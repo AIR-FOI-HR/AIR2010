@@ -7,96 +7,237 @@
     tools:context=".ui.home.HomeFragment"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/home_ringo_design"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center">
 
-
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ringo_picture"
+            android:alpha="0.6"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_ringo_title"/>
-            <TextView
+                android:text="@string/home_ringo_title"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_ringo_difficulty"/>
-            <TextView
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_card_difficulty"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_difficulty_medium"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_ringo_time"/>
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_card_time"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_ringo_time"
+                    android:textColor="#000000"/>
+            </LinearLayout>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="@string/home_ringo_description"/>
+                android:text="@string/home_ringo_description"
+                android:textColor="#000000"/>
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/home_maker_design"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp">
 
-
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/makerbuino_picture"
+            android:alpha="0.6"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_maker_title"/>
-            <TextView
+                android:text="@string/home_maker_title"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_maker_difficulty"/>
-            <TextView
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_card_difficulty"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_difficulty_hard"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_maker_time"/>
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_card_time"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_maker_time"
+                    android:textColor="#000000"/>
+            </LinearLayout>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="@string/home_maker_description"/>
+                android:text="@string/home_maker_description"
+                android:textColor="#000000"/>
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/home_nibble_design"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp">
 
-
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nibble_picture"
+            android:alpha="0.6"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_nibble_title"/>
-            <TextView
+                android:text="@string/home_nibble_title"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_nibble_difficulty"/>
-            <TextView
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_card_difficulty"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_difficulty_easy"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_nibble_time"/>
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_card_time"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_nibble_time"
+                    android:textColor="#000000"/>
+            </LinearLayout>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="@string/home_nibble_description"/>
+                android:text="@string/home_nibble_description"
+                android:textColor="#000000"/>
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

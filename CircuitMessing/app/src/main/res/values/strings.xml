@@ -21,20 +21,22 @@
 
     <!-- home fragment -->
     <string name="home_ringo_title">Ringo build guide</string>
-    <string name="home_ringo_difficulty">Difficulty: medium</string>
-    <string name="home_ringo_time">Time: 5 hours</string>
     <string name="home_ringo_description">Assemble your own mobile phone - Ringo!</string>
 
-
     <string name="home_maker_title">MAKERbuino build guide</string>
-    <string name="home_maker_difficulty">Difficulty: hard</string>
-    <string name="home_maker_time">Time: 4 hours 30 minutes</string>
     <string name="home_maker_description">Assemble your own portable gaming console - MAKERbuino!</string>
 
-
     <string name="home_nibble_title">Nibble build guide</string>
-    <string name="home_nibble_difficulty">Difficulty: easy</string>
-    <string name="home_nibble_time">Time: 2 hours</string>
     <string name="home_nibble_description">Build guide for your brand new gaming console - Nibble!</string>
+
+    <string name="home_card_difficulty">Difficulty: </string>
+    <string name="home_difficulty_easy">easy</string>
+    <string name="home_difficulty_medium">medium</string>
+    <string name="home_difficulty_hard">hard</string>
+
+    <string name="home_card_time">Time: </string>
+    <string name="home_ringo_time">5 hours</string>
+    <string name="home_maker_time">4 hours 30 minutes</string>
+    <string name="home_nibble_time">2 hours</string>
 
 </resources>
