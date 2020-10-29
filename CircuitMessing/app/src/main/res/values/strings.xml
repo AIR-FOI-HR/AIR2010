@@ -15,14 +15,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-
+    <string name="text_input_username">Username</string>
+    <string name="text_input_password">Password</string>
+    <string name="text_input_repeat_password">Repeat password</string>
 
     <!-- home fragment -->
     <string name="home_ringo_title">Ringo build guide</string>
     <string name="home_ringo_difficulty">Difficulty: medium</string>
     <string name="home_ringo_time">Time: 5 hours</string>
     <string name="home_ringo_description">Assemble your own mobile phone - Ringo!</string>
-
 
 
     <string name="home_maker_title">MAKERbuino build guide</string>
@@ -35,6 +36,5 @@
     <string name="home_nibble_difficulty">Difficulty: easy</string>
     <string name="home_nibble_time">Time: 2 hours</string>
     <string name="home_nibble_description">Build guide for your brand new gaming console - Nibble!</string>
-
 
 </resources>
