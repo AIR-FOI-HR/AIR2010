@@ -1,11 +1,9 @@
-package com.example.circuitmessing
+package com.example.circuitmessing.ui.auth
+import android.app.Activity
 
 import android.os.Bundle
-import android.util.Log
+import android.view.LayoutInflater
 import android.view.Menu
-import android.widget.Button
-import android.widget.TextView
-import androidx.activity.viewModels
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -17,60 +15,78 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import com.example.circuitmessing.R
+import com.example.circuitmessing.databinding.ActivityLoginBinding
+import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
+import com.example.circuitmessing.databinding.FragmentRegisterFragmentBinding
 import com.example.circuitmessing.databinding.LoginMainBinding
-import com.example.circuitmessing.databinding.RegisterMainBinding
+import com.example.circuitmessing.fragment_login
+import com.example.circuitmessing.fragment_register
 import com.example.circuitmessing.ui.classes.User
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
-import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.nav_header_main.view.*
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : FragmentActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var database: DatabaseReference
-    private lateinit var registerBinding: RegisterMainBinding
-    private lateinit var loginBinding: LoginMainBinding
+    private lateinit var registerBinding: FragmentRegisterFragmentBinding
+    private lateinit var loginBinding: FragmentLoginFragmentBinding
+    private lateinit var loginBindingView: ActivityLoginBinding
+
+    private var mFragmentManager: FragmentManager = supportFragmentManager
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        /*
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+         */
+
+        // Bind the LoginView and show it
+        loginBindingView = ActivityLoginBinding.inflate(layoutInflater)
+        val loginView = loginBindingView.root
+        setContentView(loginView)
+
+        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.login_fragment, fragment_login())
+        fragmentTransaction.commit()
+
 
         // Instance of the database reference
         database = Firebase.database.reference
 
-        val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+
+        //val fragment =  loginBindingView.navRegisterFragment
+        val toggleButton = loginBindingView.signUpButton
+        toggleButton.setOnClickListener(){
+            showRegisterFragment()
         }
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
 
+    }
 
-        // Bind the RegisterMain and set it to View
-        registerBinding = RegisterMainBinding.inflate(layoutInflater)
+    private fun showRegisterFragment(){
+        registerBinding = FragmentRegisterFragmentBinding.inflate(layoutInflater)
         val view = registerBinding.root
-        setContentView(view)
+
+        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.login_fragment, fragment_register())
+        fragmentTransaction.commit()
 
         // Get user data from register_main
-        var username = registerBinding.usernameFieldInput.text
-        var password = registerBinding.passwordFieldInput.text
-        var repeatPassword = registerBinding.passwordFieldInput.text
+        var username = registerBinding.registerUsernameInput.text
+        var password = registerBinding.registerPasswordInput.text
+        var repeatPassword = registerBinding.registerPasswordInputRepeat.text
         var registerButton = registerBinding.registerButton
 
         // Save new user to the database on a click of a register button
@@ -83,33 +99,20 @@ class LoginActivity : AppCompatActivity() {
                 // Warning message about passwords don't match goes here
             }
         }
+    }
 
-        // Bind the login_main and set it to View
-        loginBinding = LoginMainBinding.inflate(layoutInflater)
-        val loginView = loginBinding.root
-        setContentView(loginView)
+    private fun showLoginFragment(){
+        loginBinding = FragmentLoginFragmentBinding.inflate(layoutInflater)
 
         // Get user data from login_main
-        var loginUsername = loginBinding.usernameFieldInput.text
-        var loginPassword = loginBinding.passwordFieldInput.text
-        var loginButton = loginBinding.loginToggleButton
+        var loginUsername = loginBinding.loginUsernameInput.text
+        var loginPassword = loginBinding.loginPasswordInput.text
+        var loginButton = loginBinding.loginButton
 
         // Check user login data
         loginButton.setOnClickListener {
             loginUser(loginUsername.toString(), loginPassword.toString())
         }
-    }
-
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
     private fun createNewUser(username: String, password: String): User {
