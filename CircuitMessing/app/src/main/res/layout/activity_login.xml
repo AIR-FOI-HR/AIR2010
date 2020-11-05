@@ -30,23 +30,23 @@
         </com.google.android.material.appbar.AppBarLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-
-
     <fragment
-        android:id="@+id/nav_register_fragment"
+        android:id="@+id/login_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/loginToggleButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout"
+        android:layout_marginTop="125dp"
+        />
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/loginToggleButton"
         android:layout_width="400dp"
         android:layout_height="75dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.50"
