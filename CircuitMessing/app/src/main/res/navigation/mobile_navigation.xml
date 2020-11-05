@@ -22,4 +22,16 @@
         android:name="com.example.circuitmessing.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="com.example.circuitmessing.fragment_register"
+        android:label="fragment_register_fragment"
+        tools:layout="@layout/fragment_register_fragment" />
+    <fragment
+        android:id="@+id/fragment_login2"
+        android:name="com.example.circuitmessing.fragment_login"
+        android:label="fragment_login_fragment"
+        tools:layout="@layout/fragment_login_fragment" />
+
 </navigation>
