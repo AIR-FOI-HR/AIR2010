@@ -34,15 +34,12 @@
 
     <fragment
         android:id="@+id/nav_register_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:defaultNavHost="true"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/loginToggleButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout"
-        app:navGraph="@navigation/mobile_navigation" />
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout" />
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/loginToggleButton"

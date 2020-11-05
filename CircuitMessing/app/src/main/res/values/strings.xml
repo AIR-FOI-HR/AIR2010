@@ -37,5 +37,11 @@
     <string name="home_ringo_time">5 hours</string>
     <string name="home_maker_time">4 hours 30 minutes</string>
     <string name="home_nibble_time">2 hours</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 
 </resources>
