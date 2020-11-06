@@ -21,9 +21,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.circuitmessing.R
 import com.example.circuitmessing.databinding.ActivityLoginBinding
-import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
-import com.example.circuitmessing.databinding.FragmentRegisterFragmentBinding
-import com.example.circuitmessing.databinding.LoginMainBinding
 import com.example.circuitmessing.fragment_login
 import com.example.circuitmessing.fragment_register
 import com.example.circuitmessing.ui.classes.User
@@ -34,12 +31,12 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-class LoginActivity : FragmentActivity() {
+class LoginActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var database: DatabaseReference
-    private lateinit var registerBinding: FragmentRegisterFragmentBinding
-    private lateinit var loginBinding: FragmentLoginFragmentBinding
+    //private lateinit var registerBinding: FragmentRegisterFragmentBinding
+    //private lateinit var loginBinding: FragmentLoginFragmentBinding
     private lateinit var loginBindingView: ActivityLoginBinding
 
     private var mFragmentManager: FragmentManager = supportFragmentManager
@@ -47,11 +44,9 @@ class LoginActivity : FragmentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /*
-        setContentView(R.layout.activity_main)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-         */
+        setContentView(R.layout.activity_login)
+        //val toolbar: Toolbar = findViewById(R.id.toolbar)
+        //setSupportActionBar(toolbar)
 
         // Bind the LoginView and show it
         loginBindingView = ActivityLoginBinding.inflate(layoutInflater)
@@ -59,7 +54,7 @@ class LoginActivity : FragmentActivity() {
         setContentView(loginView)
 
         val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.login_fragment, fragment_login())
+        fragmentTransaction.replace(R.id.login_and_register_fragment, fragment_login())
         fragmentTransaction.commit()
 
 
@@ -68,20 +63,27 @@ class LoginActivity : FragmentActivity() {
 
 
         //val fragment =  loginBindingView.navRegisterFragment
-        val toggleButton = loginBindingView.signUpButton
-        toggleButton.setOnClickListener(){
+        val signupButton = loginBindingView.signUpButton
+        signupButton.setOnClickListener(){
             showRegisterFragment()
         }
+
+        val signinButton = loginBindingView.signInButton
+        signinButton.setOnClickListener {
+            showLoginFragment()
+        }
+
 
     }
 
     private fun showRegisterFragment(){
-        registerBinding = FragmentRegisterFragmentBinding.inflate(layoutInflater)
+        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.login_and_register_fragment, fragment_register())
+        fragmentTransaction.commit()
+
+        /*registerBinding = FragmentRegisterFragmentBinding.inflate(layoutInflater)
         val view = registerBinding.root
 
-        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.login_fragment, fragment_register())
-        fragmentTransaction.commit()
 
         // Get user data from register_main
         var username = registerBinding.registerUsernameInput.text
@@ -98,11 +100,16 @@ class LoginActivity : FragmentActivity() {
             else {
                 // Warning message about passwords don't match goes here
             }
-        }
+        }*/
     }
 
     private fun showLoginFragment(){
-        loginBinding = FragmentLoginFragmentBinding.inflate(layoutInflater)
+
+        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.login_and_register_fragment, fragment_login())
+        fragmentTransaction.commit()
+
+        /*loginBinding = FragmentLoginFragmentBinding.inflate(layoutInflater)
 
         // Get user data from login_main
         var loginUsername = loginBinding.loginUsernameInput.text
@@ -112,7 +119,7 @@ class LoginActivity : FragmentActivity() {
         // Check user login data
         loginButton.setOnClickListener {
             loginUser(loginUsername.toString(), loginPassword.toString())
-        }
+        }*/
     }
 
     private fun createNewUser(username: String, password: String): User {

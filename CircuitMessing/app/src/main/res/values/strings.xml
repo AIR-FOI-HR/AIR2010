@@ -18,6 +18,11 @@
     <string name="text_input_password">Password</string>
     <string name="text_input_repeat_password">Repeat password</string>
 
+    <!-- LOGIN ACTIVITY -->
+
+    <string name="login_activity_signin_tab_button">Sign in</string>
+    <string name="login_activity_signup_tab_button">Sign up</string>
+
     <!-- home fragment -->
     <string name="home_ringo_title">Ringo build guide</string>
     <string name="home_ringo_description">Assemble your own mobile phone - Ringo!</string>
@@ -38,10 +43,6 @@
     <string name="home_maker_time">4 hours 30 minutes</string>
     <string name="home_nibble_time">2 hours</string>
     <string name="title_activity_login">LoginActivity</string>
-    <!--
-    This string is used for square devices and overridden by hello_world in
-    values-round/strings.xml for round devices.
-    -->
-    <string name="hello_world">Hello Square World!</string>
+
 
 </resources>
