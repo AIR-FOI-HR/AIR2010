@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFB300"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageButton
+        android:id="@+id/nibbleMenu"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFB300"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu"
+        android:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    />
+
+    <ImageButton
+        android:id="@+id/settingsMenu"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFB300"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dots"
+        android:tint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/appBarLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    />
+
+    <TextView
+        android:id="@+id/nibbleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Nibble"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/leftArrow"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        app:icon="@drawable/abc_vector_test"
+        app:iconPadding="0dp"
+        app:iconTint="#FFB300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rightArrow"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="20dp"
+        android:rotationY="180"
+        app:icon="@drawable/abc_vector_test"
+        app:iconPadding="0dp"
+        app:iconTint="#FFB300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
