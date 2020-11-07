@@ -1,4 +1,4 @@
-package com.example.circuitmessing
+package com.example.circuitmessing.ui.auth
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,11 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.circuitmessing.R
 
 class fragment_register : Fragment() {
 
     companion object {
-        fun newInstance() = fragment_register()
+        fun newInstance() =
+            fragment_register()
     }
 
     private lateinit var viewModel: FragmentRegisterViewModel

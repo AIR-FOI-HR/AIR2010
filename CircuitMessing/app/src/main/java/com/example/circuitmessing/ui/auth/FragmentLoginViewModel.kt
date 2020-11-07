@@ -1,4 +1,4 @@
-package com.example.circuitmessing
+package com.example.circuitmessing.ui.auth
 
 import androidx.lifecycle.ViewModel
 
