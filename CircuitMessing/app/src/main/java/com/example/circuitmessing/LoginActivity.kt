@@ -11,7 +11,8 @@ import com.example.circuitmessing.databinding.ActivityLoginBinding
 import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
 import com.example.circuitmessing.databinding.FragmentRegisterFragmentBinding
 import com.example.circuitmessing.fragment_login
-import com.example.circuitmessing.fragment_register
+//import com.example.circuitmessing.fragment_register
+import com.example.circuitmessing.ui.auth.fragment_register
 import com.example.circuitmessing.ui.classes.User
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DataSnapshot
