@@ -43,6 +43,8 @@
     <string name="home_maker_time">4 hours 30 minutes</string>
     <string name="home_nibble_time">2 hours</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_product_drawer">ProductDrawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
 
 
 </resources>

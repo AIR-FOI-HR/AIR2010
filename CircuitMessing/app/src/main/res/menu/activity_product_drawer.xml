@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_introduction"
+            android:icon="@drawable/ic_baseline_check_24"
+            android:title="Introduction" />
+        <item
+            android:id="@+id/nav_meet_tools"
+            android:icon="@drawable/ic_baseline_check_24"
+            android:title="Meet the tools" />
+        <item
+            android:id="@+id/nav_time_makin"
+            android:icon="@drawable/ic_baseline_check_24"
+            android:title="Time to get makin'" />
+        <item
+            android:id="@+id/nav_summed_up"
+            android:icon="@drawable/ic_baseline_check_24"
+            android:title="Summed up" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_baseline_check_24"
+            android:title="Quiz" />
+    </group>
+</menu>
