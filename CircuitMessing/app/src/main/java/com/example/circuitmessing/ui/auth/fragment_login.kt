@@ -7,15 +7,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
-import com.example.circuitmessing.R
 import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
+import java.math.BigInteger
+import java.security.MessageDigest
 
 class fragment_login : Fragment() {
 
@@ -31,36 +33,23 @@ class fragment_login : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_login_fragment, container, false)
 
-
-        println("register fragment")
-
-
+        // Instance of the database reference
+        database = Firebase.database.reference
         loginBinding = FragmentLoginFragmentBinding.inflate(layoutInflater)
+        val view = loginBinding.root
 
-        // Get user data from login_main
+        // Get user data from fragment_login
         var loginUsername = loginBinding.loginUsernameInput.text
         var loginPassword = loginBinding.loginPasswordInput.text
-        val loginButton = loginBinding.loginButton
-        val i_couldnt_make_the_binding_work = root.findViewById<Button>(R.id.login_button)
+        var loginButton = loginBinding.loginButton
 
         // Check user login data
-        i_couldnt_make_the_binding_work.setOnClickListener {
-            //loginUser(loginUsername.toString(), loginPassword.toString())
-
-            //A way to change activity
-            val intent = Intent(this.context, MainActivity::class.java)
-            startActivity(intent)
-            this.activity?.finish()
-
-            //Once the user connected, we can keep the session to avoid reconnection at each launch
-            // Also used in LoginAcitivity
-
-            //preferences.isConnected = true
+        loginButton.setOnClickListener {
+            loginUser(loginUsername.toString(), loginPassword.toString())
         }
 
-        return root
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -68,7 +57,6 @@ class fragment_login : Fragment() {
         viewModel = ViewModelProviders.of(this).get(FragmentLoginViewModel::class.java)
         // TODO: Use the ViewModel
     }
-
 
     private fun loginUser(username: String, password: String){
         var foundUserInDatabase: Boolean = false
@@ -78,19 +66,28 @@ class fragment_login : Fragment() {
                 for (ds in dataSnapshot.children) {
                     val dbUsername = ds.child("username").getValue(String::class.java)
                     val dbPassword = ds.child("password").getValue(String::class.java)
-                    if(dbUsername == username && dbPassword == password){
+                    val dbSalt = ds.child("salt").getValue(String::class.java)
+
+                    val hashedPassword = getSHA512( password + dbSalt.toString())
+
+                    if(dbUsername == username && dbPassword == hashedPassword){
                         foundUserInDatabase = true
+                        //A way to change activity
+                        val intent = Intent(activity, MainActivity::class.java)
+                        startActivity(intent)
+                        activity?.finish()
+
+                        //Once the user connected, we can keep the session to avoid reconnection at each launch
+                        // Also used in LoginAcitivity
+                        preferences.isConnected = true
                     }
                     else{
-                        // Message error about wrong credentials
+                        loginBinding.loginPasswordInput.error = "Wrong username or password"
                     }
                 }
-                if(!foundUserInDatabase){
-                    // Grant user access
-
-                }
-                else {
-                    // Message: "User with that username already exists!"
+                if(foundUserInDatabase){
+                    loginBinding.loginUsernameInput.setText("")
+                    loginBinding.loginPasswordInput.setText("")
                 }
             }
             override fun onCancelled(databaseError: DatabaseError) {
@@ -98,6 +95,25 @@ class fragment_login : Fragment() {
             }
         }
         usersRef.addListenerForSingleValueEvent(valueEventListener)
+    }
+
+    private fun getSHA512(input:String):String{
+        val md: MessageDigest = MessageDigest.getInstance("SHA-512")
+        val messageDigest = md.digest(input.toByteArray())
+
+        // Convert byte array into signum representation
+        val no = BigInteger(1, messageDigest)
+
+        // Convert message digest into hex value
+        var hashtext: String = no.toString(16)
+
+        // Add preceding 0s to make it 32 bit
+        while (hashtext.length < 32) {
+            hashtext = "0$hashtext"
+        }
+
+        // return the HashText
+        return hashtext
     }
 
 }

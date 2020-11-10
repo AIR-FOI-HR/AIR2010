@@ -8,21 +8,9 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.databinding.ActivityLoginBinding
-import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
-import com.example.circuitmessing.databinding.FragmentRegisterFragmentBinding
-import com.example.circuitmessing.fragment_login
+import com.example.circuitmessing.ui.auth.fragment_login
 //import com.example.circuitmessing.fragment_register
 import com.example.circuitmessing.ui.auth.fragment_register
-import com.example.circuitmessing.ui.classes.User
-import com.google.android.material.button.MaterialButton
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_login.view.*
 
 class LoginActivity : AppCompatActivity() {
 

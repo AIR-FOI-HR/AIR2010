@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_ringo_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -87,6 +88,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_maker_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -164,6 +166,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_nibble_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
