@@ -45,6 +45,24 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_product_drawer">ProductDrawer</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="ringo_title">Welcome to Ringo!</string>
+    <string name="ringo_chapter1">Welcome to the CircuitMess Ringo build guide! In the following 5 chapters, we’ll help you build your own mobile phone out of the components you received in your Ringo kit!</string>
+    <string name="ringo_title2">Recommended age group</string>
+    <string name="ringo_chapter2">We believe that an 11-year-old child should be able to assemble a Ringo with some help from an adult. The estimated age group is 11+. The estimated build time is around 5 hours, but it can vary depending on your skill level.CircuitMess Ringo was designed to bring the basics of STEM (Science, Technology, Engineering, and Mathematics) to beginners in a fun and interesting way.</string>
+    <string name="ringo_title3">What You’ll Learn With the Ringo</string>
+    <string name="ringo_chapter3">Ringo’s main goal is to educate and motivate you to learn something new or brush the skills you already have. In the process of assembly, you’ll learn: how to solder, what are the basic electronic components and what is their function, how can electronic components be connected and why, what are microcontrollers and some basics of digital electronics.</string>
+    <string name="nibble_title">Welcome to Nibble!</string>
+    <string name="nibble_chapter1">In this build guide, you’ll find out how to assemble a game console all by yourself, using only a couple of tools in the process. Whether this is your first time meeting a do-it-yourself device or you’re a DIY veteran, you will learn a lot!</string>
+    <string name="nibble_title2">Recommended age group</string>
+    <string name="nibble_chapter2">As it says on the box, you should be at least 9 years old to assemble this console. With that in mind, parts of the assembly like soldering and tightening bolts should be carefully approached - ask an adult to help out if you\'ve never soldered before. The time of the assembly depends on your previous knowledge and experience with electronics. You will need an estimate of 2 hours in total to assemble your console.</string>
+    <string name="nibble_title3">What You’ll Learn With the Nibble</string>
+    <string name="nibble_chapter3">Nibble’s main goal is to educate and motivate you to learn something new or brush up on the skills you already have. It should also serve as an entry point in electronics, making it the perfect project for starting out your big engineering career. In the process of assembly, you’ll learn: how to solder, what are the basic electronic components and their function, how can electronic components be connected and why, what are microcontrollers and some basics of digital electronics.</string>
+    <string name="makerbuino_title">Welcome to MAKERbuino!</string>
+    <string name="makerbuino_chapter1">Welcome to the MAKERbuino build guide. In these chapters, we’ll help you make a fully functional retro gaming device out of a bunch of components you’ve received in your MAKERbuino package.</string>
+    <string name="makerbuino_title2">Recommended age group</string>
+    <string name="makerbuino_chapter2">Our estimation is that an 11-year-old kid should be able to assemble the MAKERbuino with a tiny bit of help from an adult. Therefore, the estimated age group is 11+. Estimated build time: 4 hours 30 minutes. Build time varies and depends on the skills of a user. MAKERbuino was made with the purpose of bringing STEM (Science, Technology, Engineering, and Mathematics) to electronics rookies in a fun and interesting way.</string>
+    <string name="makerbuino_title3">What You’ll Learn With the MAKERbuino</string>
+    <string name="makerbuino_chapter3">MAKERbuino’s main goal is to educate and motivate you to learn something new or brush the skills you already have.In the process of making the MAKERbuino you’ll learn: how to solder, what are the basic electronic components and what is their function, how can electronic components be connected and why, what are microcontrollers and some basics of digital electronics.</string>
 
 
 </resources>
