@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
-import com.example.circuitmessing.products.ringo.ActivityRingo
+import com.example.circuitmessing.*
 import com.example.circuitmessing.databinding.FragmentHomeBinding
 
 
@@ -34,7 +34,19 @@ class HomeFragment : Fragment() {
 
 
         homeView.homeRingoButton.setOnClickListener {
-            val intent = Intent(this.context, ActivityRingo::class.java)
+            val intent = Intent(this.activity, ActivityRingo::class.java)
+            startActivity(intent)
+            this.activity?.finish()
+        }
+
+        homeView.homeMakerButton.setOnClickListener {
+            val intent = Intent(this.activity, MakerbuinoActivity::class.java)
+            startActivity(intent)
+            this.activity?.finish()
+        }
+
+        homeView.homeNibbleButton.setOnClickListener {
+            val intent = Intent(this.activity, ActivityNibble::class.java)
             startActivity(intent)
             this.activity?.finish()
         }
