@@ -1,4 +1,4 @@
-package com.example.circuitmessing
+package com.example.circuitmessing.products.makerbuino
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.circuitmessing.R
 
 class makerbuino_introduction : Fragment() {
 

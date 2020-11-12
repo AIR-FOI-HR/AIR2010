@@ -1,4 +1,4 @@
-package com.example.circuitmessing
+package com.example.circuitmessing.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,10 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.MainActivity
+import com.example.circuitmessing.R
 import com.example.circuitmessing.databinding.ActivityLoginBinding
-import com.example.circuitmessing.ui.auth.fragment_login
 //import com.example.circuitmessing.fragment_register
-import com.example.circuitmessing.ui.auth.fragment_register
 
 class LoginActivity : AppCompatActivity() {
 
@@ -40,14 +40,16 @@ class LoginActivity : AppCompatActivity() {
         setContentView(loginView)
 
         val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.login_and_register_fragment,
+        fragmentTransaction.replace(
+            R.id.login_and_register_fragment,
             fragment_login()
         )
         fragmentTransaction.commit()
 
         val signUpButton = loginBindingView.signUpButton
         val signInButton = loginBindingView.signInButton
-
+        val toggleGroup = loginBindingView.loginToggleButton
+        toggleGroup.check(signInButton.id)
 
         signUpButton.setOnClickListener(){
             showRegisterFragment()
@@ -61,7 +63,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showRegisterFragment(){
         val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.login_and_register_fragment,
+        fragmentTransaction.replace(
+            R.id.login_and_register_fragment,
             fragment_register()
         )
         fragmentTransaction.commit()
@@ -69,7 +72,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showLoginFragment(){
         val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.login_and_register_fragment,
+        fragmentTransaction.replace(
+            R.id.login_and_register_fragment,
             fragment_login()
         )
         fragmentTransaction.commit()
