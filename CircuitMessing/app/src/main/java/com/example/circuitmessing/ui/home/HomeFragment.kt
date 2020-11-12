@@ -5,13 +5,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.example.circuitmessing.ActivityRingo
-import com.example.circuitmessing.MainActivity
-import com.example.circuitmessing.R
+import com.example.circuitmessing.products.ringo.ActivityRingo
 import com.example.circuitmessing.databinding.FragmentHomeBinding
 
 
@@ -42,10 +38,6 @@ class HomeFragment : Fragment() {
             startActivity(intent)
             this.activity?.finish()
         }
-
-
-
-
 
         return view
 
