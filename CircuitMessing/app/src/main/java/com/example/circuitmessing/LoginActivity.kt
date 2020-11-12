@@ -47,7 +47,8 @@ class LoginActivity : AppCompatActivity() {
 
         val signUpButton = loginBindingView.signUpButton
         val signInButton = loginBindingView.signInButton
-
+        val toggleGroup = loginBindingView.loginToggleButton
+        toggleGroup.check(signInButton.id)
 
         signUpButton.setOnClickListener(){
             showRegisterFragment()

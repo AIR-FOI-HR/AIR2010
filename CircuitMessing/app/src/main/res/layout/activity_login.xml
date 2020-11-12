@@ -40,8 +40,10 @@
         android:layout_width="400dp"
         android:layout_height="75dp"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="15dp"
-        android:layout_gravity="center">
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"
+        app:singleSelection="true"
+        app:selectionRequired="true">
 
         <Button
             android:id="@+id/signInButton"
