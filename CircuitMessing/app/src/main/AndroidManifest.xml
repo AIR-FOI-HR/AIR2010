@@ -12,11 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".MakerbuinoActivity" />
-        <activity android:name=".ActivityNibble" />
-        <activity android:name=".ActivityRingo" />
+        <activity android:name=".products.makerbuino.MakerbuinoActivity" />
+        <activity android:name=".products.nibble.ActivityNibble" />
+        <activity android:name=".products.ringo.ActivityRingo" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.auth.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

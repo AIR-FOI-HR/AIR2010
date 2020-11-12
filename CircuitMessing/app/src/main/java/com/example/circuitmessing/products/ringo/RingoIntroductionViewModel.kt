@@ -1,4 +1,4 @@
-package com.example.circuitmessing
+package com.example.circuitmessing.products.ringo
 
 import androidx.lifecycle.ViewModel
 
