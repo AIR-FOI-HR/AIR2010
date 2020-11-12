@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.example.circuitmessing.*
 import com.example.circuitmessing.databinding.FragmentHomeBinding
+import com.example.circuitmessing.products.makerbuino.MakerbuinoActivity
+import com.example.circuitmessing.products.nibble.ActivityNibble
+import com.example.circuitmessing.products.ringo.ActivityRingo
 
 
 class HomeFragment : Fragment() {
