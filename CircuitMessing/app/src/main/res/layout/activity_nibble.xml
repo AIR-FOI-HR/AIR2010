@@ -1,97 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    android:layout_height="match_parent">
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        tools:context=".products.nibble.ActivityNibble">
 
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar2"
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFB300"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FFB300"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/nibble_introduction_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/leftArrow"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="51dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="0dp"
+                app:icon="@drawable/abc_vector_test"
+                app:iconPadding="0dp"
+                app:iconTint="#FFB300"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/rightArrow"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="51dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="20dp"
+                android:rotationY="180"
+                app:icon="@drawable/abc_vector_test"
+                app:iconPadding="0dp"
+                app:iconTint="#FFB300"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_nibble"
+        app:menu="@menu/activity_product_drawer" />
 
 
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <ImageButton
-        android:id="@+id/nibbleMenu"
-        android:layout_width="41dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#FFB300"
-        android:scaleType="centerCrop"
-        android:src="@drawable/menu"
-        android:tint="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    />
-
-    <ImageButton
-        android:id="@+id/settingsMenu"
-        android:layout_width="41dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="10dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="#FFB300"
-        android:scaleType="centerCrop"
-        android:src="@drawable/dots"
-        android:tint="@android:color/white"
-        app:layout_constraintEnd_toEndOf="@+id/appBarLayout"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    />
-
-    <TextView
-        android:id="@+id/nibbleTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="10dp"
-        android:text="Nibble"
-        android:textColor="@android:color/white"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/leftArrow"
-        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-        android:layout_width="51dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="20dp"
-        app:icon="@drawable/abc_vector_test"
-        app:iconPadding="0dp"
-        app:iconTint="#FFB300"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/rightArrow"
-        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-        android:layout_width="51dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="20dp"
-        android:rotationY="180"
-        app:icon="@drawable/abc_vector_test"
-        app:iconPadding="0dp"
-        app:iconTint="#FFB300"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

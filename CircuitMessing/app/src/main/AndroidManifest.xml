@@ -12,9 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".products.makerbuino.MakerbuinoActivity" />
-        <activity android:name=".products.nibble.ActivityNibble" />
-        <activity android:name=".products.ringo.ActivityRingo" />
+        <activity android:name=".products.makerbuino.MakerbuinoActivity"
+            android:label="Makerbuino"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".products.nibble.ActivityNibble"
+            android:label="Nibble"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".products.ringo.ActivityRingo"
+            android:label="Ringo"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.auth.LoginActivity"
             android:label="@string/app_name"
