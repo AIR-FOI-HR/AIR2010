@@ -7,26 +7,26 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
-            android:title="Home" />
+            android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_introduction"
             android:icon="@drawable/ic_baseline_check_24"
-            android:title="Introduction" />
+            android:title="@string/menu_introduction" />
         <item
             android:id="@+id/nav_meet_tools"
             android:icon="@drawable/ic_baseline_check_24"
-            android:title="Meet the tools" />
+            android:title="@string/menu_meet_tools" />
         <item
             android:id="@+id/nav_time_makin"
             android:icon="@drawable/ic_baseline_check_24"
-            android:title="Time to get makin'" />
+            android:title="@string/menu_time_makin" />
         <item
             android:id="@+id/nav_summed_up"
             android:icon="@drawable/ic_baseline_check_24"
-            android:title="Summed up" />
+            android:title="@string/menu_summed_up" />
         <item
             android:id="@+id/nav_quiz"
             android:icon="@drawable/ic_baseline_check_24"
-            android:title="Quiz" />
+            android:title="@string/menu_quiz" />
     </group>
 </menu>

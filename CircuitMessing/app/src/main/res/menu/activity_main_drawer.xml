@@ -11,23 +11,23 @@
         <item
             android:id="@+id/nav_titles"
             android:icon="@drawable/ic_baseline_emoji_events_24"
-            android:title="Titles" />
+            android:title="@string/menu_titles" />
         <item
             android:id="@+id/nav_ranking"
             android:icon="@drawable/ic_baseline_poll_24"
-            android:title="Ranking" />
+            android:title="@string/menu_ranking" />
         <item
             android:id="@+id/nav_forum"
             android:icon="@drawable/ic_baseline_groups_24"
-            android:title="Forum" />
+            android:title="@string/menu_forum" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_baseline_settings_24"
-            android:title="Settings" />
+            android:title="@string/menu_settings" />
         <item
             android:id="@+id/nav_sign_out"
             android:icon="@drawable/ic_baseline_power_settings_new_24"
-            android:title="SIGN OUT" />
+            android:title="@string/menu_sign_out" />
 
 
     </group>
