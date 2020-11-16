@@ -17,5 +17,8 @@ class Preferences(context: Context) {
         get() = prefs.getBoolean("night_mode", false)
         set(value) = prefs.edit().putBoolean("night_mode", value).apply()
 
+    var username: String
+        get() = prefs.getString("username", "noName").toString()
+        set(value) = prefs.edit().putString("username", value).apply()
 
 }

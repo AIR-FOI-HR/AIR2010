@@ -80,6 +80,7 @@ class fragment_login : Fragment() {
                         //Once the user connected, we can keep the session to avoid reconnection at each launch
                         // Also used in LoginAcitivity
                         preferences.isConnected = true
+                        preferences.username = username
                     }
                     else{
                         loginBinding.loginPasswordInput.error = "Wrong username or password"

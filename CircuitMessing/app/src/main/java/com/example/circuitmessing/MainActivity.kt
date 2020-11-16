@@ -3,6 +3,8 @@ package com.example.circuitmessing
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
+import android.widget.TextView
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -14,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.FragmentManager
 import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.databinding.NavHeaderRingoBinding
 import com.example.circuitmessing.ui.auth.LoginActivity
 
 
@@ -31,6 +34,12 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
+
+        // Setting navHeader text to the current user username
+        val headerView = navView.getHeaderView(0)
+        val navUsername = headerView.findViewById<View>(R.id.username) as TextView
+        navUsername.text = preferences.username
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
