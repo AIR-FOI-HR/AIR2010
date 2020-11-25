@@ -8,11 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.ui.AppBarConfiguration
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.databinding.ActivityRingoBinding
+import com.example.circuitmessing.databinding.RingoTimeToGetMakinFragmentBinding
+import com.example.circuitmessing.ui.auth.fragment_register
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.nav_header_ringo.view.*
 
@@ -63,5 +66,6 @@ class ActivityRingo : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
 }
 

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ringo_time_to_get_makin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+
+        <TextView
+            android:id="@+id/motivational_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivational tip from Albert"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/motivational_chapter_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering basic: Motivational tip from Albert"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivational_ringo"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/solders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivational_chapter_ringo"
+            app:srcCompat="@drawable/_586969030754_44"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/step1_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 1-The Brain board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/solders"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/step1_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 1-The Brain board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step1_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step1_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step1_title_ringo"
+            app:srcCompat="@drawable/ringo_step1" />
+
+        <TextView
+            android:id="@+id/step2_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 2-Attaching the Brain board onto the Main board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step2_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 2-Attaching the Brain board onto the Main board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step2_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step2_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step2_title_ringo"
+            app:srcCompat="@drawable/ringo_step2" />
+
+        <TextView
+            android:id="@+id/step3_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 3-Soldering the Brain board to the Main board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step3_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 3-Soldering the Brain board to the Main board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step3_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step3_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step3_title_ringo"
+            app:srcCompat="@drawable/ringo_step3" />
+
+        <TextView
+            android:id="@+id/step4_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 4-The Display board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step4_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 4-The Display board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step4_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step4_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step4_title_ringo"
+            app:srcCompat="@drawable/ringo_step4" />
+
+        <TextView
+            android:id="@+id/step5_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 5-Mounting the Display board onto the Main board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step5_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 5-Mounting the Display board onto the Main board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step5_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step5_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step5_title_ringo"
+            app:srcCompat="@drawable/ringo_step5" />
+
+        <TextView
+            android:id="@+id/step6_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 6-Soldering the Display board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step6_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 6-Soldering the Display board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step6_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step6_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step6_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step6_title_ringo"
+            app:srcCompat="@drawable/ringo_step6" />
+
+        <TextView
+            android:id="@+id/step7_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 7-The Sound board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step6_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step7_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 7-The Sound board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step7_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step7_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step7_title_ringo"
+            app:srcCompat="@drawable/ringo_step7" />
+
+        <TextView
+            android:id="@+id/step8_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 8-Attaching the Sound board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step8_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 8-Attaching the Sound board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step8_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step8_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step8_title_ringo"
+            app:srcCompat="@drawable/ringo_step8" />
+
+        <TextView
+            android:id="@+id/step9_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 9-Soldering the Sound board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step9_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 9-Soldering the Sound board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step9_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step9_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step9_title_ringo"
+            app:srcCompat="@drawable/ringo_step9" />
+
+        <TextView
+            android:id="@+id/step10_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 10-A lot of buttons…"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step10_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 10-A lot of buttons…"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step10_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step10_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step10_title_ringo"
+            app:srcCompat="@drawable/ringo_step10" />
+
+        <TextView
+            android:id="@+id/step11_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 11-The joystick"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 11-The joystick"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step11_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step11_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step11_title_ringo"
+            app:srcCompat="@drawable/ringo_step11" />
+
+        <TextView
+            android:id="@+id/step12_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 12-The Network board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step12_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 12-The Network board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step12_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step12_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step12_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step12_title_ringo"
+            app:srcCompat="@drawable/ringo_step12" />
+
+        <TextView
+            android:id="@+id/step13_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 13-The speaker"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step12_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step13_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering the components step 13-The speaker"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step13_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step13_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step13_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step13_title_ringo"
+            app:srcCompat="@drawable/ringo_step13" />
+
+        <TextView
+            android:id="@+id/step14_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 14-The button caps"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step13_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step14_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Finishing touches-step 14 the button caps"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step14_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step14_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step14_title_ringo"
+            app:srcCompat="@drawable/ringo_step14" />
+
+        <TextView
+            android:id="@+id/step15_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 15-The front casing"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step15_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Peeling and casings-Step 15 – The front casing"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step15_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step15_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step15_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step15_title_ringo"
+            app:srcCompat="@drawable/ringo_step15" />
+
+        <TextView
+            android:id="@+id/step16_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 16-The back casing"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step15_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step16_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Peeling and casings-Step 16 – The back casing"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step16_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step16_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step16_title_ringo"
+            app:srcCompat="@drawable/ringo_step16" />
+
+        <TextView
+            android:id="@+id/step17_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 17-The battery"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step17_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Peeling and casings-Step 17 – The battery"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step17_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step17_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step17_title_ringo"
+            app:srcCompat="@drawable/ringo_step17" />
+
+        <TextView
+            android:id="@+id/step18_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 18-The antenna"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step18_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Peeling and casings-Step 18 – The antenna"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step18_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step18_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step18_title_ringo"
+            app:srcCompat="@drawable/ringo_step18" />
+
+        <TextView
+            android:id="@+id/step19_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 19-Combining the front and back casing"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter_ringo" />
+
+        <TextView
+            android:id="@+id/step19_chapter_ringo"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Peeling and casings-Step 19 – Combining the front and back casing"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_title_ringo" />
+
+        <ImageView
+            android:id="@+id/ringo_step19_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step19_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/step19_title_ringo"
+            app:srcCompat="@drawable/ringo_step19" />
+
+        <TextView
+            android:id="@+id/finish_title_ringo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Congrats..."
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_chapter_ringo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

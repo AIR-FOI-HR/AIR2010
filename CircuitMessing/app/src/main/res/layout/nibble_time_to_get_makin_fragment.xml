@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nibble_time_to_get_makin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+
+        <TextView
+            android:id="@+id/chapter_one_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chapter One- Soldering the components"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chapter_one_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter One-buttons"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_title_nibble"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_one_buttons1"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons"
+            app:srcCompat="@drawable/nibble_chapter_one_buttons"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_one_buttons2"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons"
+            app:srcCompat="@drawable/nibble_chapter_one_buttons_other_side"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/chapter_one_capture_switch"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter One-switch"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons1"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_one_switch_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_capture_switch"
+            app:srcCompat="@drawable/nibble_chapter_one_switch"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/chapter_one_battery"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter one-battery"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_image" />
+
+        <ImageView
+            android:id="@+id/chaper_one_battery_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/chapter_one_battery"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_image"
+            app:srcCompat="@drawable/nibble_chapter_one_battery" />
+
+        <TextView
+            android:id="@+id/chapter_one_screen"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter one-screen"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chaper_one_battery_image" />
+
+        <ImageView
+            android:id="@+id/chaper_one_screen_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/chapter_one_screen"
+            app:layout_constraintTop_toBottomOf="@+id/chaper_one_battery_image"
+            app:srcCompat="@drawable/nibble_chapter_one_screen" />
+
+        <TextView
+            android:id="@+id/chapter_two_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chapter Two- First Check"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_screen"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/chapter_two_battery"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter one-screen"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_title_nibble"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_two_battery_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/chapter_two_battery"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_title_nibble"
+            app:srcCompat="@drawable/nibble_chapter_two_batteries"
+           />
+
+        <TextView
+            android:id="@+id/chapter_two_fuse"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter two-fuse"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_two_fuse_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/chapter_two_fuse"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery_image"
+            app:srcCompat="@drawable/nibble_chapter_two_fuse"
+            />
+
+        <TextView
+            android:id="@+id/chapter_two_final"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter One-switch"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_two_final_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_final"
+            app:srcCompat="@drawable/nibble_chapter_two_final"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/chapter_three_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chapter Three- Button caps"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_final_image"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/chapter_three_buttons"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter three-Button caps"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_title_nibble"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_three_buttons_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/chapter_two_fuse"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_title_nibble"
+            app:srcCompat="@drawable/nibble_chapter_three_buttons"
+            />
+
+        <TextView
+            android:id="@+id/chapter_four_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chapter Four-Casing Up"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_buttons"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/chapter_four_casing"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Chapter Four-Casing Up"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_title_nibble"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_four_casing_image"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_casing"
+            app:srcCompat="@drawable/nibble_chapter_four_casing" />
+
+        <ImageView
+            android:id="@+id/chapter_four_bolts_image"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_casing"
+            app:srcCompat="@drawable/nibble_chapter_four_bolts"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/nibble_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final product"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_bolts_image"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/nibble_final_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nibble_final"
+            app:srcCompat="@drawable/nibble_final"
+            android:layout_marginTop="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
