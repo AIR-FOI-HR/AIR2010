@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/makerbuino_time_to_get_makin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+
+        <TextView
+            android:id="@+id/motivational_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivational tip from Albert"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/motivational_chapter_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Soldering basic: Motivational tip from Albert"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivational_makerbuino"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/solders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivational_chapter_makerbuino"
+            app:srcCompat="@drawable/_586969030754_44"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/step1_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 1 – the SD socket"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/solders"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/step1_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly Step 1 – the SD socket"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step1_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step1_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step1_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step1" />
+
+        <TextView
+            android:id="@+id/step2_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 2 – Microcomputer’s socket"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step2_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly Step 2 – Microcomputer’s socket"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step2_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step2_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step2_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step2" />
+
+        <TextView
+            android:id="@+id/step3_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 3 – 10k ohm resistor"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step3_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly : Step 3 – 10k ohm resistor"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step3_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step3_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step3_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step3" />
+
+        <TextView
+            android:id="@+id/step4_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 4 – 16MHz crystal"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step4_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly: Step 4 – 16MHz crystal"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step4_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step4_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step4_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step4" />
+
+        <TextView
+            android:id="@+id/step5_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 5 – two 22pF capacitors"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step5_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly: Step 5 – two 22pF capacitors"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step5_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step5_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step5_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step5" />
+
+        <TextView
+            android:id="@+id/step6_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 6 – two slide switches"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step6_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly: Step 6 – two slide switches"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step6_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step6_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step6_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step6_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step6" />
+
+        <TextView
+            android:id="@+id/step7_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 7 – 100uF electrolytic capacitors"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step6_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step7_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly: Step 7 – 100uF electrolytic capacitors"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step7_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step7_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step7_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step7" />
+
+        <TextView
+            android:id="@+id/step8_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 8 – 3.3V voltage regulator and 2n2222 transistor"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step8_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly: Step 8 – 3.3V voltage regulator and 2n2222 transistor"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step8_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step8_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step8_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step8" />
+
+        <TextView
+            android:id="@+id/step9_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 9 – Nokia 5110 LCD screen"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step9_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly: Step 9 – Nokia 5110 LCD screen"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step9_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step9_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step9_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step9" />
+
+        <TextView
+            android:id="@+id/step10_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 10-Insert the ATmega328 microcomputer"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step10_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly step 10-Insert the ATmega328 microcomputer"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step10_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step10_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step10_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step10" />
+
+        <TextView
+            android:id="@+id/step11_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 11-first functionality test"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step11_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly step 11-first functionality test"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step11_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step11_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step11_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step11png" />
+
+        <TextView
+            android:id="@+id/step12_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 12-solder the second 10k ohm resistor"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step12_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Starting the assembly step 12-solder the second 10k ohm resistor"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step12_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step12_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step12_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step12_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step12" />
+
+        <TextView
+            android:id="@+id/step13_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 13-female 6-pin angle header"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step12_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step13_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Some more soldering step 13-female 6-pin angle header"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step13_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step13_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step13_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step13_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step13" />
+
+        <TextView
+            android:id="@+id/step14_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 14-two wheel potentiometers"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step13_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step14_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Some more soldering :step 14 two wheel potentiometers"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step14_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step14_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step14_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step14" />
+
+        <TextView
+            android:id="@+id/step15_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 15-3×2 ICSP header and 100nF capacitors"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step15_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Some more soldering-Step 15 – 3×2 ICSP header and 100nF capacitors"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step15_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step15_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step15_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step15_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step15" />
+
+        <TextView
+            android:id="@+id/step16_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 16-some more resistors and a diode"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step15_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step16_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Some more soldering: Step 16: some more resistors and a diode"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step16_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step16_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step16_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step16" />
+
+        <TextView
+            android:id="@+id/step17_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 17-headphone connector"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step17_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Some more soldering-Step 17 – headphone connector"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step17_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step17_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step17_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step17" />
+
+        <TextView
+            android:id="@+id/step18_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 18-Li-Po charger board"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step18_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Some more soldering-Step 18 – Li-Po charger board"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step18_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step18_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step18_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step18" />
+
+        <TextView
+            android:id="@+id/step19_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 19-male 4-pin angle multiplayer headers"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step19_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Peeling and casings-Step 19 – Combining the front and back casing"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step19_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step19_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step19_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step19" />
+
+        <TextView
+            android:id="@+id/step20_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 20-seven big clicky pushbuttons"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_chapter_makerbuino" />
+
+        <TextView
+            android:id="@+id/step20_chapter_makerbuino"
+            android:layout_width="196dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="Text from time to get makin': Some more doldering: Step 20-seven big clicky pushbuttons"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step20_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_step20_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@+id/step20_chapter_makerbuino"
+            app:layout_constraintTop_toBottomOf="@+id/step20_title_makerbuino"
+            app:srcCompat="@drawable/makerbuino_step20" />
+
+        <TextView
+            android:id="@+id/finish_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Congrats..."
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step20_chapter_makerbuino" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
