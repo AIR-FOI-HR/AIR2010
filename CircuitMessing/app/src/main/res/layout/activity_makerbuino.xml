@@ -27,15 +27,17 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/maker_buino_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"/>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_marginTop="56dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <include
-                layout="@layout/makerbuino_introduction_fragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
             <Button
                 android:id="@+id/leftArrow"
                 style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
