@@ -9,9 +9,14 @@ import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.children
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
+import com.example.circuitmessing.products.ringo.Ringo_time_to_get_makin_fragment
+import com.example.circuitmessing.products.ringo.ringo_introduction
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -20,9 +25,11 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_ringo.*
+import kotlinx.android.synthetic.main.nibble_time_to_get_makin_fragment.*
 
 class ActivityNibble : AppCompatActivity() {
     private lateinit var database: DatabaseReference
+    private var mFragmentManager: FragmentManager = supportFragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,7 +54,21 @@ class ActivityNibble : AppCompatActivity() {
                 R.id.nav_home -> {
                     returnHome()
                 }
-                // All other cases for drawer items will go here also
+                R.id.nav_introduction -> {
+                    replaceFragment(R.id.nibble_fragment, nibble_introduction_fragment())
+                }
+                R.id.nav_meet_tools -> {
+
+                }
+                R.id.nav_time_makin -> {
+                    replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
+                }
+                R.id.nav_summed_up -> {
+
+                }
+                R.id.nav_quiz -> {
+
+                }
             }
 
             // set item as selected to persist highlight
@@ -68,6 +89,8 @@ class ActivityNibble : AppCompatActivity() {
         checkDonePages(productName = "nibble", pageName = "makin", item3)
         checkDonePages(productName = "nibble", pageName = "summed", item4)
 
+        replaceFragment(R.id.nibble_fragment, nibble_introduction_fragment())
+
         // Update database when specific page is done
         rightArrow?.setOnClickListener {
             when {
@@ -77,6 +100,7 @@ class ActivityNibble : AppCompatActivity() {
                 }
                 navView.menu.getItem(2).isChecked -> {
                     // tools
+                    replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
@@ -144,6 +168,15 @@ class ActivityNibble : AppCompatActivity() {
             }
         }
         pageRef.addListenerForSingleValueEvent(valueEventListener)
+    }
+
+    private fun replaceFragment(fragmentId: Int,fragment: Fragment) {
+        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(
+            fragmentId,
+            fragment
+        )
+        fragmentTransaction.commit()
     }
 }
 

@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.ui.AppBarConfiguration
@@ -22,6 +23,7 @@ import com.example.circuitmessing.databinding.ActivityRingoBinding
 import com.example.circuitmessing.databinding.RingoTimeToGetMakinFragmentBinding
 import com.example.circuitmessing.ui.auth.fragment_register
 import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
+import com.example.circuitmessing.ui.auth.fragment_login
 import com.google.android.gms.common.logging.Logger
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.database.DataSnapshot
@@ -33,6 +35,8 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_ringo.*
 import kotlinx.android.synthetic.main.activity_ringo.view.*
 import kotlinx.android.synthetic.main.nav_header_ringo.view.*
+import kotlinx.android.synthetic.main.nibble_time_to_get_makin_fragment.*
+import java.lang.reflect.Method
 import kotlin.math.log
 
 
@@ -46,8 +50,8 @@ class ActivityRingo : AppCompatActivity() {
         setContentView(R.layout.activity_ringo)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-        database = Firebase.database.reference
 
+        database = Firebase.database.reference
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
 
@@ -65,8 +69,21 @@ class ActivityRingo : AppCompatActivity() {
                 R.id.nav_home -> {
                     returnHome()
                 }
+                R.id.nav_introduction -> {
+                    replaceFragment(R.id.ringo_fragment, ringo_introduction())
+                }
+                R.id.nav_meet_tools -> {
 
-                // All other cases for drawer items will go here also
+                }
+                R.id.nav_time_makin -> {
+                    replaceFragment(R.id.ringo_fragment, Ringo_time_to_get_makin_fragment())
+                }
+                R.id.nav_summed_up -> {
+
+                }
+                R.id.nav_quiz -> {
+
+                }
             }
 
             // set item as selected to persist highlight
@@ -88,6 +105,8 @@ class ActivityRingo : AppCompatActivity() {
         checkDonePages(productName = "ringo", pageName = "makin", item3)
         checkDonePages(productName = "ringo", pageName = "summed", item4)
 
+        replaceFragment(R.id.ringo_fragment, ringo_introduction())
+
         // Update database when specific page is done
         rightArrow?.setOnClickListener {
             when {
@@ -97,6 +116,7 @@ class ActivityRingo : AppCompatActivity() {
                 }
                 navView.menu.getItem(2).isChecked -> {
                     // tools
+                    replaceFragment(R.id.ringo_fragment, Ringo_time_to_get_makin_fragment())
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
@@ -164,6 +184,15 @@ class ActivityRingo : AppCompatActivity() {
             }
         }
         pageRef.addListenerForSingleValueEvent(valueEventListener)
+    }
+
+    private fun replaceFragment(fragmentId: Int, fragment: Fragment) {
+        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(
+            fragmentId,
+            fragment
+        )
+        fragmentTransaction.commit()
     }
 }
 

@@ -14,6 +14,7 @@
         tools:context=".products.ringo.ActivityRingo">
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/ringo_app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay">
@@ -27,15 +28,17 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/ringo_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"/>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_marginTop="56dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <include
-                layout="@layout/ringo_introduction_fragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
             <Button
                 android:id="@+id/leftArrow"
                 style="@style/Widget.MaterialComponents.Button.TextButton.Icon"

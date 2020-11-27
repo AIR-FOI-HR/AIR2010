@@ -8,9 +8,14 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
+import com.example.circuitmessing.products.nibble.Nibble_time_to_get_makin
+import com.example.circuitmessing.products.nibble.nibble_introduction_fragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -22,6 +27,7 @@ import kotlinx.android.synthetic.main.activity_ringo.*
 
 class MakerbuinoActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
+    private var mFragmentManager: FragmentManager = supportFragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,8 +52,21 @@ class MakerbuinoActivity : AppCompatActivity() {
                 R.id.nav_home -> {
                     returnHome()
                 }
+                R.id.nav_introduction -> {
+                    replaceFragment(R.id.maker_buino_fragment, makerbuino_introduction())
+                }
+                R.id.nav_meet_tools -> {
 
-                // All other cases for drawer items will go here also
+                }
+                R.id.nav_time_makin -> {
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_time_to_get_makin())
+                }
+                R.id.nav_summed_up -> {
+
+                }
+                R.id.nav_quiz -> {
+
+                }
             }
 
             // set item as selected to persist highlight
@@ -68,6 +87,8 @@ class MakerbuinoActivity : AppCompatActivity() {
         checkDonePages(productName = "makerbuino", pageName = "makin", item3)
         checkDonePages(productName = "makerbuino", pageName = "summed", item4)
 
+        replaceFragment(R.id.maker_buino_fragment, makerbuino_introduction())
+
         // Update database when specific page is done
         rightArrow?.setOnClickListener {
             when {
@@ -77,6 +98,7 @@ class MakerbuinoActivity : AppCompatActivity() {
                 }
                 navView.menu.getItem(2).isChecked -> {
                     // tools
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_time_to_get_makin())
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
@@ -144,5 +166,14 @@ class MakerbuinoActivity : AppCompatActivity() {
             }
         }
         pageRef.addListenerForSingleValueEvent(valueEventListener)
+    }
+
+    private fun replaceFragment(fragmentId: Int,fragment: Fragment) {
+        val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(
+            fragmentId,
+            fragment
+        )
+        fragmentTransaction.commit()
     }
 }

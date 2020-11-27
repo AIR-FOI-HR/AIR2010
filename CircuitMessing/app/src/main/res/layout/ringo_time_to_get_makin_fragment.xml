@@ -26,38 +26,43 @@
 
         <TextView
             android:id="@+id/motivational_chapter_ringo"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_width="365dp"
+            android:layout_height="225dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Text from time to get makin': Soldering basic: Motivational tip from Albert"
+            android:maxLines="20"
+            android:text="Soldering is an essential skill if you want to dive into the world of DIY electronics.
+Your soldering iron is your best companion when it comes to creating something new. It gives you the power to create unique electronic devices from scratch.
+Nobody is born a soldering genius. It’s a skill just like any other and you need to practice it in order to become better at it.
+Also, I know how frustrating it can be when something doesn’t work from the first try. The truth is, you’ll have to get used to it because DIY electronics are all about that trial-and-error process, all while learning something new.
+And please, don’t worry, In the worst-case scenario (something not working) we’ll make it work together.
+Good luck and keep making!"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/motivational_ringo"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/motivational_ringo" />
 
         <ImageView
             android:id="@+id/solders"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/motivational_chapter_ringo"
-            app:srcCompat="@drawable/_586969030754_44"
-            android:layout_marginTop="20dp"/>
+            app:srcCompat="@drawable/_586969030754_44" />
 
         <TextView
             android:id="@+id/step1_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="Step 1-The Brain board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/solders"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/solders" />
 
         <TextView
             android:id="@+id/step1_chapter_ringo"
@@ -67,7 +72,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 1-The Brain board"
+            android:text="Let’s begin with the Brain board. Take 2 sticks of pin headers and cut them to size so that you can solder them onto the Brain board’s PCB.
+            You need to trim them with your diagonal cutter pliers.
+            In the end, you need to have one 22-pin header and one 11-pin machined header."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step1_title_ringo" />
@@ -103,7 +110,11 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 2-Attaching the Brain board onto the Main board"
+            android:text="For this, you will need:
+1 x M3x10mm black nylon bolt
+1 x M3x5mm brass (golden) spacer
+(WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!)
+1 x M3 black nylon nut"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step2_title_ringo" />
@@ -139,7 +150,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 3-Soldering the Brain board to the Main board"
+            android:text="Remember the headers you had to cut and solder to the Brain board?
+                          We’re not done with them yet! You need to solder them to the Main board too.
+                          We need to do this in order to establish an electrical connection between the Brain board and the Main board."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step3_title_ringo" />
@@ -175,7 +188,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 4-The Display board"
+            android:text="Next, we have the Display board..."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step4_title_ringo" />
@@ -211,7 +224,12 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 5-Mounting the Display board onto the Main board"
+            android:text="For this, you’ll need:
+                        3 x M3x10mm black nylon bolt
+                        3x M3x5mm brass (golden) spacer
+                        (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!)
+                        3x M3 black nylon nut
+                        Put the bolts through the holes so that they face the same direction as the pins."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step5_title_ringo" />
@@ -247,7 +265,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 6-Soldering the Display board"
+            android:text="Now let’s go ahead and solder the Display board pins onto the Main board.
+                        Through these pins, the Brain board will be able to push all the images to the Display board, so it’s important to solder them properly."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step6_title_ringo" />
@@ -283,7 +302,11 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 7-The Sound board"
+            android:text="With the Sound board we’re going to have to do a bit more soldering than with the other boards.
+                    For this step, you’ll need:
+                    1 x pin header row
+                    1 x microphone
+                    1 x headphone jack"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step7_title_ringo" />
@@ -319,7 +342,11 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 8-Attaching the Sound board"
+            android:text="For this step, you’ll need the following components:
+                        1 x M3x10mm black nylon bolt
+                        1 x M3x5mm brass (golden) spacer
+                        (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!)
+                        1 x M3 black nylon nut"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step8_title_ringo" />
@@ -355,7 +382,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 9-Soldering the Sound board"
+            android:text="The Sound board shouldn’t pose any problems since it doesn’t have that many pins that need to be soldered.
+                    Plus, by now you should be getting a grip on how soldering works if you didn’t already have the experience.
+                    Solder the pins to the Main board and we’re done with that."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step9_title_ringo" />
@@ -391,7 +420,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 10-A lot of buttons…"
+            android:text="All of these buttons may seem overwhelming, but trust us, after you solder a couple of them, the rest will be a breeze!
+                    The smaller buttons are placed where the numerical keypad is, and just below the display.
+                    The bigger buttons are placed where it says A and B."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step10_title_ringo" />
@@ -427,7 +458,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 11-The joystick"
+            android:text="The joystick is still left to be soldered, but after all those pushbuttons, it shouldn’t be an issue."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step11_title_ringo" />
@@ -463,7 +494,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 12-The Network board"
+            android:text="In order to attach the Network board to the Main board, you’ll need the following components:
+2x M2.              5 white nylon bolt2x M2.5 white nylon nut"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step12_title_ringo" />
@@ -499,7 +531,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Soldering the components step 13-The speaker"
+            android:text="Connecting the speaker is easy!
+                    First, you need to insert the speaker’s wire connector through the large hole on the top of the Main board."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step13_title_ringo" />
@@ -535,7 +568,10 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Finishing touches-step 14 the button caps"
+            android:text="Pressing those pushbuttons without button caps on would be really tough, wouldn’t it?
+                    Well then, let’s take out all the button caps and place them on the buttons.
+                    Same as with the pushbuttons, there are two types: the bigger ones are for the A and B buttons and the smaller ones make up the rest.
+                    *NOTE: You will receive the buttons with UV printed symbols."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step14_title_ringo" />
@@ -571,7 +607,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Peeling and casings-Step 15 – The front casing"
+            android:text="Before starting to screw anything together, make sure to take off the protective peeling that we mentioned earlier.
+                    There are total of 4 layers you need to peel off, two on each plastic case."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step15_title_ringo" />
@@ -607,7 +644,12 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Peeling and casings-Step 16 – The back casing"
+            android:text="Take the rest of the components:
+                    6x M3x12mm metal bolt
+                    (WATCH OUT – there are two versions of metal bolts that look similar; you need the longer bolts here)
+                    6x M3x4mm brass (golden) spacer
+                    (WATCH OUT – there are two similar types of brass spacers in your kit and you need the shorter brass spacer here!)
+                    1 x Bottom aesthetic casing1 x Bottom protective casing"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step16_title_ringo" />
@@ -643,7 +685,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Peeling and casings-Step 17 – The battery"
+            android:text="The battery comes with pre-applied two-sided sticky tape, so you’ll need to peel off the paper layer from the back of the battery.
+            Be careful not to peel off the whole tape, just the protective paper layer."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step17_title_ringo" />
@@ -664,7 +707,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Step 18-The antenna"
+            android:text="You were probably wondering what’s that dangling black wire connected to the network module.
+                    That’s the Ringo’s antenna and it is impossible to connect to the mobile network without it."
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -715,7 +759,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="Text from time to get makin': Peeling and casings-Step 19 – Combining the front and back casing"
+            android:text="Place the back casing onto the back of the Main board.
+                    Watch out for the cables as they might get in the way. Make sure they stay within the casing and away from the screws so they don’t stick out or get damaged."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step19_title_ringo" />
@@ -736,7 +781,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Congrats..."
+            android:text="And voilá, you’ve just assembled your very own mobile phone!
+                    Check out the following chapter for further instructions on how to set up your Ringo."
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
