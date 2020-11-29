@@ -8,10 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class nibble_introduction_fragment : Fragment() {
+class Nibble_introduction_fragment : Fragment() {
 
     companion object {
-        fun newInstance() = nibble_introduction_fragment()
+        fun newInstance() = Nibble_introduction_fragment()
     }
 
     private lateinit var viewModel: NibbleIntroductionFragmentViewModel
