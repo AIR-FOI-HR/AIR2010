@@ -15,7 +15,7 @@ import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.nibble.Nibble_time_to_get_makin
-import com.example.circuitmessing.products.nibble.nibble_introduction_fragment
+import com.example.circuitmessing.products.nibble.Nibble_introduction_fragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -53,7 +53,7 @@ class MakerbuinoActivity : AppCompatActivity() {
                     returnHome()
                 }
                 R.id.nav_introduction -> {
-                    replaceFragment(R.id.maker_buino_fragment, makerbuino_introduction())
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_introduction())
                 }
                 R.id.nav_meet_tools -> {
 
@@ -87,7 +87,7 @@ class MakerbuinoActivity : AppCompatActivity() {
         checkDonePages(productName = "makerbuino", pageName = "makin", item3)
         checkDonePages(productName = "makerbuino", pageName = "summed", item4)
 
-        replaceFragment(R.id.maker_buino_fragment, makerbuino_introduction())
+        replaceFragment(R.id.maker_buino_fragment, Makerbuino_introduction())
 
         // Update database when specific page is done
         rightArrow?.setOnClickListener {

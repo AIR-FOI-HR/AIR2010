@@ -70,7 +70,7 @@ class ActivityRingo : AppCompatActivity() {
                     returnHome()
                 }
                 R.id.nav_introduction -> {
-                    replaceFragment(R.id.ringo_fragment, ringo_introduction())
+                    replaceFragment(R.id.ringo_fragment, Ringo_introduction())
                 }
                 R.id.nav_meet_tools -> {
 
@@ -105,7 +105,7 @@ class ActivityRingo : AppCompatActivity() {
         checkDonePages(productName = "ringo", pageName = "makin", item3)
         checkDonePages(productName = "ringo", pageName = "summed", item4)
 
-        replaceFragment(R.id.ringo_fragment, ringo_introduction())
+        replaceFragment(R.id.ringo_fragment, Ringo_introduction())
 
         // Update database when specific page is done
         rightArrow?.setOnClickListener {

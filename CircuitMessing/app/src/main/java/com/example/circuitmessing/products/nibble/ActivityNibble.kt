@@ -16,7 +16,7 @@ import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.ringo.Ringo_time_to_get_makin_fragment
-import com.example.circuitmessing.products.ringo.ringo_introduction
+import com.example.circuitmessing.products.ringo.Ringo_introduction
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -55,7 +55,7 @@ class ActivityNibble : AppCompatActivity() {
                     returnHome()
                 }
                 R.id.nav_introduction -> {
-                    replaceFragment(R.id.nibble_fragment, nibble_introduction_fragment())
+                    replaceFragment(R.id.nibble_fragment, Nibble_introduction_fragment())
                 }
                 R.id.nav_meet_tools -> {
 
@@ -89,7 +89,7 @@ class ActivityNibble : AppCompatActivity() {
         checkDonePages(productName = "nibble", pageName = "makin", item3)
         checkDonePages(productName = "nibble", pageName = "summed", item4)
 
-        replaceFragment(R.id.nibble_fragment, nibble_introduction_fragment())
+        replaceFragment(R.id.nibble_fragment, Nibble_introduction_fragment())
 
         // Update database when specific page is done
         rightArrow?.setOnClickListener {
