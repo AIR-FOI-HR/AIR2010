@@ -8,10 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class makerbuino_introduction : Fragment() {
+class Makerbuino_introduction : Fragment() {
 
     companion object {
-        fun newInstance() = makerbuino_introduction()
+        fun newInstance() = Makerbuino_introduction()
     }
 
     private lateinit var viewModel: MakerbuinoIntroductionViewModel

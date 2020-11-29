@@ -1,4 +1,4 @@
-package com.example.circuitmessing.products.ringo
+package com.example.circuitmessing.products.nibble
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class Ringo_introduction : Fragment() {
+class Nibble_meet_the_tools : Fragment() {
 
     companion object {
-        fun newInstance() = Ringo_introduction()
+        fun newInstance() = Nibble_meet_the_tools()
     }
 
-    private lateinit var viewModel: RingoIntroductionViewModel
+    private lateinit var viewModel: NibbleMeetTheToolsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.ringo_introduction_fragment, container, false)
+        return inflater.inflate(R.layout.nibble_meet_the_tools_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(RingoIntroductionViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(NibbleMeetTheToolsViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
