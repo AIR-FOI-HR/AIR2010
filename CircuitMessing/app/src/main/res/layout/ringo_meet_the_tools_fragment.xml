@@ -16,7 +16,7 @@
             android:id="@+id/chapter_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CHAPTER TITLE"
+            android:text="Ringo tools"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -31,7 +31,11 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="The Ringo is a kit designed to educate, but it’s far from a toy.
+And as such, it requires some real tools.
+The equipment and tools required for the assembly are not included in the standard kit.
+If you’ve bought the standard kit (no tools included) and don’t have them, now would be a good time to borrow or purchase them.
+If you’ve bought a Ringo kit with tools, you’ll get a box with the following tools."
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@+id/chapter_title"
             tools:layout_editor_absoluteX="25dp" />
@@ -41,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL1"
+            android:text="Soldering iron"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -65,8 +69,9 @@
             android:layout_marginTop="25dp"
             android:ems="10"
             android:gravity="start|top"
-            android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="This is the most important tool in a maker’s arsenal, but for the Ringo’s assembly, any entry-level soldering iron will suffice.
+Though if you plan to dive into the world of DIY, you should consider maybe getting a more expensive soldering station with temperature regulation. It could make your soldering experience that much better.
+If you have bought the Ringo tools kit, you have also received a USB soldering iron in the set, as well as a stand for the soldering iron and a piece of sponge you can use to clean it."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL2"
+            android:text="Solder"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -102,7 +107,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="This is the metal material you will be melting with your soldering iron in order to connect two components together.
+We highly advise buying a rosin core, 60/40 solder.This type of solder is commonly used in the DIY electronics community for similar soldering projects.
+Be careful when buying solder, because bad solder can lead to a lot of complications like bad solder joints and unwanted bridging."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +120,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL3"
+            android:text="Diagonal cutter pliers"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -138,7 +145,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="With pliers like these, you’ll be able to trim leads of soldered components, cut wires and pin headers.
+We prefer this type shown in the picture (Plato, model 170), but any other type will do."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +157,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL4"
+            android:text="Needle-nose pliers"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -174,7 +182,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="You’re going to need pliers like these when assembling the casing, or when plugging in some tricky connectors.
+They’re generally useful when doing some fine mechanical work."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -185,7 +194,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL5"
+            android:text="Standard cross screwdriver"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -210,7 +219,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="You’ll need this cross (Phillips) screwdriver to screw down all the modules to the Main board and to assemble the entire casing together.
+A standard 2.0mm cross screwdriver should do the trick."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -221,7 +231,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL6"
+            android:text="Desoldering vacuum tool (solder sucker)"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -246,7 +256,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="This tool is useful when cleaning up some bigger soldering mistakes but it isn’t necessary for assembling your Ringo.
+If you plan on doing some hacking, modding, or hardware repairs in the future, buying this one is always a good idea."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -257,7 +268,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL7"
+            android:text="Cleaning sponge"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -282,11 +293,25 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="This piece of sponge doesn’t seem like much, but put it under some water and see how it turns into a solder-cleaning super-sponge.
+Use it after soldering a couple of joints to remove excess solder from the tip of your soldering iron.
+Don’t use it when it’s dripping wet, but also don’t use it when it’s completely dry."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_tool7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:text="Extra tools that are not mandatory for assembling Ringo but might come in handy include a helping third hand with magnification, multimeter and solder wick."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_tool7" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

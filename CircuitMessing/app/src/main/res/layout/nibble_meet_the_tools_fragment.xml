@@ -16,7 +16,7 @@
             android:id="@+id/chapter_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CHAPTER TITLE"
+            android:text="Nibble tools"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -30,8 +30,10 @@
             android:layout_marginTop="25dp"
             android:ems="10"
             android:gravity="start|top"
-            android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="You’ve got your Circuitmess Nibble in front of you? Cool!
+First of all, go over the list of components below and make sure you have all of them on your table and ready for assembly.
+Your Nibble kit was hand packed with love in Croatia by us, the CircuitMess team, and we always double-check, but mistakes can happen!
+In case something is missing, please contact us at contact@circuitmess.com and we'll get back to you as soon as possible. Here is the list of tools that will help you build your own Nibble."
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@+id/chapter_title"
             tools:layout_editor_absoluteX="25dp" />
@@ -41,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL1"
+            android:text="Soldering accessories"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -65,8 +67,13 @@
             android:layout_marginTop="25dp"
             android:ems="10"
             android:gravity="start|top"
-            android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="Soldering sponge\nThis piece of sponge doesn’t seem like much, but put it under some water and see how it turns into a solder-cleaning super-sponge.
+Use it after soldering a couple of joints to remove excess solder from the tip of your soldering iron.
+Make sure it’s not dripping wet, but also not completely dry.\n\nSoldering iron stand\nThis stand is used for keeping soldering iron in a safe place while it’s still hot.
+Place it close to your working area (but not too close) when not using the soldering iron and carefully place the soldering iron on top of it.
+Also, use it to cool off the soldering iron after all the soldering work is done.\n\nSolder\nThis is the metal material you will be melting with your soldering iron in order to connect two components together.
+This type of solder is commonly used in the DIY electronics community for similar soldering projects.
+Be careful about getting new solder for your other DIY projects, because bad solder can lead to a lot of complications like bad solder joints and unwanted bridging."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL2"
+            android:text="Soldering equipment"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -101,8 +108,13 @@
             android:layout_marginTop="25dp"
             android:ems="10"
             android:gravity="start|top"
-            android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="Soldering iron\nThis is the most important tool in a maker’s arsenal, but for the Nibble’s assembly, any entry-level soldering iron will suffice.
+If you plan to dive into the world of DIY, you should consider getting a more expensive soldering station with temperature regulation.
+It could make your soldering experience that much better.There are also many soldering irons with interchangeable tips that can be particularly useful when working with much smaller components.
+Instructions on how to properly solder and take care of your soldering iron will be explained in the next chapter.\n\nSoldering iron cable\nThis cable is used to connect your soldering iron to the USB power brick.
+When you connect your cable be prepared that your soldering iron will heat up if you hold it in your hand.
+For safety reasons, make sure to plug out the cable whenever you’re not using the soldering iron.\n\nUSB power brick for the soldering iron\nUse this power brick to connect the soldering iron via the USB cable to the power.
+Be sure to only use this power brick because using some other power bricks can damage the device or cause it to not function properly."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL3"
+            android:text="Phillips screwdriver"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -138,7 +150,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="You’ll need this cross screwdriver to screw down all the modules to the main board and to assemble the entire casing together.
+A standard 2.0mm cross screwdriver is one of the most used tools in the world of DIY, and this project is no exception."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +162,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL4"
+            android:text="Micro USB cable"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -174,7 +187,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="This cable is used to connect your Nibble to a computer.
+That way you can download the newest firmware and upload new games to your console."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -185,7 +199,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL5"
+            android:text="Desoldering vacuum tool"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -210,11 +224,24 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="This tool is useful for cleaning up soldering mistakes but is not 100% necessary for assembling your Nibble.
+It should help you with the removal of solder if you make a mistake here or in any other case of soldering later."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_tool5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:text="Extra tools that are not mandatory for assembling Nibble but might come in handy include a helping third hand with magnification, multimeter and solder wick."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_tool5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
