@@ -15,6 +15,9 @@ import androidx.fragment.app.FragmentTransaction
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
+import com.example.circuitmessing.products.makerbuino.Makerbuino_introduction
+import com.example.circuitmessing.products.makerbuino.Makerbuino_meet_the_tools
+import com.example.circuitmessing.products.makerbuino.Makerbuino_time_to_get_makin
 import com.example.circuitmessing.products.ringo.Ringo_time_to_get_makin_fragment
 import com.example.circuitmessing.products.ringo.Ringo_introduction
 import com.google.android.material.navigation.NavigationView
@@ -58,7 +61,7 @@ class ActivityNibble : AppCompatActivity() {
                     replaceFragment(R.id.nibble_fragment, Nibble_introduction_fragment())
                 }
                 R.id.nav_meet_tools -> {
-
+                    replaceFragment(R.id.nibble_fragment, Nibble_meet_the_tools())
                 }
                 R.id.nav_time_makin -> {
                     replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
@@ -97,10 +100,14 @@ class ActivityNibble : AppCompatActivity() {
                 navView.menu.getItem(1).isChecked -> {
                     val item = navView.menu.getItem(1)
                     updatePageDone(productName = "nibble", pageName = "intro", item)
+                    replaceFragment(R.id.nibble_fragment, Nibble_meet_the_tools())
+                    navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(2).isChecked -> {
-                    // tools
+                    val item = navView.menu.getItem(2)
+                    updatePageDone(productName = "nibble", pageName = "tools", item)
                     replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
+                    navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
@@ -110,6 +117,31 @@ class ActivityNibble : AppCompatActivity() {
                     // summed
                 }
                 navView.menu.getItem(4).isChecked -> {
+                    // quiz
+                }
+            }
+        }
+        leftArrow?.setOnClickListener {
+            when {
+                navView.menu.getItem(1).isChecked -> {
+                    returnHome()
+                }
+                navView.menu.getItem(2).isChecked -> {
+                    val item = navView.menu.getItem(1)
+                    updatePageDone(productName = "nibble", pageName = "tools", item)
+                    replaceFragment(R.id.nibble_fragment, Nibble_introduction_fragment())
+                    navView.menu.getItem(1).isChecked = true;
+                }
+                navView.menu.getItem(3).isChecked -> {
+                    val item = navView.menu.getItem(2)
+                    updatePageDone(productName = "nibble", pageName = "makin", item)
+                    replaceFragment(R.id.nibble_fragment, Nibble_meet_the_tools())
+                    navView.menu.getItem(2).isChecked = true;
+                }
+                navView.menu.getItem(4).isChecked -> {
+                    // summed
+                }
+                navView.menu.getItem(5).isChecked -> {
                     // quiz
                 }
             }

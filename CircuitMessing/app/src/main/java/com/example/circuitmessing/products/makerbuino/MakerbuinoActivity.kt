@@ -56,7 +56,7 @@ class MakerbuinoActivity : AppCompatActivity() {
                     replaceFragment(R.id.maker_buino_fragment, Makerbuino_introduction())
                 }
                 R.id.nav_meet_tools -> {
-
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_meet_the_tools())
                 }
                 R.id.nav_time_makin -> {
                     replaceFragment(R.id.maker_buino_fragment, Makerbuino_time_to_get_makin())
@@ -95,14 +95,43 @@ class MakerbuinoActivity : AppCompatActivity() {
                 navView.menu.getItem(1).isChecked -> {
                     val item = navView.menu.getItem(1)
                     updatePageDone(productName = "makerbuino", pageName = "intro", item)
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_meet_the_tools())
+                    navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(2).isChecked -> {
-                    // tools
+                    val item = navView.menu.getItem(2)
+                    updatePageDone(productName = "makerbuino", pageName = "tools", item)
                     replaceFragment(R.id.maker_buino_fragment, Makerbuino_time_to_get_makin())
+                    navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "makerbuino", pageName = "makin", item)
+                }
+                navView.menu.getItem(4).isChecked -> {
+                    // summed
+                }
+                navView.menu.getItem(5).isChecked -> {
+                    // quiz
+                }
+            }
+        }
+        leftArrow?.setOnClickListener {
+            when {
+                navView.menu.getItem(1).isChecked -> {
+                    returnHome()
+                }
+                navView.menu.getItem(2).isChecked -> {
+                    val item = navView.menu.getItem(1)
+                    updatePageDone(productName = "makerbuino", pageName = "tools", item)
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_introduction())
+                    navView.menu.getItem(1).isChecked = true;
+                }
+                navView.menu.getItem(3).isChecked -> {
+                    val item = navView.menu.getItem(2)
+                    updatePageDone(productName = "makerbuino", pageName = "makin", item)
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_meet_the_tools())
+                    navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
                     // summed
