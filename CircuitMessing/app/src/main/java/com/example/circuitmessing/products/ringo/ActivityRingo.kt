@@ -23,6 +23,9 @@ import com.example.circuitmessing.databinding.ActivityRingoBinding
 import com.example.circuitmessing.databinding.RingoTimeToGetMakinFragmentBinding
 import com.example.circuitmessing.ui.auth.fragment_register
 import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
+import com.example.circuitmessing.products.nibble.Nibble_introduction_fragment
+import com.example.circuitmessing.products.nibble.Nibble_meet_the_tools
+import com.example.circuitmessing.products.nibble.Nibble_time_to_get_makin
 import com.example.circuitmessing.ui.auth.fragment_login
 import com.google.android.gms.common.logging.Logger
 import com.google.android.material.navigation.NavigationView
@@ -73,7 +76,7 @@ class ActivityRingo : AppCompatActivity() {
                     replaceFragment(R.id.ringo_fragment, Ringo_introduction())
                 }
                 R.id.nav_meet_tools -> {
-
+                    replaceFragment(R.id.ringo_fragment, Ringo_meet_the_tools())
                 }
                 R.id.nav_time_makin -> {
                     replaceFragment(R.id.ringo_fragment, Ringo_time_to_get_makin_fragment())
@@ -113,14 +116,43 @@ class ActivityRingo : AppCompatActivity() {
                 navView.menu.getItem(1).isChecked -> {
                     val item = navView.menu.getItem(1)
                     updatePageDone(productName = "ringo", pageName = "intro", item)
+                    replaceFragment(R.id.ringo_fragment, Ringo_meet_the_tools())
+                    navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(2).isChecked -> {
-                    // tools
+                    val item = navView.menu.getItem(2)
+                    updatePageDone(productName = "ringo", pageName = "tools", item)
                     replaceFragment(R.id.ringo_fragment, Ringo_time_to_get_makin_fragment())
+                    navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "ringo", pageName = "makin", item)
+                }
+                navView.menu.getItem(4).isChecked -> {
+                    // summed
+                }
+                navView.menu.getItem(5).isChecked -> {
+                    // quiz
+                }
+            }
+        }
+        leftArrow?.setOnClickListener {
+            when {
+                navView.menu.getItem(1).isChecked -> {
+                    returnHome()
+                }
+                navView.menu.getItem(2).isChecked -> {
+                    val item = navView.menu.getItem(1)
+                    updatePageDone(productName = "ringo", pageName = "tools", item)
+                    replaceFragment(R.id.ringo_fragment, Ringo_introduction())
+                    navView.menu.getItem(1).isChecked = true;
+                }
+                navView.menu.getItem(3).isChecked -> {
+                    val item = navView.menu.getItem(2)
+                    updatePageDone(productName = "ringo", pageName = "makin", item)
+                    replaceFragment(R.id.ringo_fragment, Ringo_meet_the_tools())
+                    navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
                     // summed
