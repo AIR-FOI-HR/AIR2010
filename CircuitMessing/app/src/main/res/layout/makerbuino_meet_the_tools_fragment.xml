@@ -16,7 +16,7 @@
             android:id="@+id/chapter_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CHAPTER TITLE"
+            android:text="MAKERbuino tools"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -30,18 +30,21 @@
             android:layout_marginTop="25dp"
             android:ems="10"
             android:gravity="start|top"
-            android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="There are some tools and equipment that are required for the assembly and they are not included in the standard kit.
+If you’ve bought the standard kit (not a kit with tools) and don’t have them, now would be a good time to borrow or purchase them.
+These tools are useful whenever assembling, fixing or modifying electronic devices and should be the part of every maker’s/hacker’s/modder’s/electrician’s equipment.
+Many of these are available in a supermarket or in some professional DIY electronics stores like Radio Shack, Adafruit, Sparkfun…."
             android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_title"
-            tools:layout_editor_absoluteX="25dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_title" />
 
         <TextView
             android:id="@+id/title_tool1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL1"
+            android:text="Soldering iron"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -66,7 +69,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="Any entry-level ‘all-in-one’ soldering iron that you might find at your local hardware store should work (recommended power – something around 30W).
+It’s a good idea to upgrade to a more expensive soldering station with temperature regulation if you plan to dive into the world of DIY electronics more thoroughly."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL2"
+            android:text="Solder"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -102,7 +106,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="We highly advise buying a rosin core, 60/40 solder.
+This type of solder is usually preferred by the DIY electronics community for similar soldering projects.
+Be careful when buying solder, bad solder leads to lots of complications like bad solder joints and unwanted bridging."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL3"
+            android:text="Diagonal Cutter Pliers"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -138,7 +144,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="You’ll need pliers like this to trim leads of soldered components and cut wires.
+We prefer this type showed on the picture (Plato, model 170)."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +156,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL4"
+            android:text="Standard cross screwdriver"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -174,7 +181,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="You’ll need this one to mount the casing and the LCD screen.
+A regular cross screwdriver with a shaft diameter of 3mm or smaller is sufficient."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -185,7 +193,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="TOOL5"
+            android:text="Some insulating tape"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -210,11 +218,24 @@
             android:ems="10"
             android:gravity="start|top"
             android:maxLines="10"
-            android:text="SOME TEXT"
+            android:text="You’ll need some sort of adhesive to fixate MAKERbuino’s speaker to the back side of the casing.
+Our advice: some insulating or similar tape is the best choice here, but a tube of superglue or a hot glue gun will also do the job. Although, it will not look as tidy as it could if you’ve used the tape for fixation."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_tool5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:text="Extra tools that are not mandatory for assembling MAKERbuino but might come in handy include a desoldering vacuum tool, helping third hand with magnification, multimeter and solder wick."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_tool5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
