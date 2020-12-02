@@ -62,7 +62,7 @@ class MakerbuinoActivity : AppCompatActivity() {
                     replaceFragment(R.id.maker_buino_fragment, Makerbuino_time_to_get_makin())
                 }
                 R.id.nav_summed_up -> {
-
+                    replaceFragment(R.id.maker_buino_fragment, MakerbuinoFinishingUpFragment())
                 }
                 R.id.nav_quiz -> {
 
@@ -107,9 +107,12 @@ class MakerbuinoActivity : AppCompatActivity() {
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "makerbuino", pageName = "makin", item)
+                    replaceFragment(R.id.maker_buino_fragment, MakerbuinoFinishingUpFragment())
+                    navView.menu.getItem(4).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
-                    // summed
+                    val item = navView.menu.getItem(4)
+                    updatePageDone(productName = "makerbuino", pageName = "summed", item)
                 }
                 navView.menu.getItem(5).isChecked -> {
                     // quiz
@@ -134,7 +137,10 @@ class MakerbuinoActivity : AppCompatActivity() {
                     navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
-                    // summed
+                    val item = navView.menu.getItem(3)
+                    updatePageDone(productName = "makerbuino", pageName = "summed", item)
+                    replaceFragment(R.id.maker_buino_fragment, Makerbuino_time_to_get_makin())
+                    navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(5).isChecked -> {
                     // quiz

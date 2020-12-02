@@ -18,6 +18,7 @@ import com.example.circuitmessing.R
 import com.example.circuitmessing.products.makerbuino.Makerbuino_introduction
 import com.example.circuitmessing.products.makerbuino.Makerbuino_meet_the_tools
 import com.example.circuitmessing.products.makerbuino.Makerbuino_time_to_get_makin
+import com.example.circuitmessing.products.ringo.RingoFinishingUpFragment
 import com.example.circuitmessing.products.ringo.Ringo_time_to_get_makin_fragment
 import com.example.circuitmessing.products.ringo.Ringo_introduction
 import com.google.android.material.navigation.NavigationView
@@ -67,7 +68,7 @@ class ActivityNibble : AppCompatActivity() {
                     replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
                 }
                 R.id.nav_summed_up -> {
-
+                    replaceFragment(R.id.nibble_fragment, NibbleFinishingUpFragment())
                 }
                 R.id.nav_quiz -> {
 
@@ -112,9 +113,12 @@ class ActivityNibble : AppCompatActivity() {
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "nibble", pageName = "makin", item)
+                    replaceFragment(R.id.nibble_fragment, NibbleFinishingUpFragment())
+                    navView.menu.getItem(4).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
-                    // summed
+                    val item = navView.menu.getItem(4)
+                    updatePageDone(productName = "nibble", pageName = "summed", item)
                 }
                 navView.menu.getItem(4).isChecked -> {
                     // quiz
@@ -139,7 +143,10 @@ class ActivityNibble : AppCompatActivity() {
                     navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
-                    // summed
+                    val item = navView.menu.getItem(3)
+                    updatePageDone(productName = "nibble", pageName = "summed", item)
+                    replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
+                    navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(5).isChecked -> {
                     // quiz
