@@ -23,6 +23,8 @@ import com.example.circuitmessing.databinding.ActivityRingoBinding
 import com.example.circuitmessing.databinding.RingoTimeToGetMakinFragmentBinding
 import com.example.circuitmessing.ui.auth.fragment_register
 import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
+import com.example.circuitmessing.products.makerbuino.MakerbuinoFinishingUpFragment
+import com.example.circuitmessing.products.makerbuino.Makerbuino_time_to_get_makin
 import com.example.circuitmessing.products.nibble.Nibble_introduction_fragment
 import com.example.circuitmessing.products.nibble.Nibble_meet_the_tools
 import com.example.circuitmessing.products.nibble.Nibble_time_to_get_makin
@@ -82,7 +84,7 @@ class ActivityRingo : AppCompatActivity() {
                     replaceFragment(R.id.ringo_fragment, Ringo_time_to_get_makin_fragment())
                 }
                 R.id.nav_summed_up -> {
-
+                    replaceFragment(R.id.ringo_fragment, RingoFinishingUpFragment())
                 }
                 R.id.nav_quiz -> {
 
@@ -128,9 +130,12 @@ class ActivityRingo : AppCompatActivity() {
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "ringo", pageName = "makin", item)
+                    replaceFragment(R.id.ringo_fragment, RingoFinishingUpFragment())
+                    navView.menu.getItem(4).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
-                    // summed
+                    val item = navView.menu.getItem(4)
+                    updatePageDone(productName = "ringo", pageName = "summed", item)
                 }
                 navView.menu.getItem(5).isChecked -> {
                     // quiz
@@ -155,7 +160,10 @@ class ActivityRingo : AppCompatActivity() {
                     navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
-                    // summed
+                    val item = navView.menu.getItem(3)
+                    updatePageDone(productName = "ringo", pageName = "summed", item)
+                    replaceFragment(R.id.ringo_fragment, Ringo_time_to_get_makin_fragment())
+                    navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(5).isChecked -> {
                     // quiz
