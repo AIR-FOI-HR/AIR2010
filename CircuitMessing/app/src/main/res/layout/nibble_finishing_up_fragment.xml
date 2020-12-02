@@ -21,22 +21,23 @@
                 android:layout_marginVertical="20dp"
                 android:layout_marginHorizontal="20dp"
                 android:padding="10dp"
-                android:text="NaN"
+                android:text="Nibble"
                 android:textColor="#fff"
                 android:textSize="40sp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="There are a couple of additional things you need to keep an eye on while using the console."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
+                android:layout_marginVertical="10dp"
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="The micro-USB to USB cable is used to connect the console to your computer and to download new software updates as well as to upload your own games created using CircuitBlocks!"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -51,7 +52,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Micro USB cable"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -66,7 +67,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Connecting your Nibble to the computer"
+                android:textColor="#000"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is CircuitBlocks you say?"
+                android:textColor="#000"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CircuitBlocks is a graphical programming interface that helps newbies get into embedded programming."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -74,7 +92,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="It’s based on Microsoft’s MakeCode and PXT-Blockly (Google Blockly fork) and it presents the user with a slick Scratch-like interface in which they connect logic blocks to generate code for their MAKERphone and Nibble (and soon other CircuitMess devices)."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -82,26 +100,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="You can find more about CircuitBlocks here."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
+                android:layout_marginVertical="10dp" />
 
             <ImageView
                 android:id="@+id/nibble_finishing_up_image_3"
@@ -113,15 +115,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Once connected to your computer, make sure to turn the console on so it gets recognized."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Additionally, there is also a small button on top of the console, which is used to quickly reset the console. Use that button whenever the console gets stuck or if it’s loading for too long. However, do not touch this button while playing the games since it will erase your game progress!"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -136,7 +139,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="There is also a small blue light underneath the screen that should be blinking while the console is on. You probably won’t see it from all these casings, but if you do, don’t be surprised - it’s an indicator that your console is working."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -151,7 +154,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="The blue blinking light - an indicator of a working console"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -159,7 +162,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Finally, if your batteries ever run out of juice, make sure to replace them with AAA (triple-A) batteries. It’s best to use the batteries from the same pack since they are all going to last for the same amount of time. "
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -174,10 +177,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Now enough talking, let’s get playing!"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"/>
 
 
 

@@ -21,7 +21,7 @@
                 android:layout_marginVertical="20dp"
                 android:layout_marginHorizontal="20dp"
                 android:padding="10dp"
-                android:text="NaN"
+                android:text="Makerbuino"
                 android:textColor="#fff"
                 android:textSize="40sp"/>
 
@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="If everything electronics-related is working fine, the last step is to put the guts (electronics) in a nice crystal clear acrylic casing so that everyone can see your perfect soldering joints!"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Start by assembling the bottom side of the casing, which consists of two pieces of plastic."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -58,7 +58,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Next up, place the colored button caps to the yellow pushbuttons by simply snapping them on (you will have to apply some force and that is completely normal)."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -73,7 +73,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Continue by mounting the front plate and fixating it with black hexagonal M3 spacers and nuts."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -81,7 +81,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Some newer versions of the kit have a hand-strap included."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -89,7 +89,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="If your kit has a hand-strap, you can now place it around the bottom right hexagonal M3 spacer."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -104,26 +104,30 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Now look at you, you've managed to make your own working gaming device out of a bag of tiny electronic components."
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:text="Well done, you should be proud of yourself!"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="some text ------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
+                android:layout_marginVertical="10dp"
+                android:text="That's all folks!"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
