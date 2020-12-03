@@ -44,10 +44,11 @@
 
             <ImageView
                 android:id="@+id/nibble_finishing_up_image_1"
+                android:src="@drawable/nibble_finishing_up_1"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -59,10 +60,11 @@
 
             <ImageView
                 android:id="@+id/nibble_finishing_up_image_2"
+                android:src="@drawable/nibble_finishing_up_2"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -107,10 +109,11 @@
 
             <ImageView
                 android:id="@+id/nibble_finishing_up_image_3"
+                android:src="@drawable/nibble_finishing_up_3"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -131,10 +134,11 @@
 
             <ImageView
                 android:id="@+id/nibble_finishing_up_image_4"
+                android:src="@drawable/nibble_finishing_up_4"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -146,10 +150,11 @@
 
             <ImageView
                 android:id="@+id/nibble_finishing_up_image_5"
+                android:src="@drawable/nibble_finishing_up_5"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -169,10 +174,11 @@
 
             <ImageView
                 android:id="@+id/nibble_finishing_up_image_6"
+                android:src="@drawable/nibble_finishing_up_6"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"
