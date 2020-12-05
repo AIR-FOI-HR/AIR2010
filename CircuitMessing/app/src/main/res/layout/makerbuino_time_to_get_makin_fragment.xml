@@ -21,23 +21,22 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/motivational_chapter_makerbuino"
-            android:layout_width="375dp"
-            android:layout_height="261dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="Soldering is an essential skill if you want to become an electronics ninja one day.
 Your soldering iron is a magical wand, only instead of enabling you to fight black magic, it gives you the power to create unique intelligent electronic devices from scratch.
 Don’t get frustrated by soldering failure, it’s just a matter of practice. You’ll get better at it over time by soldering kits like MAKERbuino and working on other fun projects you decide to make. I know how frustrating it can be when something doesn’t work from the first try. The truth is, you’ll have to get used to it because you’ll get lots of that in the world of DIY electronics.
 And please, don’t worry, In the worst-case scenario (your MAKERbuino not working) we’ll make it work together.
 Good luck and keep making!"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/motivational_makerbuino" />
 
@@ -45,8 +44,9 @@ Good luck and keep making!"
             android:id="@+id/solders"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/motivational_chapter_makerbuino"
             app:srcCompat="@drawable/_586969030754_44" />
@@ -55,221 +55,261 @@ Good luck and keep making!"
             android:id="@+id/step1_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 1 – the SD socket"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/solders" />
 
         <TextView
             android:id="@+id/step1_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="We’ll start with the SD card socket – the big shiny metallic component that is mounted on the PCB’s surface.
-                    Find the SD socket, place it on the back side of the board where there is “SD SOCKET” text written on it."
+                    Find the SD socket, place it on the back side of the board where there is “SD SOCKET” text written on it. Continue by soldering the four pads of the socket’s shielding. When soldering the socket’s contacts, you DON’T have to solder the three rightmost pins because they are not used."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step1_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step1_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step1_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step1_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step1" />
 
         <TextView
             android:id="@+id/step2_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 2 – Microcomputer’s socket"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step1_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step1_image" />
 
         <TextView
-            android:id="@+id/step2_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Microcomputer’s socket is also soldered at the back of the MAKERbuino board.
-                    Be careful how you rotate the socket because it’s not symmetrical. Be sure to place it on the right side indicated by a notch on the socket."
+            android:id="@+id/step2_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Microcomputer’s socket is also soldered at the back of the MAKERbuino board."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step2_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step2_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Be careful how you rotate the socket because it’s not symmetrical. Be sure to place it on the right side indicated by a notch on the socket."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter1_makerbuino" />
+
+        <TextView
+            android:id="@+id/step2_chapter3_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Pro tip: first solder the two diagonal pins of the socket, then make sure that the socket is aligned with the board nicely, correct the alignment if needed and solder the rest of the pins. "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter2_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step2_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step2_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step2_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter3_makerbuino"
             app:srcCompat="@drawable/makerbuino_step2" />
 
         <TextView
             android:id="@+id/step3_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 3 – 10k ohm resistor"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step2_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step2_image" />
 
         <TextView
-            android:id="@+id/step3_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Find the tiny 10kΩ resistor (colors: brown, black, black, red, brown) and solder it to the front side of the board where the R2 mark is (bottom side of the board) – this resistor is necessary for the screen to work."
+            android:id="@+id/step3_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Find the tiny 10kΩ resistor (colors: brown, black, black, red, brown) and solder it to the front side of the board where the R2 mark is (bottom side of the board) – this resistor is necessary for the screen to work. Pro tip: when you insert the resistor, bend the leads of the resistor so that it doesn’t fall out from the PCB while you’re soldering it. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step3_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step3_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Important: Remember to cut all the leads of the components you’ve soldered using your diagonal cutter pliers. Also, save the excess leads you’ve cut, you’ll need them in one of the further steps. "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3_chapter1_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step3_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step3_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step3_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3_chapter2_makerbuino"
             app:srcCompat="@drawable/makerbuino_step3" />
 
         <TextView
             android:id="@+id/step4_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 4 – 16MHz crystal"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step3_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step3_image" />
 
         <TextView
-            android:id="@+id/step4_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Find the 16MHz crystal and insert it on the front side of the PCB (right half of the PCB, marked Q1, 16MHz).
-                    IMPORTANT: Text marking on the crystal may vary and sometimes look like this: “16B000”."
+            android:id="@+id/step4_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Find the 16MHz crystal and insert it on the front side of the PCB (right half of the PCB, marked Q1, 16MHz)."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step4_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step4_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="IMPORTANT: Text marking on the crystal may vary and sometimes look like this: “16B000”. Apply the previous pro tip and bend the leads of the crystal at the back of the board. "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4_chapter1_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step4_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step4_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step4_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4_chapter2_makerbuino"
             app:srcCompat="@drawable/makerbuino_step4" />
 
         <TextView
             android:id="@+id/step5_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 5 – two 22pF capacitors"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step4_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step4_image" />
 
         <TextView
             android:id="@+id/step5_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Solder the two 22pF ceramic capacitors (little red-ish thingies with the number 22 written on them).
-                    Along with the crystal, these are essential for the oscillating circuit of the game console."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Solder the two 22pF ceramic capacitors (little red-ish thingies with the number 22 written on them). Along with the crystal, these are essential for the oscillating circuit of the game console. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step5_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step5_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step5_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step5_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step5" />
 
         <TextView
             android:id="@+id/step6_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 6 – two slide switches"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step5_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step5_image" />
 
         <TextView
             android:id="@+id/step6_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Now solder the two slide toggle switches for turning the console ON and OFF and muting the sound.
-                            They’re soldered at the bottom side of the PCB and labeled as SWITCH1 and SWITCH2."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Now solder the two slide toggle switches for turning the console ON and OFF and muting the sound. They’re soldered at the bottom side of the PCB and labeled as SWITCH1 and SWITCH2. The left switch is muting the sound and the right one will turn the console’s power ON and OFF. The switches have to go all the way down and sit nicely on the PCB. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step6_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step6_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step6_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step6_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step6_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step6" />
 
         <TextView
@@ -281,290 +321,419 @@ Good luck and keep making!"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step6_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step6_image" />
 
         <TextView
-            android:id="@+id/step7_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Locate the three electrolytic capacitors (tiny black barrels with two leads).
-                    The places for these are marked on the PCB as C4, C5 and C7."
+            android:id="@+id/step7_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Locate the three electrolytic capacitors (tiny black barrels with two leads). The places for these are marked on the PCB as C4, C5 and C7. Important: these capacitors are polarized, make sure to insert them properly. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step7_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step7_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="The polarity of the capacitors is indicated with the big white minus (-) sign on the capacitors (the big white stripe)."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter1_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step7_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step7_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step7_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter2_makerbuino"
             app:srcCompat="@drawable/makerbuino_step7" />
 
         <TextView
             android:id="@+id/step8_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 8 – 3.3V voltage regulator and 2n2222 transistor"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step7_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step7_image" />
 
         <TextView
-            android:id="@+id/step8_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Important: These two components are very similar so make sure to read the text on the components carefully because that is the only way you can recognize them."
+            android:id="@+id/step8_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Important: These two components are very similar so make sure to read the text on the components carefully because that is the only way you can recognize them. (Please note that the text on your transistor may vary and have something like “KSP 2222A – 708” written on it. This happens because the different manufacturers tend to write unique serial numbers on their components). Solder the regulator on the board where “IC2 3.3V” is marked and the transistor to the spot with “T1 2N2222” marking on it. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step8_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step8_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Be careful to turn these components on the right side!"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_chapter1_makerbuino" />
+
+        <TextView
+            android:id="@+id/step8_chapter3_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Important: Make sure the flat side of the regulator and the transistor faces down towards the board, this is achieved by bending the pins of the components by 90 degrees."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_chapter2_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step8_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step8_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step8_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_chapter3_makerbuino"
             app:srcCompat="@drawable/makerbuino_step8" />
 
         <TextView
             android:id="@+id/step9_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 9 – Nokia 5110 LCD screen"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step8_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step8_image" />
 
         <TextView
-            android:id="@+id/step9_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Important: Firstly, check the photo next to this text and determine the version of the screen you have."
+            android:id="@+id/step9_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="You’ll need M2 screws, nuts, and spacers for mounting your screen."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step9_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step9_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="mportant: check whether the soldering joints on your microcomputer’s socket are soldered nice and clean and that they are all shaped like a “volcano”."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_chapter1_makerbuino" />
+
+        <TextView
+            android:id="@+id/step9_chapter3_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="You have to make sure connections on the microcontroller are good because you won’t be able to fix them after you solder the screen (the screen overlaps the socket’s soldering joints). Important: before soldering the screen to the PCB,  fasten its bottom two holes with screws, nuts, and spacers. n this way, you’ll ensure that the screen module is aligned perfectly before soldering it to the PCB. You will only be able to fixate the screen using the bottom two holes on it. After you’ve fixated the screen, solder the connector on the other side of the PCB and avoid bridging between pins.  "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_chapter2_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step9_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step9_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step9_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_chapter3_makerbuino"
             app:srcCompat="@drawable/makerbuino_step9" />
 
         <TextView
             android:id="@+id/step10_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 10-Insert the ATmega328 microcomputer"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step9_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step9_image" />
 
         <TextView
-            android:id="@+id/step10_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Most common mistake that people do with the microcontroller is that they either insert it in the socket wrongly or break the microcontroller’s tiny pins in the process of inserting it. Don’t worry, it just needs a tiny bit of caution and concentration (don’t hurry with this one)"
+            android:id="@+id/step10_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Let’s start by finding the little black precious microcomputer. Here comes the tricky part…Important: Most common mistake that people do with the microcontroller is that they either insert it in the socket wrongly or break the microcontroller’s tiny pins in the process of inserting it. Don’t worry, it just needs a tiny bit of caution and concentration (don’t hurry with this one).  "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step10_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step10_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Firstly, locate the microcontroller’s notch indicating which side to turn it when inserting it in the socket. "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter1_makerbuino" />
+
+        <TextView
+            android:id="@+id/step10_chapter3_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Secondly, DON’T insert the microcontroller straight away. You’ll need to bend the pins a bit. Do this pushing the microcontroller’s pins against the table so that you apply equal force to all pins. "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter2_makerbuino" />
+
+        <TextView
+            android:id="@+id/step10_chapter4_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Check whether there are pins on the microcomputer that are not bent correctly and correct that."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter3_makerbuino" />
+
+        <TextView
+            android:id="@+id/step10_chapter5_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Finally, slowly insert the microcontroller into the socket. If needed, take the chip out and bend the pins some more. "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter4_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step10_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step10_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step10_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter5_makerbuino"
             app:srcCompat="@drawable/makerbuino_step10" />
 
         <TextView
             android:id="@+id/step11_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 11-first functionality test"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step10_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step10_image" />
 
         <TextView
-            android:id="@+id/step11_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="We’ve just soldered all of the core MAKERbuino components required for its basic functions and we’re going to test them.
-                    Connect the battery to the already soldered female battery connector."
+            android:id="@+id/step11_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="We’ve just soldered all of the core MAKERbuino components required for its basic functions and we’re going to test them. Connect the battery to the already soldered female battery connector. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step11_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step11_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Turn the device on by moving the power switch into the left position. The screen should turn on and display some text. "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter1_makerbuino" />
+
+        <TextView
+            android:id="@+id/step11_chapter3_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="If that happened, that means all of the components so far work fine and are properly soldered."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter2_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step11_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step11_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step11_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter3_makerbuino"
             app:srcCompat="@drawable/makerbuino_step11png" />
 
         <TextView
             android:id="@+id/step12_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 12-solder the second 10k ohm resistor"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step11_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step11_image" />
 
         <TextView
             android:id="@+id/step12_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="This resistor is important for connecting the microcontroller to the serial UART programmer board.
-                    It’s labeled R3 and the color code goes brown, black, black, red, brown."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="This resistor is important for connecting the microcontroller to the serial UART programmer board. It’s labeled R3 and the color code goes brown, black, black, red, brown. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step12_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step12_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step12_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step12_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step12_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step12" />
 
         <TextView
             android:id="@+id/step13_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 13-female 6-pin angle header"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step12_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step12_image"
+             />
 
         <TextView
-            android:id="@+id/step13_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Locate this black female connector.
-                        It’s soldered to the place labeled “JP2, serial programmer”.
-                        The serial UART programmer board is connected to this port.
-                        Make sure to turn it the right way"
+            android:id="@+id/step13_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Locate this black female connector. It’s soldered to the place labeled “JP2, serial programmer”. The serial UART programmer board is connected to this port. Make sure to turn it the right way.  "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step13_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step13_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Pro tip: If the component is falling out of the PCB when you try to solder it, place your cutting pliers’ handle underneath the component you’re soldering."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step13_chapter1_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step13_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step13_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step13_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step13_chapter2_makerbuino"
             app:srcCompat="@drawable/makerbuino_step13" />
 
         <TextView
             android:id="@+id/step14_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 14-two wheel potentiometers"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step13_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step13_image" />
 
         <TextView
             android:id="@+id/step14_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Now we’ll locate and solder the two trim potentiometers labeled TR1 andTR2.
-                    The left potentiometer is used for regulating the screen’s backlight and the right one regulates the sound volume."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Now we’ll locate and solder the two trim potentiometers labeled TR1 and TR2. The left potentiometer is used for regulating the screen’s backlight and the right one regulates the sound volume. Make sure to use our previous pro tip here and put your pliers underneath the potentiometers while soldering them."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step14_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step14_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step14_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step14_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step14" />
 
         <TextView
@@ -576,227 +745,286 @@ Good luck and keep making!"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step14_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step14_image" />
 
         <TextView
             android:id="@+id/step15_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="The header is mounted on the top left front side of the PCB (labeled JP1). After the header, find the two little 100nF capacitors (they have 104 written on their surface) and solder them on places labeled with C1 and C6."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step15_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step15_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step15_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step15_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step15_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step15" />
 
         <TextView
             android:id="@+id/step16_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 16-some more resistors and a diode"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step15_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step15_image" />
 
         <TextView
-            android:id="@+id/step16_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="TOk, let’s solder the rest of the small two-leaded components."
+            android:id="@+id/step16_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Ok, let’s solder the rest of the small two-leaded components."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step16_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step16_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Solder the 2.2k ohm resistor (red, red, red, golden) to the place marked “R1, 2k”"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter1_makerbuino" />
+
+        <TextView
+            android:id="@+id/step16_chapter3_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="100 ohm resistor (brown, black, brown, golden OR brown, black, black, black, brown) to the spot marked “R6, 100”"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter2_makerbuino" />
+
+        <TextView
+            android:id="@+id/step16_chapter4_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Two 4.7k ohm resistors (yellow, purple, red, golden) need to be placed on the marking “R4, 4k7” and “R5, 4k7”"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter3_makerbuino" />
+
+        <TextView
+            android:id="@+id/step16_chapter5_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1N4148 diode needs to go where “D1, 1N4148” is written on the board. "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter4_makerbuino" />
+
+        <TextView
+            android:id="@+id/step16_chapter6_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Important: mind the polarity of the diode by making sure that the black ring on the diode matches the marking on the PCB"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter5_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step16_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step16_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step16_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter6_makerbuino"
             app:srcCompat="@drawable/makerbuino_step16" />
 
         <TextView
             android:id="@+id/step17_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 17-headphone connector"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step16_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step16_image" />
 
         <TextView
             android:id="@+id/step17_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="The headphone connector goes to the place marked“X1, STEREOJACK”."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="The headphone connector goes to the place marked“X1, STEREOJACK”. Although this connector was built for stereo sound output, MAKERbuino can only output bleeps and bloops in mono. Because of that, both left and right earphone are bridged together and connected to the same sound output channel on the microcomputer. Make use of our previous pro tip and place your pliers beneath the connector so that it doesn’t fall off while you’re soldering it. "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step17_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step17_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step17_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step17_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step17" />
 
         <TextView
             android:id="@+id/step18_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 18-Li-Po charger board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step17_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step17_image" />
 
         <TextView
-            android:id="@+id/step18_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="For mounting the TP4056 Li-Po charger board, you’ll need to make use of those tiny excess cut-off leads we’ve told you to save on step 3.
-                    Pick four of the longest leads from the pile of excess leads and insert them through charger’s and PCB’s contacts and bend them before soldering"
+            android:id="@+id/step18_chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="For mounting the TP4056 Li-Po charger board, you’ll need to make use of those tiny excess cut-off leads we’ve told you to save on step 3. Pick four of the longest leads from the pile of excess leads and insert them through charger’s and PCB’s contacts and bend them before soldering. You need to solder the contacts both on the top and the bottom side of your MAKERbuino in order for the charger to work properly."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step18_title_makerbuino" />
 
+        <TextView
+            android:id="@+id/step18_chapter2_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Electronics 101: This way of adding stack-on PCBs to the main PCB is called the “child board design”. Boards stacked onto the main PCB are called the “child boards”."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter1_makerbuino" />
+
         <ImageView
             android:id="@+id/makerbuino_step18_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step18_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step18_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter2_makerbuino"
             app:srcCompat="@drawable/makerbuino_step18" />
 
         <TextView
             android:id="@+id/step19_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 19-male 4-pin angle multiplayer headers"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step18_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step18_image" />
 
         <TextView
             android:id="@+id/step19_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Before starting to screw anything together, make sure to take off the protective peeling that we mentioned earlier.
-                    There are total of 6 layers you need to peel off, two on each plastic case."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="These are labeled as JP3 and JP4 on the board. Use the pro tip about placing the pliers underneath the component because these might be a bit harder to solder."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step19_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step19_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step19_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step19_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step19" />
 
         <TextView
             android:id="@+id/step20_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 20-seven big clicky pushbuttons"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step19_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step19_image" />
 
         <TextView
             android:id="@+id/step20_chapter_makerbuino"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Finally! Time’s to solder the yellow pushbuttons.
-                    Important: make sure to push the pushbuttons all the way down to the PCB, otherwise they might get angled, which will cause them to jam when you mount the front casing."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Finally! Time’s to solder the yellow pushbuttons. Important: make sure to push the pushbuttons all the way down to the PCB, otherwise they might get angled, which will cause them to jam when you mount the front casing."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step20_title_makerbuino" />
 
         <ImageView
             android:id="@+id/makerbuino_step20_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step20_chapter_makerbuino"
-            app:layout_constraintTop_toBottomOf="@+id/step20_title_makerbuino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step20_chapter_makerbuino"
             app:srcCompat="@drawable/makerbuino_step20" />
 
         <TextView
             android:id="@+id/finish_title_makerbuino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Congrats..."
+            android:layout_marginTop="25dp"
+            android:text="You did a good job. Well done!"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step20_chapter_makerbuino" />
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_step20_image" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
