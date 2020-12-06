@@ -21,17 +21,28 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/motivational_chapter_ringo"
-            android:layout_width="365dp"
-            android:layout_height="225dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="20"
+            android:id="@+id/motivational_chapter_ringo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Soldering is an essential skill if you want to dive into the world of DIY electronics."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivational_ringo" />
+
+        <TextView
+            android:id="@+id/motivational_chapter_ringo2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="Soldering is an essential skill if you want to dive into the world of DIY electronics.
 Your soldering iron is your best companion when it comes to creating something new. It gives you the power to create unique electronic devices from scratch.
 Nobody is born a soldering genius. It’s a skill just like any other and you need to practice it in order to become better at it.
@@ -39,169 +50,302 @@ Also, I know how frustrating it can be when something doesn’t work from the fi
 And please, don’t worry, In the worst-case scenario (something not working) we’ll make it work together.
 Good luck and keep making!"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/motivational_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/motivational_chapter_ringo1" />
 
         <ImageView
             android:id="@+id/solders"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/motivational_chapter_ringo"
+            app:layout_constraintTop_toBottomOf="@+id/motivational_chapter_ringo2"
             app:srcCompat="@drawable/_586969030754_44" />
 
         <TextView
             android:id="@+id/step1_title_ringo"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 1-The Brain board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/solders" />
 
         <TextView
-            android:id="@+id/step1_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Let’s begin with the Brain board. Take 2 sticks of pin headers and cut them to size so that you can solder them onto the Brain board’s PCB.
-            You need to trim them with your diagonal cutter pliers.
-            In the end, you need to have one 22-pin header and one 11-pin machined header."
+            android:id="@+id/step1_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Let’s begin with the Brain board. Take 2 sticks of pin headers and cut them to size so that you can solder them onto the Brain board’s PCB."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step1_title_ringo" />
 
+        <TextView
+            android:id="@+id/step1_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="You need to trim them with your diagonal cutter pliers."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter1_ringo"/>
+
+        <TextView
+            android:id="@+id/step1_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="In the end, you need to have one 22-pin header and one 11-pin machined header."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step1_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="The pin headers need to be soldered so that they’re vertical to the board.
+Luckily there is a nice technique for doing just that:"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter3_ringo" />
+
+        <TextView
+            android:id="@+id/step1_chapter5_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="1) Solder just the first pin of one row of headers"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter4_ringo"/>
+
+        <TextView
+            android:id="@+id/step1_chapter6_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="2) Check that the pin header is perpendicular."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter5_ringo"/>
+
+        <TextView
+            android:id="@+id/step1_chapter7_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="3) If the header is slightly skewed and needs adjusting, melt the solder and tilt the headers with your fingers.
+(Watch out not to burn yourself.)"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter6_ringo"/>
+
+        <TextView
+            android:id="@+id/step1_chapter8_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="4) Check if the headers are aligned correctly, if not then repeat the process.
+If the header is vertical to the board, you can solder the rest of the pins.  "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter7_ringo"/>
+
+        <TextView
+            android:id="@+id/step1_chapter9_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Solder the second row of the headers as well.
+Make sure that they’re vertical to the Brain board!
+The results should look like the photo on the left."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter8_ringo"/>
+
         <ImageView
             android:id="@+id/ringo_step1_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step1_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step1_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1_chapter9_ringo"
             app:srcCompat="@drawable/ringo_step1" />
 
         <TextView
             android:id="@+id/step2_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 2-Attaching the Brain board onto the Main board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step1_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step1_image" />
 
         <TextView
-            android:id="@+id/step2_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
+            android:id="@+id/step2_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="For this, you will need:
 1 x M3x10mm black nylon bolt
 1 x M3x5mm brass (golden) spacer
 (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!)
 1 x M3 black nylon nut"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step2_title_ringo" />
 
+        <TextView
+            android:id="@+id/step2_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Put the bolt through the Brain board so it faces out in the direction of the pins.
+Then screw the brass spacer on top of it."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step2_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Use a small screwdriver for this!"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step2_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Then, you can place the entire Brain board onto the Main board where it says “the Brain board”. Put the plastic nut onto the bolt on the back side of the Main board.
+Now that they’re fixed together, we can solder the Brain board onto the Main board."
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter3_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step2_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step2_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step2_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2_chapter4_ringo"
             app:srcCompat="@drawable/ringo_step2" />
 
         <TextView
             android:id="@+id/step3_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 3-Soldering the Brain board to the Main board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step2_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step2_image" />
 
         <TextView
             android:id="@+id/step3_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Remember the headers you had to cut and solder to the Brain board?
-                          We’re not done with them yet! You need to solder them to the Main board too.
-                          We need to do this in order to establish an electrical connection between the Brain board and the Main board."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Remember the headers you had to cut and solder to the Brain board? We’re not done with them yet! You need to solder them to the Main board too. We need to do this in order to establish an electrical connection between the Brain board and the Main board."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step3_title_ringo" />
 
         <ImageView
             android:id="@+id/ringo_step3_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step3_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step3_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3_chapter_ringo"
             app:srcCompat="@drawable/ringo_step3" />
 
         <TextView
             android:id="@+id/step4_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 4-The Display board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step3_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step3_image" />
 
         <TextView
             android:id="@+id/step4_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Next, we have the Display board..."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Next, we have the Display board... Again, you’ll have to cut the pin headers to the appropriate size so that they can fit the pins on the Display board.
+You need an 8-pin header row for this. With the same technique used when soldering the Brain board’s pin headers, soldering this shouldn’t be a problem."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step4_title_ringo" />
 
         <ImageView
             android:id="@+id/ringo_step4_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step4_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step4_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4_chapter_ringo"
             app:srcCompat="@drawable/ringo_step4" />
 
         <TextView
@@ -213,191 +357,266 @@ Good luck and keep making!"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step4_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step4_image" />
 
         <TextView
-            android:id="@+id/step5_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="For this, you’ll need:
-                        3 x M3x10mm black nylon bolt
-                        3x M3x5mm brass (golden) spacer
-                        (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!)
-                        3x M3 black nylon nut
-                        Put the bolts through the holes so that they face the same direction as the pins."
+            android:id="@+id/step5_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="For this, you’ll need: 3 x M3x10mm black nylon bolt, 3x M3x5mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!), 3x M3 black nylon nut."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step5_title_ringo" />
 
+        <TextView
+            android:id="@+id/step5_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Put the bolts through the holes so that they face the same direction as the pins."
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step5_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Then, put the spacers on top of them and screw them on. Place the Display board on the Main board where it says “LCD display”. Then tighten the three nuts from the back side of the Main board."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step5_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="NOTE : You can’t tighten the nuts with a screwdriver from underneath, only from above!"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_chapter3_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step5_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step5_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step5_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5_chapter4_ringo"
             app:srcCompat="@drawable/ringo_step5" />
 
         <TextView
             android:id="@+id/step6_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 6-Soldering the Display board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step5_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step5_image" />
 
         <TextView
             android:id="@+id/step6_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Now let’s go ahead and solder the Display board pins onto the Main board.
-                        Through these pins, the Brain board will be able to push all the images to the Display board, so it’s important to solder them properly."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Now let’s go ahead and solder the Display board pins onto the Main board. Through these pins, the Brain board will be able to push all the images to the Display board, so it’s important to solder them properly."
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step6_title_ringo" />
 
         <ImageView
             android:id="@+id/ringo_step6_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step6_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step6_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step6_chapter_ringo"
             app:srcCompat="@drawable/ringo_step6" />
 
         <TextView
             android:id="@+id/step7_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 7-The Sound board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step6_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step6_image" />
 
         <TextView
-            android:id="@+id/step7_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="With the Sound board we’re going to have to do a bit more soldering than with the other boards.
-                    For this step, you’ll need:
-                    1 x pin header row
-                    1 x microphone
-                    1 x headphone jack"
+            android:id="@+id/step7_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="With the Sound board we’re going to have to do a bit more soldering than with the other boards. For this step, you’ll need:"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step7_title_ringo" />
 
+        <TextView
+            android:id="@+id/step7_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="1 x pin header row"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step7_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1 x microphone"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step7_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1 x headphone jack"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter3_ringo" />
+
+        <TextView
+            android:id="@+id/step7_chapter5_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="First, solder the microphone to the Sound board. Be careful not to solder it onto the opposite side. After that, solder the headphone jack, too. As before, you need to trim the pin headers to the right size using your diagonal cutter pliers. You’ll need a 9-pin header for the Sound board. Solder them vertically to the board just like you’ve done with the Brain board and Display board before."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter4_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step7_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step7_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step7_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step7_chapter5_ringo"
             app:srcCompat="@drawable/ringo_step7" />
 
         <TextView
             android:id="@+id/step8_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 8-Attaching the Sound board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step7_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step7_image" />
 
         <TextView
-            android:id="@+id/step8_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="For this step, you’ll need the following components:
-                        1 x M3x10mm black nylon bolt
-                        1 x M3x5mm brass (golden) spacer
-                        (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!)
-                        1 x M3 black nylon nut"
+            android:id="@+id/step8_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="For this step, you’ll need the following components: 1 x M3x10mm black nylon bolt, 1 x M3x5mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!), 1 x M3 black nylon nut"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step8_title_ringo" />
 
+        <TextView
+            android:id="@+id/step8_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Put the screw through the board as we did with the other boards, then screw down the spacer. Place the Sound board onto the Main board where it says “Sound board”. Fasten the nut from the back side."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_chapter1_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step8_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step8_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step8_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step8_chapter2_ringo"
             app:srcCompat="@drawable/ringo_step8" />
 
         <TextView
             android:id="@+id/step9_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 9-Soldering the Sound board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step8_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step8_image" />
 
         <TextView
             android:id="@+id/step9_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="The Sound board shouldn’t pose any problems since it doesn’t have that many pins that need to be soldered.
-                    Plus, by now you should be getting a grip on how soldering works if you didn’t already have the experience.
-                    Solder the pins to the Main board and we’re done with that."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="The Sound board shouldn’t pose any problems since it doesn’t have that many pins that need to be soldered. Plus, by now you should be getting a grip on how soldering works if you didn’t already have the experience. Solder the pins to the Main board and we’re done with that."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step9_title_ringo" />
 
         <ImageView
             android:id="@+id/ringo_step9_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step9_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step9_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step9_chapter_ringo"
             app:srcCompat="@drawable/ringo_step9" />
 
         <TextView
@@ -409,143 +628,302 @@ Good luck and keep making!"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step9_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step9_image" />
 
         <TextView
-            android:id="@+id/step10_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="All of these buttons may seem overwhelming, but trust us, after you solder a couple of them, the rest will be a breeze!
-                    The smaller buttons are placed where the numerical keypad is, and just below the display.
-                    The bigger buttons are placed where it says A and B."
+            android:id="@+id/step10_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="All of these buttons may seem overwhelming, but trust us, after you solder a couple of them, the rest will be a breeze!"
             android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step10_title_ringo" />
 
+        <TextView
+            android:id="@+id/step10_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="The smaller buttons are placed where the numerical keypad is, and just below the display. The bigger buttons are placed where it says A and B. Let’s start with the big yellow ones. Push them into the Main board so that they sit firmly on the board."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step10_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Before soldering the push buttons, make sure that they’re perpendicular (vertical)  to the board. This is very important as you’ll have trouble putting the protective casing on the device if the buttons are tilted!"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step10_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="The soldering pads are quite big for these buttons, so you’ll need to hold your iron on them a bit longer. Soldering the smaller pushbuttons is mostly the same as soldering the big yellow ones."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter3_ringo" />
+
+        <TextView
+            android:id="@+id/step10_chapter5_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Please make sure that the pushbuttons are sitting firmly on the board and that they’re not tilted before soldering them."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter4_ringo" />
+
+        <TextView
+            android:id="@+id/step10_chapter6_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="As we said in the previous paragraph, you won’t be able to mount the casing if the buttons are tilted! Make sure you solder each and every pin correctly. Don’t get hasty just because there’s so many of them. Slow and steady wins the race!"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter5_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step10_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step10_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step10_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step10_chapter6_ringo"
             app:srcCompat="@drawable/ringo_step10" />
 
         <TextView
             android:id="@+id/step11_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 11-The joystick"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step10_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step10_image" />
 
         <TextView
-            android:id="@+id/step11_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
+            android:id="@+id/step11_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="The joystick is still left to be soldered, but after all those pushbuttons, it shouldn’t be an issue."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step11_title_ringo" />
 
+        <TextView
+            android:id="@+id/step11_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Once you’re done with that, feel free to turn off your soldering iron and take a breather, because soldering time is over!"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Nice job so far, but unfortunately we’re not done yet. There are still a few steps ahead. Oh no! It seems we’ve made a mistake during the soldering process! As you already know, soldering joints mustn’t be bridged as the device won’t work correctly (signals or voltages will get mixed or shorted). This is a perfect moment to demonstrate how to fix bridged solder joints with a desoldering vacuum pump:"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Push down the plunger button on the desoldering pump"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter3_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter5_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Place the soldering iron on the bridged joint until it melts"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter4_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter6_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Place the desoldering pump directly on the melted solder joint"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter5_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter7_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Press the release button on the desoldering pump, that should suck up the molten solder"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter6_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter8_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Repeat the process if needed"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter7_ringo" />
+
+        <TextView
+            android:id="@+id/step11_chapter9_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="This will require some practice, but it isn’t impossible to learn!"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter8_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step11_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step11_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step11_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step11_chapter9_ringo"
             app:srcCompat="@drawable/ringo_step11" />
 
         <TextView
             android:id="@+id/step12_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 12-The Network board"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step11_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step11_image" />
 
         <TextView
-            android:id="@+id/step12_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="In order to attach the Network board to the Main board, you’ll need the following components:
-2x M2.              5 white nylon bolt2x M2.5 white nylon nut"
+            android:id="@+id/step12_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="In order to attach the Network board to the Main board, you’ll need the following components: 2x M2.5 white nylon bolt2x M2.5 white nylon nut. The Network board first needs to be inserted into the big connector on the back where it says “Mini PCIE Express”. The network module needs to be inserted at an angle like this. Then you need to push it down until it’s horizontal with the Main board."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step12_title_ringo" />
 
+        <TextView
+            android:id="@+id/step12_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Keep holding it down and put one bolt through the Network board and the Main board. Fasten it with a nut from the other side. Then put the other bolt and fasten the other nut too."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step12_chapter1_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step12_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step12_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step12_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step12_chapter2_ringo"
             app:srcCompat="@drawable/ringo_step12" />
 
         <TextView
             android:id="@+id/step13_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 13-The speaker"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step12_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step12_image" />
 
         <TextView
             android:id="@+id/step13_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Connecting the speaker is easy!
-                    First, you need to insert the speaker’s wire connector through the large hole on the top of the Main board."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Connecting the speaker is easy! First, you need to insert the speaker’s wire connector through the large hole on the top of the Main board. Once you’ve done that, take the white connector with a pair of pliers (or your fingers) and put it in the female connector slot where it says “speaker”. You should feel a bump when the connector fits in the slot nicely."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step13_title_ringo" />
 
         <ImageView
             android:id="@+id/ringo_step13_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step13_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step13_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step13_chapter_ringo"
             app:srcCompat="@drawable/ringo_step13" />
 
         <TextView
@@ -557,237 +935,366 @@ Good luck and keep making!"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step13_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step13_image" />
 
         <TextView
-            android:id="@+id/step14_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Pressing those pushbuttons without button caps on would be really tough, wouldn’t it?
-                    Well then, let’s take out all the button caps and place them on the buttons.
-                    Same as with the pushbuttons, there are two types: the bigger ones are for the A and B buttons and the smaller ones make up the rest.
-                    *NOTE: You will receive the buttons with UV printed symbols."
+            android:id="@+id/step14_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Pressing those pushbuttons without button caps on would be really tough, wouldn’t it? Well then, let’s take out all the button caps and place them on the buttons. Same as with the pushbuttons, there are two types: the bigger ones are for the A and B buttons and the smaller ones make up the rest."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step14_title_ringo" />
 
+        <TextView
+            android:id="@+id/step14_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="*NOTE: You will receive the buttons with UV printed symbols."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step14_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Place them on top of the buttons and push down firmly. They should make a “click” when they fit into place."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_chapter2_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step14_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step14_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step14_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step14_chapter3_ringo"
             app:srcCompat="@drawable/ringo_step14" />
 
         <TextView
             android:id="@+id/step15_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 15-The front casing"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step14_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step14_image" />
 
         <TextView
-            android:id="@+id/step15_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Before starting to screw anything together, make sure to take off the protective peeling that we mentioned earlier.
-                    There are total of 4 layers you need to peel off, two on each plastic case."
+            android:id="@+id/step15_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Since we don’t want anything to happen to your Ringo, it’s best to put it in its plastic casing. Let’s start with the front side. For this, we’re going to need: 6x M3x8mm metal bolt (WATCH OUT – there are two versions of metal bolts that look similar; you need the shorter bolts here), 6 x M3x5mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!), 1 x Front protective casing1 x Front aesthetic casing. Put the bolts in from the front side and tighten the metal spacers from the back side."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step15_title_ringo" />
 
+        <TextView
+            android:id="@+id/step15_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Don’t tighten them too much, because you could damage the casing!"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step15_chapter1_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step15_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step15_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step15_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step15_chapter2_ringo"
             app:srcCompat="@drawable/ringo_step15" />
 
         <TextView
             android:id="@+id/step16_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 16-The back casing"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step15_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step15_image" />
 
         <TextView
             android:id="@+id/step16_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Take the rest of the components:
-                    6x M3x12mm metal bolt
-                    (WATCH OUT – there are two versions of metal bolts that look similar; you need the longer bolts here)
-                    6x M3x4mm brass (golden) spacer
-                    (WATCH OUT – there are two similar types of brass spacers in your kit and you need the shorter brass spacer here!)
-                    1 x Bottom aesthetic casing1 x Bottom protective casing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Take the rest of the components: 6x M3x12mm metal bolt (WATCH OUT – there are two versions of metal bolts that look similar; you need the longer bolts here), 6x M3x4mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the shorter brass spacer here!), 1 x Bottom aesthetic casing1 x Bottom protective casing. The process is pretty similar to assembling the front casing."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step16_title_ringo" />
 
         <ImageView
             android:id="@+id/ringo_step16_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step16_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step16_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step16_chapter_ringo"
             app:srcCompat="@drawable/ringo_step16" />
 
         <TextView
             android:id="@+id/step17_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 17-The battery"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step16_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step16_image" />
 
         <TextView
-            android:id="@+id/step17_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="The battery comes with pre-applied two-sided sticky tape, so you’ll need to peel off the paper layer from the back of the battery.
-            Be careful not to peel off the whole tape, just the protective paper layer."
+            android:id="@+id/step17_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="The battery comes with pre-applied two-sided sticky tape, so you’ll need to peel off the paper layer from the back of the battery."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step17_title_ringo" />
 
+        <TextView
+            android:id="@+id/step17_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Be careful not to peel off the whole tape, just the protective paper layer."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step17_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Place it inside the largest slot on the back casing, and make sure the battery’s cable is facing right. Press down on the battery firmly to ensure it’s stuck to the casing nicely. After sticking the battery to the casing, all that’s left to do is connect the white connector into the slot on the Main board where it says “battery”."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_chapter2_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step17_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step17_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step17_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step17_chapter3_ringo"
             app:srcCompat="@drawable/ringo_step17" />
 
         <TextView
             android:id="@+id/step18_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="You were probably wondering what’s that dangling black wire connected to the network module.
-                    That’s the Ringo’s antenna and it is impossible to connect to the mobile network without it."
+            android:layout_marginTop="25dp"
+            android:text="Step 18- The antenna"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step17_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step17_image" />
 
         <TextView
-            android:id="@+id/step18_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Text from time to get makin': Peeling and casings-Step 18 – The antenna"
+            android:id="@+id/step18_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="You were probably wondering what’s that dangling black wire connected to the network module. That’s the Ringo’s antenna and it is impossible to connect to the mobile network without it. Like with the battery, you’ll need to first peel off the paper layer from the end of the antenna."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step18_title_ringo" />
 
+        <TextView
+            android:id="@+id/step18_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Be extra gentle with it as it can be damaged if sticked wrongly!"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step18_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Then stick it to the casing right next to the battery, with the antenna wire facing up."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step18_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Be careful when tugging on the antenna because the antenna connector on the network module is a bit fragile and might even break if you put too much strain on it!"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter3_ringo" />
+
+        <TextView
+            android:id="@+id/step18_chapter5_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Now you should have the back casing connected to the Main board with the battery and antenna as shown on the photo on the left."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter4_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step18_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step18_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step18_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step18_chapter5_ringo"
             app:srcCompat="@drawable/ringo_step18" />
 
         <TextView
             android:id="@+id/step19_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:text="Step 19-Combining the front and back casing"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step18_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step18_image" />
 
         <TextView
-            android:id="@+id/step19_chapter_ringo"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Place the back casing onto the back of the Main board.
-                    Watch out for the cables as they might get in the way. Make sure they stay within the casing and away from the screws so they don’t stick out or get damaged."
+            android:id="@+id/step19_chapter1_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Place the back casing onto the back of the Main board."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step19_title_ringo" />
 
+        <TextView
+            android:id="@+id/step19_chapter2_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Watch out for the cables as they might get in the way. Make sure they stay within the casing and away from the screws so they don’t stick out or get damaged."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_chapter1_ringo" />
+
+        <TextView
+            android:id="@+id/step19_chapter3_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Flip the phone so that the screen is facing up. Now place the front casing onto the front side of the Main board. Tighten the six bolts on the BACK SIDE. Squeeze the bottom and top pieces of casings together with your fingers while tightening the bolts."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_chapter2_ringo" />
+
+        <TextView
+            android:id="@+id/step19_chapter4_ringo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Keep in mind that you don’t tighten them too much when assembling the casing because you might damage it."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_chapter3_ringo" />
+
         <ImageView
             android:id="@+id/ringo_step19_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/step19_chapter_ringo"
-            app:layout_constraintTop_toBottomOf="@+id/step19_title_ringo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step19_chapter4_ringo"
             app:srcCompat="@drawable/ringo_step19" />
 
         <TextView
             android:id="@+id/finish_title_ringo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="And voilá, you’ve just assembled your very own mobile phone!
-                    Check out the following chapter for further instructions on how to set up your Ringo."
+            android:layout_marginTop="25dp"
+            android:text="And voilá, you’ve just assembled your very own mobile phone! Check out the following chapter for further instructions on how to set up your Ringo."
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step19_chapter_ringo" />
+            app:layout_constraintTop_toBottomOf="@+id/ringo_step19_image" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

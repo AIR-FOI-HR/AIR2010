@@ -21,119 +21,296 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/chapter_one_buttons"
-            android:layout_width="364dp"
-            android:layout_height="224dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="12"
-            android:text="The main part of the console, besides the screen, are the buttons. In order to move, shoot, dodge, jump, and pause in games, you need to have some kind of input.
-                        Buttons are the most commonly used input and there are a total of seven of them (eight if you include the reset button, which is located at the top of the console and is already soldered on).
-                        The buttons consist of two parts - mechanical button parts and the button caps. Buttons can work even without the caps, but pressing them with the caps on feels way nicer and they look a lot cooler."
-            android:textSize="14sp"
+            android:id="@+id/chapter_one_part1_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Part One - The buttons"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_one_title_nibble" />
 
-        <ImageView
+        <TextView
             android:id="@+id/chapter_one_buttons1"
-            android:layout_width="170dp"
-            android:layout_height="150dp"
-            android:adjustViewBounds="true"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons"
-            app:srcCompat="@drawable/nibble_chapter_one_buttons"
-            android:layout_marginTop="20dp"/>
-
-        <ImageView
-            android:id="@+id/chapter_one_buttons2"
-            android:layout_width="170dp"
-            android:layout_height="150dp"
-            android:adjustViewBounds="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="The buttons consist of two parts - mechanical button parts and the button caps. Buttons can work even without the caps, but pressing them with the caps on feels way nicer and they look a lot cooler. Take one of the mechanical button parts and put it through the holes. There are a total of seven button placement locations, each with four little holes, that mark the following buttons: MENU, UP, LEFT, DOWN, RIGHT, A, and B."
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons"
-            app:srcCompat="@drawable/nibble_chapter_one_buttons_other_side"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part1_nibble" />
 
         <TextView
-            android:id="@+id/chapter_one_capture_switch"
-            android:layout_width="364dp"
-            android:layout_height="238dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="14"
-            android:text="Unfortunately, the console cannot stay powered on all the time, and sometimes you have to switch it off. This is where the switch comes in. You can easily switch the console on and off with one simple push.
-                    Before soldering this part, try to switch it around a few times. Each time the state of the switch changes, you should hear a loud click. So far, it’s not really doing anything, but soon enough, it will give life to your Nibble whenever you want it to.
-                    The process of soldering down this component is exactly the same as the previous ones.
-                    Take the switch and put the pins through the holes so that the switch lies on the front (yellow) part of the mainboard and the pins stick out of the back (mostly white side). "
+            android:id="@+id/chapter_one_buttons2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Make sure to place the buttons on the correct side. You should see the little button text marks when placing the buttons. The solder joint needs to be on the back of the console (the side with the white patterns on it). The button should go through the holes all the way and make a little click when it falls in place."
             android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons1" />
 
-        <ImageView
-            android:id="@+id/chapter_one_switch_image"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/chapter_one_buttons3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            android:text="After placing the component in the proper place (pins through the little holes), place the main board on the surface in front of you and take the soldering iron. Turn the main board around, so that you’re facing the white part, take a piece of solder and the soldering iron in your hands, and start heating it up.  "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_one_capture_switch"
-            app:srcCompat="@drawable/nibble_chapter_one_switch"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons2" />
 
         <TextView
-            android:id="@+id/chapter_one_battery"
-            android:layout_width="274dp"
-            android:layout_height="194dp"
-            android:layout_marginTop="20dp"
-            android:ems="18"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="This part is probably the easiest one to solder in this whole process.
-                    While it does take up a large part of the console, it only has two pins.
-                    Unlike all of the other parts, this one goes onto the back of the console (the mostly white side). The pins should go through the holes so that they’re visible from the front side, the one where the screen and the buttons are located. "
+            android:id="@+id/chapter_one_buttons4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Firstly, carefully place the soldering iron on one of the pins, so that it’s touching both the pin and the little plated area around the hole that the pin is going through. Leave it like that for about ten seconds so it heats up and then apply the tip of the solder to it. The solder should easily melt and spread evenly around the joint. Repeat the process for the other three pins. Make sure that the button is still fully pushed from the other side and that it’s not moving sideways in any directions.   "
             android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons3" />
+
+        <TextView
+            android:id="@+id/chapter_one_buttons5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="If the button is not moving, but it can be clicked, then the first component is soldered. Congratulations! One down, many more to go."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons4" />
+
+        <ImageView
+            android:id="@+id/chapter_one_buttons1_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons5"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/nibble_chapter_one_buttons"/>
+
+        <ImageView
+            android:id="@+id/chapter_one_buttons2_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons1_image"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/nibble_chapter_one_buttons_other_side"/>
+
+        <TextView
+            android:id="@+id/chapter_one_part2_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Part two - the switch"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons2_image" />
+
+        <TextView
+            android:id="@+id/chapter_one_capture_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Unfortunately, the console cannot stay powered on all the time, and sometimes you have to switch it off. This is where the switch comes in. You can easily switch the console on and off with one simple push. Before soldering this part, try to switch it around a few times. Each time the state of the switch changes, you should hear a loud click. So far, it’s not really doing anything, but soon enough, it will give life to your Nibble whenever you want it to. The process of soldering down this component is exactly the same as the previous ones. "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part2_nibble" />
+
+        <TextView
+            android:id="@+id/chapter_one_switch_bridging1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Bridging"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_capture_switch" />
+
+        <TextView
+            android:id="@+id/chapter_one_switch_bridging2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Another problem that can happen when soldering is a bridge. It is most common when soldering two pins very close to each other. If you bridge the pins, you must un-bridge them before continuing with the build.  "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_bridging1" />
+
+        <TextView
+            android:id="@+id/chapter_one_switch_bridging3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Breaking off the bridged joint is easy - just place the heated soldering iron in the middle, take the excessive solder off, and clean the iron on the sponge. Repeat the process several times if needed. Clean the soldering iron so you don’t have any residual solder on it."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_bridging2" />
+
+        <ImageView
+            android:id="@+id/chapter_one_switch_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_bridging3"
+            app:srcCompat="@drawable/nibble_chapter_one_switch"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/chapter_one_part3_battery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Part three - The battery holder"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_image" />
 
+        <TextView
+            android:id="@+id/chapter_one_part3_battery1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Unlike all of the other parts, this one goes onto the back of the console (the mostly white side). The pins should go through the holes so that they’re visible from the front side, the one where the screen and the buttons are located. "
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part3_battery" />
+
+        <TextView
+            android:id="@+id/chapter_one_part3_battery2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Again, pick up the soldering iron and solder the two pins. As easy as it gets! "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part3_battery1" />
+
         <ImageView
-            android:id="@+id/chaper_one_battery_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:id="@+id/chapter_one_battery_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/chapter_one_battery"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part3_battery2"
             app:srcCompat="@drawable/nibble_chapter_one_battery" />
 
         <TextView
-            android:id="@+id/chapter_one_screen"
-            android:layout_width="272dp"
-            android:layout_height="195dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Now onto the big one - the display! This thing makes everything that is happening inside the console actually come to life. All of the pixels, colors, characters, letters, and numbers are shown on this beauty.
-"
-            android:textSize="14sp"
+            android:id="@+id/chapter_one_part4_screen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Part four - The screen"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chaper_one_battery_image" />
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_battery_image" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Since this is pretty much the most important part of the console, together with the processor, you should treat it with care."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="You’ll notice a little protective layer on top of it, which you can take off by pulling the little green part. Don’t do that just yet, so that the screen stays protected all the way through the soldering part."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen1" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="After you’ve done your soldering, take it off so your screen can really shine! Everything will work just as well even if the protector remains on, so don’t worry too much about it. Inserting the screen is pretty much the same as with the other components. Just make sure to push the pins all the way through so that the screen fits firmly in place. Even though the screen has its protector, try to touch the black part as little as possible, so that it doesn’t get damaged. Especially avoid touching any part of the screen with the soldering iron, hot or cold (except the pins, duh). Turn the console around and solder all of the pins. Beware of the previously mentioned bad solder joints and solder bridges. "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen2" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Before starting the soldering process, make sure to place some soft material under the screen so that it doesn’t get damaged or scratched while facing down on the table. "
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen3" />
 
         <ImageView
-            android:id="@+id/chaper_one_screen_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:id="@+id/chapter_one_screen_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toEndOf="@+id/chapter_one_screen"
-            app:layout_constraintTop_toBottomOf="@+id/chaper_one_battery_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen4"
             app:srcCompat="@drawable/nibble_chapter_one_screen" />
 
         <TextView
@@ -144,87 +321,91 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_one_screen"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_screen_image"
+            android:layout_marginTop="25dp"/>
 
         <TextView
             android:id="@+id/chapter_two_battery"
-            android:layout_width="261dp"
-            android:layout_height="225dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="This part is really important: Take a battery and place it in one of the outer two slots so that the minus (-) symbol is closer to the little spring, and the plus (+) symbol is looking away from it. When inserting it, make sure to first insert the minus (-) part so that you push the spring with the battery and then lightly insert the other part inside the holder. You need to use a little bit of strength in this process. If you’re unable to do so, ask someone older or stronger for assistance. (It’s all about the teamwork!)"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_two_title_nibble" />
 
         <ImageView
             android:id="@+id/chapter_two_battery_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toEndOf="@+id/chapter_two_battery"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_two_title_nibble"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery"
             app:srcCompat="@drawable/nibble_chapter_two_batteries"
            />
 
         <TextView
-            android:id="@+id/chapter_two_fuse"
-            android:layout_width="261dp"
-            android:layout_height="189dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Before turning your Nibble on, you have to insert the fuse that will keep all of the components untouched if something goes wrong inside the circuit.
-                    There are a total of three fuses and they can be replaced if needed as well.
-                    Take one of the fuses from the package.
-                    It doesn’t matter which way you put the fuse, as long as the little black text on it is facing upwards."
+            android:id="@+id/chapter_two_fuse1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Before turning your Nibble on, you have to insert the fuse that will keep all of the components untouched if something goes wrong inside the circuit. There are a total of three fuses and they can be replaced if needed as well. It doesn’t matter which way you put the fuse, as long as the little black text on it is facing upwards.  "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery" />
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery_image" />
+
+        <TextView
+            android:id="@+id/chapter_two_fuse2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Now that the batteries and the fuse are both properly inserted, take the console in your hands and place the switch in the ON position."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse1" />
 
         <ImageView
             android:id="@+id/chapter_two_fuse_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toEndOf="@+id/chapter_two_fuse"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery_image"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse2"
             app:srcCompat="@drawable/nibble_chapter_two_fuse"
             />
 
         <TextView
             android:id="@+id/chapter_two_final"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="If the screen remains black, that could mean one of the two things:
-                    The batteries are empty - even though we check each battery before putting it in the package, it is possible that some of the batteries are plain empty. Try to get another set of AAA (triple-A) batteries and place them in the same way as these ones.
-                    One of the components is not properly soldered - Check for any bad solder joints, solder bridges, unsoldered pins, and residual solder somewhere on the board. ALWAYS remove the batteries and set the switch to OFF before starting the soldering process!"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="The screen should turn on and you should see something like this!"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse_image"
+            android:layout_marginTop="25dp"/>
 
         <ImageView
             android:id="@+id/chapter_two_final_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_two_final"
             app:srcCompat="@drawable/nibble_chapter_two_final"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <TextView
             android:id="@+id/chapter_three_title_nibble"
@@ -234,33 +415,31 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_two_final_image"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <TextView
             android:id="@+id/chapter_three_buttons"
-            android:layout_width="196dp"
-            android:layout_height="200dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Even though the console can work as-is, it would be much nicer to have a bit of a cleaner finish. The buttons itself are rather small and it isn’t the most comfortable thing to hold.
-                    That’s why we’ve included eight button caps (you really need seven and one is for good luck) to cover those little buttons and make them more clickable!"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Just take a button cap and put it on top of the button. Press hard so the button cap properly clicks on. If the button cap remains on after you release it and if it still can be clicked, you’ve put the cap on properly! Repeat this process for each button. After you’ve done so, check again if all the buttons are easily clickable.  "
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_three_title_nibble"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <ImageView
             android:id="@+id/chapter_three_buttons_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toEndOf="@+id/chapter_two_fuse"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_three_title_nibble"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_buttons"
             app:srcCompat="@drawable/nibble_chapter_three_buttons"
             />
 
@@ -272,43 +451,43 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_three_buttons"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_buttons_image"
+            android:layout_marginTop="25dp"/>
 
         <TextView
             android:id="@+id/chapter_four_casing"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:maxLines="10"
-            android:text="Now comes the most fun part of assembling Nibble - putting these neat, cool, transparent casings on it!
-                    You might be wondering why does it have a total of six plastic parts, but each and every one of them is there to keep the console not only safe from falling but also to be as comfortable to hold as possible. "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Now comes the most fun part of assembling Nibble - putting these neat, cool, transparent casings on it! You might be wondering why does it have a total of six plastic parts, but each and every one of them is there to keep the console not only safe from falling but also to be as comfortable to hold as possible. For this part of the assembly, you’re going to use three different types of bolts and two different types of spacers."
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_four_title_nibble"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <ImageView
             android:id="@+id/chapter_four_casing_image"
-            android:layout_width="170dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_four_casing"
             app:srcCompat="@drawable/nibble_chapter_four_casing" />
 
         <ImageView
             android:id="@+id/chapter_four_bolts_image"
-            android:layout_width="170dp"
-            android:layout_height="150dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chapter_four_casing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_casing_image"
             app:srcCompat="@drawable/nibble_chapter_four_bolts"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <TextView
             android:id="@+id/nibble_final"
@@ -318,19 +497,34 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter_four_bolts_image"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <ImageView
             android:id="@+id/nibble_final_image"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nibble_final"
             app:srcCompat="@drawable/nibble_final"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/nibble_final_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Voila! You have just completed the assembly of your own brand new gaming console - Nibble!"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nibble_final_image"
+            android:layout_marginTop="25dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
