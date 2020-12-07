@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class Ringo_meet_the_tools : Fragment() {
+class RingoIntroductionFragment : Fragment() {
 
     companion object {
-        fun newInstance() = Ringo_meet_the_tools()
+        fun newInstance() = RingoIntroductionFragment()
     }
 
-    private lateinit var viewModel: RingoMeetTheToolsViewModel
+    private lateinit var viewModel: RingoIntroductionViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.ringo_meet_the_tools_fragment, container, false)
+        return inflater.inflate(R.layout.ringo_introduction_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(RingoMeetTheToolsViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(RingoIntroductionViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

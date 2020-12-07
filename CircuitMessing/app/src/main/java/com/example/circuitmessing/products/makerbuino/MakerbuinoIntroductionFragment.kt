@@ -1,4 +1,4 @@
-package com.example.circuitmessing.products.ringo
+package com.example.circuitmessing.products.makerbuino
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,28 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class Ringo_time_to_get_makin_fragment : Fragment() {
+class MakerbuinoIntroductionFragment : Fragment() {
 
     companion object {
-        fun newInstance() = Ringo_time_to_get_makin_fragment()
+        fun newInstance() = MakerbuinoIntroductionFragment()
     }
 
-    private lateinit var viewModel: RingoTimeToGetMakinFragmentViewModel
+    private lateinit var viewModel: MakerbuinoIntroductionViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(
-            R.layout.ringo_time_to_get_makin_fragment,
-            container,
-            false
-        )
+        return inflater.inflate(R.layout.makerbuino_introduction_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(RingoTimeToGetMakinFragmentViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(MakerbuinoIntroductionViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

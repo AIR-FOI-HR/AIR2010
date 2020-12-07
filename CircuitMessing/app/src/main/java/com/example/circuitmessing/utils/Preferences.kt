@@ -20,5 +20,4 @@ class Preferences(context: Context) {
     var username: String
         get() = prefs.getString("username", "noName").toString()
         set(value) = prefs.edit().putString("username", value).apply()
-
 }

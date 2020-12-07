@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
         val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
         fragmentTransaction.replace(
             R.id.login_and_register_fragment,
-            fragment_login()
+            FragmentLogin()
         )
         fragmentTransaction.commit()
 
@@ -65,8 +65,8 @@ class LoginActivity : AppCompatActivity() {
         val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
         fragmentTransaction.replace(
             R.id.login_and_register_fragment,
-            fragment_register()
-        )
+            FragmentRegister()
+        ).addToBackStack(null)
         fragmentTransaction.commit()
     }
 
@@ -74,8 +74,8 @@ class LoginActivity : AppCompatActivity() {
         val fragmentTransaction : FragmentTransaction = mFragmentManager.beginTransaction()
         fragmentTransaction.replace(
             R.id.login_and_register_fragment,
-            fragment_login()
-        )
+            FragmentLogin()
+        ).addToBackStack(null)
         fragmentTransaction.commit()
     }
 }
