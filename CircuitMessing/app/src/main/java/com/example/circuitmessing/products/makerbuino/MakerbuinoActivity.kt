@@ -15,6 +15,7 @@ import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
 import com.example.circuitmessing.products.ProgressManager.Companion.updatePageDone
+import com.example.circuitmessing.products.quiz.QuizActivity
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_ringo.*
 
@@ -57,7 +58,12 @@ class MakerbuinoActivity : AppCompatActivity() {
                     replaceFragment(R.id.maker_buino_fragment, MakerbuinoFinishingUpFragment())
                 }
                 R.id.nav_quiz -> {
-
+                    val intent = Intent(this, QuizActivity::class.java)
+                    var product : Bundle = Bundle()
+                    product.putString("product", "makerbuino"); //Your id
+                    intent.putExtras(product) //Put your id to your next Intent
+                    startActivity(intent)
+                    finish()
                 }
             }
 

@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:scrollbars="none">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="25dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:text="Quiz"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/question_text"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/round_corners"
             android:backgroundTint="@color/colorPrimaryDark"
@@ -25,11 +34,7 @@
             android:padding="25dp"
             android:text="Quiz question?"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/answer1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/answer1"
@@ -39,10 +44,7 @@
             android:textAllCaps="false"
             android:gravity="center_vertical"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/round_corners"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/answer2"/>
+            android:background="@drawable/round_corners"/>
 
         <Button
             android:id="@+id/answer2"
@@ -52,10 +54,7 @@
             android:textAllCaps="false"
             android:gravity="center_vertical"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/round_corners"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/answer3"/>
+            android:background="@drawable/round_corners"/>
 
         <Button
             android:id="@+id/answer3"
@@ -65,13 +64,7 @@
             android:textAllCaps="false"
             android:gravity="center_vertical"
             android:layout_marginBottom="50dp"
-            android:background="@drawable/round_corners"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:background="@drawable/round_corners"/>
+    </LinearLayout>
 
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</FrameLayout>
+</ScrollView>
