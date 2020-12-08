@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class Nibble_time_to_get_makin : Fragment() {
+class NibbleMeeetTheToolsFragment : Fragment() {
 
     companion object {
-        fun newInstance() = Nibble_time_to_get_makin()
+        fun newInstance() = NibbleMeeetTheToolsFragment()
     }
 
-    private lateinit var viewModel: NibbleTimeToGetMakinViewModel
+    private lateinit var viewModel: NibbleMeetTheToolsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.nibble_time_to_get_makin_fragment, container, false)
+        return inflater.inflate(R.layout.nibble_meet_the_tools_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(NibbleTimeToGetMakinViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(NibbleMeetTheToolsViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

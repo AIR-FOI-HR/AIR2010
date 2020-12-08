@@ -3,11 +3,9 @@ package com.example.circuitmessing.products.nibble
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
-import androidx.core.view.children
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -15,24 +13,12 @@ import androidx.fragment.app.FragmentTransaction
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
-import com.example.circuitmessing.products.makerbuino.Makerbuino_introduction
-import com.example.circuitmessing.products.makerbuino.Makerbuino_meet_the_tools
-import com.example.circuitmessing.products.makerbuino.Makerbuino_time_to_get_makin
-import com.example.circuitmessing.products.ringo.RingoFinishingUpFragment
-import com.example.circuitmessing.products.ringo.Ringo_time_to_get_makin_fragment
-import com.example.circuitmessing.products.ringo.Ringo_introduction
+import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
+import com.example.circuitmessing.products.ProgressManager.Companion.updatePageDone
 import com.google.android.material.navigation.NavigationView
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_ringo.*
-import kotlinx.android.synthetic.main.nibble_time_to_get_makin_fragment.*
 
 class ActivityNibble : AppCompatActivity() {
-    private lateinit var database: DatabaseReference
     private var mFragmentManager: FragmentManager = supportFragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +26,6 @@ class ActivityNibble : AppCompatActivity() {
         setContentView(R.layout.activity_nibble)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-        database = Firebase.database.reference
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
@@ -59,13 +44,13 @@ class ActivityNibble : AppCompatActivity() {
                     returnHome()
                 }
                 R.id.nav_introduction -> {
-                    replaceFragment(R.id.nibble_fragment, Nibble_introduction_fragment())
+                    replaceFragment(R.id.nibble_fragment, NibbleIntroductionFragment())
                 }
                 R.id.nav_meet_tools -> {
-                    replaceFragment(R.id.nibble_fragment, Nibble_meet_the_tools())
+                    replaceFragment(R.id.nibble_fragment, NibbleMeeetTheToolsFragment())
                 }
                 R.id.nav_time_makin -> {
-                    replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
+                    replaceFragment(R.id.nibble_fragment, NibbleTimeToGetMakinFragment())
                 }
                 R.id.nav_summed_up -> {
                     replaceFragment(R.id.nibble_fragment, NibbleFinishingUpFragment())
@@ -93,7 +78,7 @@ class ActivityNibble : AppCompatActivity() {
         checkDonePages(productName = "nibble", pageName = "makin", item3)
         checkDonePages(productName = "nibble", pageName = "summed", item4)
 
-        replaceFragment(R.id.nibble_fragment, Nibble_introduction_fragment())
+        replaceFragment(R.id.nibble_fragment, NibbleIntroductionFragment())
 
         // Update database when specific page is done
         rightArrow?.setOnClickListener {
@@ -101,13 +86,13 @@ class ActivityNibble : AppCompatActivity() {
                 navView.menu.getItem(1).isChecked -> {
                     val item = navView.menu.getItem(1)
                     updatePageDone(productName = "nibble", pageName = "intro", item)
-                    replaceFragment(R.id.nibble_fragment, Nibble_meet_the_tools())
+                    replaceFragment(R.id.nibble_fragment, NibbleMeeetTheToolsFragment())
                     navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(2).isChecked -> {
                     val item = navView.menu.getItem(2)
                     updatePageDone(productName = "nibble", pageName = "tools", item)
-                    replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
+                    replaceFragment(R.id.nibble_fragment, NibbleTimeToGetMakinFragment())
                     navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
@@ -133,19 +118,19 @@ class ActivityNibble : AppCompatActivity() {
                 navView.menu.getItem(2).isChecked -> {
                     val item = navView.menu.getItem(1)
                     updatePageDone(productName = "nibble", pageName = "tools", item)
-                    replaceFragment(R.id.nibble_fragment, Nibble_introduction_fragment())
+                    replaceFragment(R.id.nibble_fragment, NibbleIntroductionFragment())
                     navView.menu.getItem(1).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(2)
                     updatePageDone(productName = "nibble", pageName = "makin", item)
-                    replaceFragment(R.id.nibble_fragment, Nibble_meet_the_tools())
+                    replaceFragment(R.id.nibble_fragment, NibbleMeeetTheToolsFragment())
                     navView.menu.getItem(2).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "nibble", pageName = "summed", item)
-                    replaceFragment(R.id.nibble_fragment, Nibble_time_to_get_makin())
+                    replaceFragment(R.id.nibble_fragment, NibbleTimeToGetMakinFragment())
                     navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(5).isChecked -> {
@@ -164,49 +149,6 @@ class ActivityNibble : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
-    }
-
-    private fun updatePageDone(productName: String, pageName: String, item: MenuItem) {
-        var finishedPage: Boolean = false
-        val pageRef = database.child(productName).child(pageName)
-        val valueEventListener = object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                for (ds in dataSnapshot.children) {
-                    val dbUsername = ds.key
-                    if (dbUsername == preferences.username) {
-                        finishedPage = true
-                    }
-                }
-                if (!finishedPage) {
-                    // Page completed
-                    database.child(productName).child(pageName).child(preferences.username)
-                        .setValue(true)
-                    item.setIcon(R.drawable.ic_baseline_check_24)
-                }
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-                // Here goes error message
-            }
-        }
-        pageRef.addListenerForSingleValueEvent(valueEventListener)
-    }
-
-    private fun checkDonePages(productName: String, pageName: String, item: MenuItem) {
-        val pageRef = database.child(productName).child(pageName)
-        val valueEventListener = object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                for (ds in dataSnapshot.children) {
-                    if (ds.key == preferences.username && ds.value == true) {
-                        item.setIcon(R.drawable.ic_baseline_check_24)
-                    }
-                }
-            }
-            override fun onCancelled(databaseError: DatabaseError) {
-                // Here goes error message
-            }
-        }
-        pageRef.addListenerForSingleValueEvent(valueEventListener)
     }
 
     private fun replaceFragment(fragmentId: Int,fragment: Fragment) {

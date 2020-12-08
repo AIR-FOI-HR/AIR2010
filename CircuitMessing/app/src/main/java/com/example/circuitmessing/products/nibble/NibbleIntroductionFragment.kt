@@ -1,4 +1,4 @@
-package com.example.circuitmessing.products.makerbuino
+package com.example.circuitmessing.products.nibble
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class Makerbuino_meet_the_tools : Fragment() {
+class NibbleIntroductionFragment : Fragment() {
 
     companion object {
-        fun newInstance() = Makerbuino_meet_the_tools()
+        fun newInstance() = NibbleIntroductionFragment()
     }
 
-    private lateinit var viewModel: MakerbuinoMeetTheToolsViewModel
+    private lateinit var viewModel: NibbleIntroductionFragmentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.makerbuino_meet_the_tools_fragment, container, false)
+        return inflater.inflate(R.layout.nibble_introduction_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MakerbuinoMeetTheToolsViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(NibbleIntroductionFragmentViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
