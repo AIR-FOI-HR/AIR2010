@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.circuitmessing" >
+    package="com.example.circuitmessing">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
@@ -11,31 +11,36 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".products.makerbuino.MakerbuinoActivity"
+        android:theme="@style/AppTheme">
+        <activity android:name=".products.quiz.QuizActivity"
+            android:label="Quiz"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".products.makerbuino.MakerbuinoActivity"
             android:label="Makerbuino"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".products.nibble.ActivityNibble"
+        <activity
+            android:name=".products.nibble.ActivityNibble"
             android:label="Nibble"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".products.ringo.ActivityRingo"
+        <activity
+            android:name=".products.ringo.ActivityRingo"
             android:label="Ringo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.auth.LoginActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
