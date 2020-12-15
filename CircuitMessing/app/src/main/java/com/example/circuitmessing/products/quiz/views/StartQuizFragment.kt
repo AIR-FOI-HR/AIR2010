@@ -1,4 +1,4 @@
-package com.example.circuitmessing.products.quiz
+package com.example.circuitmessing.products.quiz.views
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,25 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.circuitmessing.R
 
-class ActivityQuiz : Fragment() {
+class StartQuizFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ActivityQuiz()
+        fun newInstance() =
+            StartQuizFragment()
     }
 
-    private lateinit var viewModel: ActivityQuizViewModel
+    private lateinit var viewModel: StartQuizViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.activity_quiz_fragment, container, false)
+        return inflater.inflate(R.layout.start_quiz_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ActivityQuizViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(StartQuizViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
