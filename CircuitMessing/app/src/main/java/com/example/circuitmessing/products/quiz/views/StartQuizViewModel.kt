@@ -1,4 +1,4 @@
-package com.example.circuitmessing.products.quiz
+package com.example.circuitmessing.products.quiz.views
 
 import androidx.lifecycle.ViewModel
 
