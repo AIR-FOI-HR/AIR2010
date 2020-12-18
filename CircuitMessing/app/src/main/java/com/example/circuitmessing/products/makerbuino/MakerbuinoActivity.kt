@@ -14,6 +14,7 @@ import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
+import com.example.circuitmessing.products.ProgressManager.Companion.giveUserTitle
 import com.example.circuitmessing.products.ProgressManager.Companion.updatePageDone
 import com.example.circuitmessing.products.quiz.QuizActivity
 import com.google.android.material.navigation.NavigationView
@@ -99,18 +100,21 @@ class MakerbuinoActivity : AppCompatActivity() {
                 navView.menu.getItem(2).isChecked -> {
                     val item = navView.menu.getItem(2)
                     updatePageDone(productName = "makerbuino", pageName = "tools", item)
+                    giveUserTitle(username = preferences.username, titleName = "makerbuinoNovice")
                     replaceFragment(R.id.maker_buino_fragment, MakerbuinoTimeToGetMakinFragment())
                     navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "makerbuino", pageName = "makin", item)
+                    giveUserTitle(username = preferences.username, titleName = "makerbuinoArhitect")
                     replaceFragment(R.id.maker_buino_fragment, MakerbuinoFinishingUpFragment())
                     navView.menu.getItem(4).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
                     val item = navView.menu.getItem(4)
                     updatePageDone(productName = "makerbuino", pageName = "summed", item)
+                    giveUserTitle(username = preferences.username, titleName = "makerbuinoMaster")
                 }
                 navView.menu.getItem(5).isChecked -> {
                     // quiz

@@ -14,6 +14,7 @@ import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
+import com.example.circuitmessing.products.ProgressManager.Companion.giveUserTitle
 import com.example.circuitmessing.products.ProgressManager.Companion.updatePageDone
 import com.example.circuitmessing.products.quiz.QuizActivity
 import com.google.android.material.navigation.NavigationView
@@ -98,18 +99,21 @@ class ActivityNibble : AppCompatActivity() {
                 navView.menu.getItem(2).isChecked -> {
                     val item = navView.menu.getItem(2)
                     updatePageDone(productName = "nibble", pageName = "tools", item)
+                    giveUserTitle(username = preferences.username, titleName = "nibbleNovice")
                     replaceFragment(R.id.nibble_fragment, NibbleTimeToGetMakinFragment())
                     navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "nibble", pageName = "makin", item)
+                    giveUserTitle(username = preferences.username, titleName = "nibbleArhitect")
                     replaceFragment(R.id.nibble_fragment, NibbleFinishingUpFragment())
                     navView.menu.getItem(4).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
                     val item = navView.menu.getItem(4)
                     updatePageDone(productName = "nibble", pageName = "summed", item)
+                    giveUserTitle(username = preferences.username, titleName = "nibbleMaster")
                 }
                 navView.menu.getItem(4).isChecked -> {
                     // quiz

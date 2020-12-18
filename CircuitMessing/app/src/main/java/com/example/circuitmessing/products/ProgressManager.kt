@@ -57,6 +57,30 @@ class ProgressManager {
             }
             pageRef.addListenerForSingleValueEvent(valueEventListener)
         }
+
+        fun giveUserTitle(username: String, titleName: String){
+            var finishedPage: Boolean = false
+            val pageRef = database.child("titles").child(titleName)
+            val valueEventListener = object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    for (ds in dataSnapshot.children) {
+                        val dbUsername = ds.key
+                        if (dbUsername == preferences.username) {
+                            finishedPage = true
+                        }
+                    }
+                    if (!finishedPage) {
+                        // Page completed
+                        pageRef.child(username).setValue(true)
+                    }
+                }
+
+                override fun onCancelled(databaseError: DatabaseError) {
+                    // Here goes error message
+                }
+            }
+            pageRef.addListenerForSingleValueEvent(valueEventListener)
+        }
     }
 
 }

@@ -15,6 +15,7 @@ import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
+import com.example.circuitmessing.products.ProgressManager.Companion.giveUserTitle
 import com.example.circuitmessing.products.ProgressManager.Companion.updatePageDone
 import com.example.circuitmessing.products.quiz.QuizActivity
 import com.google.android.material.navigation.NavigationView
@@ -104,18 +105,21 @@ class ActivityRingo : AppCompatActivity() {
                 navView.menu.getItem(2).isChecked -> {
                     val item = navView.menu.getItem(2)
                     updatePageDone(productName = "ringo", pageName = "tools", item)
+                    giveUserTitle(username = preferences.username, titleName = "ringoNovice")
                     replaceFragment(R.id.ringo_fragment, RingoTimeToGetMakinFragmentFragment())
                     navView.menu.getItem(3).isChecked = true;
                 }
                 navView.menu.getItem(3).isChecked -> {
                     val item = navView.menu.getItem(3)
                     updatePageDone(productName = "ringo", pageName = "makin", item)
+                    giveUserTitle(username = preferences.username, titleName = "ringoArhitect")
                     replaceFragment(R.id.ringo_fragment, RingoFinishingUpFragment())
                     navView.menu.getItem(4).isChecked = true;
                 }
                 navView.menu.getItem(4).isChecked -> {
                     val item = navView.menu.getItem(4)
                     updatePageDone(productName = "ringo", pageName = "summed", item)
+                    giveUserTitle(username = preferences.username, titleName = "ringoMaster")
                 }
                 navView.menu.getItem(5).isChecked -> {
                     // quiz
