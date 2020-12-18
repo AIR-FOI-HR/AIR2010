@@ -1,12 +1,11 @@
 package com.example.circuitmessing.products
 
+import android.util.Log
 import android.view.MenuItem
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.R
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ValueEventListener
+import com.example.circuitmessing.ui.classes.User
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -30,6 +29,7 @@ class ProgressManager {
                         // Page completed
                         database.child(productName).child(pageName).child(preferences.username)
                             .setValue(true)
+                        database.child("users").child(preferences.username).child("points").setValue(ServerValue.increment(100))
                         item.setIcon(R.drawable.ic_baseline_check_24)
                     }
                 }
