@@ -3,6 +3,7 @@ package com.escaper.escaper.utils
 import android.content.Context
 import android.content.SharedPreferences
 import com.example.circuitmessing.R
+import com.example.core.IQuestion
 
 class Preferences(context: Context) {
     private val prefsName: String = context.getString(R.string.prefs)

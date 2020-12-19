@@ -66,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
         fragmentTransaction.replace(
             R.id.login_and_register_fragment,
             FragmentRegister()
-        ).addToBackStack(null)
+        )
         fragmentTransaction.commit()
     }
 
@@ -75,7 +75,7 @@ class LoginActivity : AppCompatActivity() {
         fragmentTransaction.replace(
             R.id.login_and_register_fragment,
             FragmentLogin()
-        ).addToBackStack(null)
+        )
         fragmentTransaction.commit()
     }
 }
