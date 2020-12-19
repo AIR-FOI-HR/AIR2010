@@ -38,8 +38,8 @@
 
         <ImageView
             android:id="@+id/fireworks"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:adjustViewBounds="true"
             android:src="@drawable/fireworks"
             android:layout_marginTop="25dp"
@@ -68,7 +68,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="22dp"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/score_text" />
@@ -87,7 +87,6 @@
             app:layout_constraintTop_toBottomOf="@+id/achieved_score" />
 
 
-
         <TextView
             android:id="@+id/achieved_titles"
             android:layout_width="wrap_content"
@@ -96,7 +95,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="22dp"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titles_text" />
@@ -104,23 +103,17 @@
         <Button
             android:id="@+id/end_quiz"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/round_corners"
             android:gravity="center"
             android:text="Continue"
-            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textSize="22dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/achieved_titles" />
 
-        <View
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            app:layout_constraintBottom_toTopOf="@+id/titles_text"
-            app:layout_constraintTop_toBottomOf="@+id/achieved_score"
-            tools:layout_editor_absoluteX="25dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
