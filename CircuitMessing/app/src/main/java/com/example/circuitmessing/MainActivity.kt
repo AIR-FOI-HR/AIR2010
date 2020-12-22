@@ -17,6 +17,8 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.FragmentManager
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.databinding.NavHeaderRingoBinding
+import com.example.circuitmessing.products.ProgressManager
+import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
 import com.example.circuitmessing.ui.auth.LoginActivity
 
 
@@ -55,6 +57,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
+                R.id.nav_titles -> {
+                    val intent = Intent(this, TitleScreen::class.java)
+                    startActivity(intent)
+                    finish()
+                }
 
                 // All other cases for drawer items will go here also
             }
@@ -65,6 +72,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        getAllTitles()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
