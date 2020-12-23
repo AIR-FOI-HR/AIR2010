@@ -2,6 +2,7 @@ package com.example.circuitmessing
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.View
 import android.widget.TextView
@@ -19,7 +20,12 @@ import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.databinding.NavHeaderRingoBinding
 import com.example.circuitmessing.products.ProgressManager
 import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
+import com.example.circuitmessing.products.quiz.classes.Quiz
 import com.example.circuitmessing.ui.auth.LoginActivity
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import java.lang.Exception
 
 
 class MainActivity : AppCompatActivity() {
@@ -73,6 +79,29 @@ class MainActivity : AppCompatActivity() {
         }
 
         getAllTitles()
+        // FETCH ALL QUESTIONS. Needs to be like this to call suspended function
+        Log.d("TAG:", "Fetching questions starting")
+        GlobalScope.launch {
+            Log.d("TAG:", "Fetching questions started")
+            GetAllQuestions()
+        }
+    }
+
+    companion object {
+        // Question objects for all products. Each has a list of questions that need fetching
+        var ringoQuiz = Quiz("Ringo")
+        var nibbleQuiz = Quiz("Nibble")
+        var makerbuinoQuiz = Quiz("Makerbuino")
+
+        // Function for fetching all questions. Calls FetchQuestions method that gets all the questions from database
+        suspend fun GetAllQuestions() {
+            ringoQuiz.FetchQuestions()
+            nibbleQuiz.FetchQuestions()
+            makerbuinoQuiz.FetchQuestions()
+
+            // Test log
+            Log.d("QUESTION:", ringoQuiz.Questions[0].QuestionText)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
