@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="20dp">
+        android:layout_marginHorizontal="25dp">
 
 
         <TextView
@@ -25,7 +25,7 @@
             android:padding="25dp"
             android:text="Quiz question?"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="24dp" />
 
         <CheckBox
             android:id="@+id/answer1"
@@ -55,13 +55,15 @@
             android:id="@+id/confirm_choice_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Confirm"
-            android:textSize="18dp"
-            android:textAllCaps="false"
-            android:gravity="center"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/round_corners"/>
+            android:textColor="#FFFFFF"
+            android:background="@drawable/round_corners"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textSize="18dp" />
 
 
     </LinearLayout>
