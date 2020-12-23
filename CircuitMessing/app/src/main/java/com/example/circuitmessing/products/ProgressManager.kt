@@ -8,11 +8,38 @@ import com.example.circuitmessing.ui.classes.User
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import kotlin.math.log
 
 class ProgressManager {
 
     companion object {
         private val database = Firebase.database.reference
+
+        public var titles: MutableList<String> = arrayListOf()
+
+        fun getAllTitles() {
+            titles.clear()
+            val pageRef = database.child("titles")
+            val valueEventListener = object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    for (title in dataSnapshot.children) {
+                        //Log.d("TITLE: ", titles.toString())
+                        for (user in title.children) {
+                            //Log.d("USER: ", users.toString())
+                            if (user.key == preferences.username && user.value == true){
+                                //Log.d("ADDED TITLE: ", titles.key.toString())
+                                titles.add(title.key.toString())
+                            }
+                        }
+                    }
+                    //Log.d("ALL TITLES: ", Titles.toString())
+                }
+                override fun onCancelled(databaseError: DatabaseError) {
+                    // Here goes error message
+                }
+            }
+            pageRef.addListenerForSingleValueEvent(valueEventListener)
+        }
 
         fun updatePageDone(productName: String, pageName: String, item: MenuItem) {
             var finishedPage: Boolean = false

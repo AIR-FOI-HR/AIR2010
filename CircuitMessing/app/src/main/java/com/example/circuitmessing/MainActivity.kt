@@ -3,6 +3,7 @@ package com.example.circuitmessing
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.View
 import android.widget.TextView
@@ -22,7 +23,14 @@ import androidx.browser.customtabs.CustomTabsService
 import androidx.fragment.app.FragmentManager
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.databinding.NavHeaderRingoBinding
+import com.example.circuitmessing.products.ProgressManager
+import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
+import com.example.circuitmessing.products.quiz.classes.Quiz
 import com.example.circuitmessing.ui.auth.LoginActivity
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import java.lang.Exception
 
 
 class MainActivity : AppCompatActivity() {
@@ -61,7 +69,12 @@ class MainActivity : AppCompatActivity() {
                     finish()
                 }
                 R.id.nav_forum ->{
-                    customTabsIntent.launchUrl(this, Uri.parse(forumUrl))
+                      customTabsIntent.launchUrl(this, Uri.parse(forumUrl))
+                }
+                R.id.nav_titles -> {
+                    val intent = Intent(this, TitleScreen::class.java)
+                    startActivity(intent)
+                    finish()
                 }
 
                 // All other cases for drawer items will go here also
@@ -73,9 +86,31 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        getAllTitles()
+        // FETCH ALL QUESTIONS. Needs to be like this to call suspended function
+        Log.d("TAG:", "Fetching questions starting")
+        GlobalScope.launch {
+            Log.d("TAG:", "Fetching questions started")
+            GetAllQuestions()
+        }
     }
 
     companion object {
+        // Question objects for all products. Each has a list of questions that need fetching
+        var ringoQuiz = Quiz("Ringo")
+        var nibbleQuiz = Quiz("Nibble")
+        var makerbuinoQuiz = Quiz("Makerbuino")
+
+        // Function for fetching all questions. Calls FetchQuestions method that gets all the questions from database
+        suspend fun GetAllQuestions() {
+            ringoQuiz.FetchQuestions()
+            nibbleQuiz.FetchQuestions()
+            makerbuinoQuiz.FetchQuestions()
+
+            // Test log
+            Log.d("QUESTION:", ringoQuiz.Questions[0].QuestionText)
+        }
+      
         // WebView setup
         private val forumUrl = "https://community.circuitmess.com/"
         private val builder = Builder()

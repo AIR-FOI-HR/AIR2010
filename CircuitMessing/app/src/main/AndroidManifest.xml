@@ -12,9 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".products.quiz.QuizActivity"
+        <activity
+            android:name=".TitleScreen"
+            android:label="Title Screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.quiz.QuizActivity"
             android:label="Quiz"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".products.makerbuino.MakerbuinoActivity"
             android:label="Makerbuino"
