@@ -1,6 +1,7 @@
 package com.example.circuitmessing
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
@@ -14,6 +15,10 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.browser.customtabs.CustomTabsClient
+import androidx.browser.customtabs.CustomTabsIntent
+import androidx.browser.customtabs.CustomTabsIntent.Builder
+import androidx.browser.customtabs.CustomTabsService
 import androidx.fragment.app.FragmentManager
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.databinding.NavHeaderRingoBinding
@@ -55,6 +60,9 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
+                R.id.nav_forum ->{
+                    customTabsIntent.launchUrl(this, Uri.parse(forumUrl))
+                }
 
                 // All other cases for drawer items will go here also
             }
@@ -65,6 +73,13 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+    }
+
+    companion object {
+        // WebView setup
+        private val forumUrl = "https://community.circuitmess.com/"
+        private val builder = Builder()
+        val customTabsIntent: CustomTabsIntent = builder.build()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
