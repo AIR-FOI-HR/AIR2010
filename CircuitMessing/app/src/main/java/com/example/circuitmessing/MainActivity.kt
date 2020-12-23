@@ -18,6 +18,8 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.FragmentManager
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.databinding.NavHeaderRingoBinding
+import com.example.circuitmessing.products.ProgressManager
+import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
 import com.example.circuitmessing.products.quiz.classes.Quiz
 import com.example.circuitmessing.ui.auth.LoginActivity
 import kotlinx.coroutines.GlobalScope
@@ -61,6 +63,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
+                R.id.nav_titles -> {
+                    val intent = Intent(this, TitleScreen::class.java)
+                    startActivity(intent)
+                    finish()
+                }
 
                 // All other cases for drawer items will go here also
             }
@@ -71,6 +78,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        getAllTitles()
         // FETCH ALL QUESTIONS. Needs to be like this to call suspended function
         Log.d("TAG:", "Fetching questions starting")
         GlobalScope.launch {
