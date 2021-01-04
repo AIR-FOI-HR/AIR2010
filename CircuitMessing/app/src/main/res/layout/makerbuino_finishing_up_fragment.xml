@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="If everything electronics-related is working fine, the last step is to put the guts (electronics) in a nice crystal clear acrylic casing so that everyone can see your perfect soldering joints!"
+                android:text="@string/mb1"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -44,7 +44,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Start by assembling the bottom side of the casing, which consists of two pieces of plastic."
+                android:text="@string/mb2"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Next up, place the colored button caps to the yellow pushbuttons by simply snapping them on (you will have to apply some force and that is completely normal)."
+                android:text="@string/mb3"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -76,7 +76,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Continue by mounting the front plate and fixating it with black hexagonal M3 spacers and nuts."
+                android:text="@string/mb4"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -84,7 +84,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Some newer versions of the kit have a hand-strap included."
+                android:text="@string/mb5"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -92,7 +92,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="If your kit has a hand-strap, you can now place it around the bottom right hexagonal M3 spacer."
+                android:text="@string/mb6"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Now look at you, you've managed to make your own working gaming device out of a bag of tiny electronic components."
+                android:text="@string/mb7"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
@@ -117,7 +117,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Well done, you should be proud of yourself!"
+                android:text="@string/mb8"
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
@@ -128,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
-                android:text="That's all folks!"
+                android:text="@string/mb9"
                 android:textColor="#000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
