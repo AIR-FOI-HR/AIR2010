@@ -30,7 +30,7 @@
             android:layout_height="75dp"
             android:background="@drawable/round_corners"
             android:gravity="center"
-            android:text="Start quiz"
+            android:text="@string/start_quiz"
             android:textSize="22dp"
             android:layout_marginTop="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
