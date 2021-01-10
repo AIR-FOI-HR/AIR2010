@@ -1,6 +1,7 @@
 package com.example.circuitmessing
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -22,6 +23,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.products.ProgressManager.Companion.titles
 import com.example.circuitmessing.ui.auth.LoginActivity
+import com.example.circuitmessing.utils.SettingsActivity
 import com.google.android.material.navigation.NavigationView
 
 class TitleScreen : AppCompatActivity() {
@@ -77,8 +79,21 @@ class TitleScreen : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
+                R.id.nav_forum ->{
+                    MainActivity.customTabsIntent.launchUrl(this, Uri.parse(MainActivity.forumUrl))
+                }
                 R.id.nav_titles -> {
                     val intent = Intent(this, TitleScreen::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                R.id.nav_ranking ->{
+                    val intent = Intent(this, RankingScreen::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                R.id.nav_settings ->{
+                    val intent = Intent(this, SettingsActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

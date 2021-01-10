@@ -62,28 +62,10 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_product_drawer">ProductDrawer</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="ringo_title">Welcome to Ringo!</string>
-    <string name="ringo_chapter1">Welcome to the CircuitMess Ringo build guide! In the following 5 chapters, we’ll help you build your own mobile phone out of the components you received in your Ringo kit!</string>
-    <string name="ringo_title2">Recommended age group</string>
-    <string name="ringo_chapter2">We believe that an 11-year-old child should be able to assemble a Ringo with some help from an adult. The estimated age group is 11+. The estimated build time is around 5 hours, but it can vary depending on your skill level.CircuitMess Ringo was designed to bring the basics of STEM (Science, Technology, Engineering, and Mathematics) to beginners in a fun and interesting way.</string>
-    <string name="ringo_title3">What You’ll Learn With the Ringo</string>
-    <string name="ringo_chapter3">Ringo’s main goal is to educate and motivate you to learn something new or brush the skills you already have. In the process of assembly, you’ll learn: how to solder, what are the basic electronic components and what is their function, how can electronic components be connected and why, what are microcontrollers and some basics of digital electronics.</string>
-    <string name="nibble_title">Dobrodošli u Nibble!</string>
-    <string name="nibble_chapter1">U ovom vodiču za izradu saznat ćete kako sami sastaviti igraću konzolu, koristeći samo nekoliko alata u procesu. Bilo da prvi put susrećete uređaj za samostalno korištenje ili ste samostalni veteran, naučit ćete puno!</string>
-    <string name="nibble_title2">Preporučena dobna skupina</string>
-    <string name="nibble_chapter2">Kao što piše na kutiji, trebali biste imati najmanje 9 godina za sastavljanje ove konzole. Imajući to na umu, treba pažljivo pristupiti dijelovima sklopa poput lemljenja i zateznih vijaka - zamolite odraslu osobu da pomogne ako nikada prije niste lemili. Vrijeme montaže ovisi o vašem prethodnom znanju i iskustvu s elektronikom. Za sastavljanje vaše konzole trebat će vam ukupno oko 2 sata.</string>
-    <string name="nibble_title3">Što ćete naučiti s Nibble</string>
-    <string name="nibble_chapter3">Glavni cilj Nibblea je educirati vas i motivirati da naučite nešto novo ili se osvježiti s vještinama koje već imate. Također bi trebao poslužiti kao ulazna točka u elektronici, čineći ga savršenim projektom za započinjanje vaše velike inženjerske karijere. U procesu montaže naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i njihova funkcija, kako se elektroničke komponente mogu povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
-    <string name="makerbuino_title">Dobrodošli u MAKERbuino!</string>
-    <string name="makerbuino_chapter1">Dobrodošli u MAKERbuino vodič za izradu. U ovim poglavljima pomoći ćemo vam da napravite potpuno funkcionalan retro uređaj za igranje od gomile komponenata koje ste dobili u paketu MAKERbuino.</string>
-    <string name="makerbuino_title2">Preporučena dobna skupina</string>
-    <string name="makerbuino_chapter2">Procjenjujemo da bi dijete od 11 godina trebalo biti u mogućnosti sastaviti MAKERbuino uz malo pomoći odrasle osobe. Stoga je procijenjena dobna skupina 11+. Procijenjeno vrijeme izrade: 4 sata 30 minuta. Vrijeme izrade varira i ovisi o vještinama korisnika. MAKERbuino je napravljen sa svrhom dovođenja STEM-a (znanosti, tehnologije, inženjerstva i matematike) među novake elektronike na zabavan i zanimljiv način.</string>
-    <string name="makerbuino_title3">Što ćete naučiti s MAKERbuinom</string>
-    <string name="makerbuino_chapter3">Glavni cilj MAKERbuina je educirati vas i motivirati da naučite nešto novo ili četkati vještine koje već imate. U procesu izrade MAKERbuina naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i koja je njihova funkcija, kako mogu li se elektroničke komponente povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
 
     <!-- activity_settings -->
     <string name="dark_mode">Tamni način</string>
-    <string name="croatian">Hrvatski</string>
+    <string name="language">ENG/HR</string>
 
     <!-- end_quiz_fragment -->
     <string name="congratulation">Čestitamo!</string>
@@ -92,6 +74,14 @@
     <string name="score_achieved">score_achieved</string>
     <string name="titles_achieved">titles_achieved</string>
     <string name="continue_quiz">Nastavak</string>
+
+    <!-- makerbuiono_introduction_fragment -->
+    <string name="makerbuino_title">Dobrodošli u MAKERbuino!</string>
+    <string name="makerbuino_chapter1">Dobrodošli u MAKERbuino vodič za izradu. U ovim poglavljima pomoći ćemo vam da napravite potpuno funkcionalan retro uređaj za igranje od gomile komponenata koje ste dobili u paketu MAKERbuino.</string>
+    <string name="makerbuino_title2">Preporučena dobna skupina</string>
+    <string name="makerbuino_chapter2">Procjenjujemo da bi dijete od 11 godina trebalo biti u mogućnosti sastaviti MAKERbuino uz malo pomoći odrasle osobe. Stoga je procijenjena dobna skupina 11+. Procijenjeno vrijeme izrade: 4 sata 30 minuta. Vrijeme izrade varira i ovisi o vještinama korisnika. MAKERbuino je napravljen sa svrhom dovođenja STEM-a (znanosti, tehnologije, inženjerstva i matematike) među novake elektronike na zabavan i zanimljiv način.</string>
+    <string name="makerbuino_title3">Što ćete naučiti s MAKERbuinom</string>
+    <string name="makerbuino_chapter3">Glavni cilj MAKERbuina je educirati vas i motivirati da naučite nešto novo ili četkati vještine koje već imate. U procesu izrade MAKERbuina naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i koja je njihova funkcija, kako mogu li se elektroničke komponente povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
 
     <!-- makerbuiono_finisihing_up_fragment -->
     <string name="mb1">Ako sve što se tiče elektronike radi u redu, zadnji je korak staviti crijeva (elektroniku) u lijepo kristalno čisto akrilno kućište kako bi svi mogli vidjeti vaše savršene lemne spojeve!</string>
@@ -187,6 +177,14 @@
     <string name="mb86">Konačno! Vrijeme je za lemljenje žutih tipki. Važno: pazite da pritisnete tipke skroz dolje na PCB, jer bi se u suprotnom mogli zavojiti, što će uzrokovati njihovo zaglavljivanje kada montirate prednje kućište.</string>
     <string name="mb87">Napravio si dobar posao. Dobro napravljeno!</string>
 
+    <!-- nibble_introduction_fragment -->
+    <string name="nibble_title">Dobrodošli u Nibble!</string>
+    <string name="nibble_chapter1">U ovom vodiču za izradu saznat ćete kako sami sastaviti igraću konzolu, koristeći samo nekoliko alata u procesu. Bilo da prvi put susrećete uređaj za samostalno korištenje ili ste samostalni veteran, naučit ćete puno!</string>
+    <string name="nibble_title2">Preporučena dobna skupina</string>
+    <string name="nibble_chapter2">Kao što piše na kutiji, trebali biste imati najmanje 9 godina za sastavljanje ove konzole. Imajući to na umu, treba pažljivo pristupiti dijelovima sklopa poput lemljenja i zateznih vijaka - zamolite odraslu osobu da pomogne ako nikada prije niste lemili. Vrijeme montaže ovisi o vašem prethodnom znanju i iskustvu s elektronikom. Za sastavljanje vaše konzole trebat će vam ukupno oko 2 sata.</string>
+    <string name="nibble_title3">Što ćete naučiti s Nibble</string>
+    <string name="nibble_chapter3">Glavni cilj Nibblea je educirati vas i motivirati da naučite nešto novo ili se osvježiti s vještinama koje već imate. Također bi trebao poslužiti kao ulazna točka u elektronici, čineći ga savršenim projektom za započinjanje vaše velike inženjerske karijere. U procesu montaže naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i njihova funkcija, kako se elektroničke komponente mogu povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
+
     <!-- nibble_finishing_up_fragment -->
     <string name="n1">Nibble</string>
     <string name="n2">Postoji nekoliko dodatnih stvari koje morate pripaziti tijekom upotrebe konzole.</string>
@@ -261,6 +259,13 @@
     <!-- start_quiz_fragment -->
     <string name="start_quiz">Započni kviz</string>
 
+    <!-- ringo_introduction_fragment -->
+    <string name="ringo_title">Dobrodošli u Ringo!</string>
+    <string name="ringo_chapter1">Dobrodošli u vodič za izradu CircuitMess Ringo! U sljedećih 5 poglavlja pomoći ćemo vam da napravite vlastiti mobitel od komponenata koje ste dobili u svom Ringo kompletu!</string>
+    <string name="ringo_title2">Preporučena dobna skupina</string>
+    <string name="ringo_chapter2">Vjerujemo da bi dijete od 11 godina trebalo biti u mogućnosti sastaviti Ringo uz pomoć odrasle osobe. Procijenjena dobna skupina je 11+. Procijenjeno vrijeme izrade je oko 5 sati, ali može se razlikovati ovisno o vašoj razini vještine. CircuitMess Ringo dizajniran je da početnike na zabavan i zanimljiv način upozna s osnovama STEM-a (znanosti, tehnologije, inženjerstva i matematike).</string>
+    <string name="ringo_title3">Što ćete naučiti s Ringom</string>
+    <string name="ringo_chapter3">Glavni cilj Ringa je educirati vas i motivirati da naučite nešto novo ili četkati vještine koje već imate. U procesu montaže naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i koja je njihova funkcija, kako se elektroničke komponente mogu povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
     <!-- ringo_finishing_up_fragment -->
     <string name="r1">Sažetak</string>
     <string name="r2">Na početku, ako ste dobili SIM karticu sa svojim CircuitMess Ringo kompletom, izvadite je i otrgnite je na drugoj najmanjoj veličini (micro SIM).</string>

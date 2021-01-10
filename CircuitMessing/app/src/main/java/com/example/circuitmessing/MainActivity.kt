@@ -27,6 +27,7 @@ import com.example.circuitmessing.products.ProgressManager
 import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
 import com.example.circuitmessing.products.quiz.classes.Quiz
 import com.example.circuitmessing.ui.auth.LoginActivity
+import com.example.circuitmessing.utils.SettingsActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -76,6 +77,16 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
+                R.id.nav_ranking ->{
+                    val intent = Intent(this, RankingScreen::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                R.id.nav_settings ->{
+                    val intent = Intent(this, SettingsActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
 
                 // All other cases for drawer items will go here also
             }
@@ -112,8 +123,8 @@ class MainActivity : AppCompatActivity() {
         }
       
         // WebView setup
-        private val forumUrl = "https://community.circuitmess.com/"
-        private val builder = Builder()
+        val forumUrl = "https://community.circuitmess.com/"
+        val builder = Builder()
         val customTabsIntent: CustomTabsIntent = builder.build()
     }
 

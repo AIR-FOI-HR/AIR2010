@@ -84,7 +84,7 @@
 
     <!-- activity_settings -->
     <string name="dark_mode">Dark mode</string>
-    <string name="croatian">Croatian</string>
+    <string name="language">ENG/HR</string>
 
     <!-- end_quiz_fragment -->
     <string name="congratulation">Congratulation!</string>
