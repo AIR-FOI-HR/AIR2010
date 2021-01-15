@@ -12,8 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RankingScreen"></activity>
-        <activity android:name=".utils.SettingsActivity" />
+        <activity
+            android:name=".RankingScreen"
+            android:label="Ranking Screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utils.SettingsActivity"
+            android:label="Settings Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TitleScreen"
             android:label="Title Screen"
