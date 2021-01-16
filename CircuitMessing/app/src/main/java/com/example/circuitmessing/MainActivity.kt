@@ -25,6 +25,7 @@ import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.databinding.NavHeaderRingoBinding
 import com.example.circuitmessing.products.ProgressManager
 import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
+import com.example.circuitmessing.products.ProgressManager.Companion.getRanking
 import com.example.circuitmessing.products.quiz.classes.Quiz
 import com.example.circuitmessing.ui.auth.LoginActivity
 import com.example.circuitmessing.utils.SettingsActivity
@@ -98,6 +99,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         getAllTitles()
+        getRanking()
         // FETCH ALL QUESTIONS. Needs to be like this to call suspended function
         Log.d("TAG:", "Fetching questions starting")
         GlobalScope.launch {
