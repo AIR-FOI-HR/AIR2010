@@ -112,14 +112,17 @@ class MainActivity : AppCompatActivity() {
         var nibbleQuiz = Quiz("Nibble")
         var makerbuinoQuiz = Quiz("Makerbuino")
 
+
         // Function for fetching all questions. Calls FetchQuestions method that gets all the questions from database
         suspend fun GetAllQuestions() {
             ringoQuiz.FetchQuestions()
             nibbleQuiz.FetchQuestions()
             makerbuinoQuiz.FetchQuestions()
 
+            //println("MAIN ACTIVITY QUESTION")
+            //ringoQuiz.DisplayQuestion()
             // Test log
-            Log.d("QUESTION:", ringoQuiz.Questions[0].QuestionText)
+            //Log.d("QUESTION:", ringoQuiz.Questions[1].QuestionText)
         }
       
         // WebView setup

@@ -8,21 +8,34 @@ import androidx.fragment.app.FragmentTransaction
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.quiz.views.QuizQuestionFragment
+import com.example.circuitmessing.products.quiz.views.StartQuizFragment
 
 class QuizActivity : AppCompatActivity() {
+
+    lateinit var productName : String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
 
         val product : Bundle? = intent.extras
-        if(product != null)
-            viewManagement(product)
 
-        val transaction : FragmentTransaction = getSupportFragmentManager().beginTransaction()
-        transaction.replace(R.id.quiz_fragment, QuizQuestionFragment())
-        transaction.addToBackStack(null)
-        transaction.commit()
+        if(product != null) {
+            viewManagement(product)
+            val mybundle : Bundle = Bundle()
+            mybundle.putString("productName", productName)
+
+            val transaction : FragmentTransaction = getSupportFragmentManager().beginTransaction()
+            val myFrag = StartQuizFragment()
+            myFrag.arguments = mybundle
+            transaction.replace(R.id.quiz_fragment, myFrag)
+            transaction.addToBackStack(null)
+            transaction.commit()
+
+        }
+
+
 
 
     }
@@ -34,6 +47,7 @@ class QuizActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
 
     private fun viewManagement(product: Bundle)
     {
@@ -52,17 +66,21 @@ class QuizActivity : AppCompatActivity() {
     {
         toolbar.setBackgroundColor(getColor(R.color.colorAccent))
         toolbar.title = "Makerbuino"
+        productName = "Makerbuino"
+
     }
 
     private fun nibbleViewManagement(toolbar: Toolbar)
     {
         toolbar.setBackgroundColor(getColor(R.color.colorPrimary))
         toolbar.title = "Nibble"
+        productName = "Nibble"
     }
 
     private fun ringoViewManagement(toolbar: Toolbar)
     {
         toolbar.setBackgroundColor(getColor(R.color.colorPrimaryDark))
         toolbar.title = "Ringo"
+        productName = "Ringo"
     }
 }

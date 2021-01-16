@@ -12,8 +12,12 @@ public class MultipleQuestion(
 
     override var QuestionFragment: Fragment = createFragment()
 
+    lateinit var myFrag : Fragment
+
     fun createFragment(): Fragment{
-        TODO()
+        myFrag = MultipleChoiceQuestionFragment(QuestionText, Answers, CorrectAnswers)
+
+        return myFrag
     }
 
     override fun checkAnswers(answer: String): Boolean {

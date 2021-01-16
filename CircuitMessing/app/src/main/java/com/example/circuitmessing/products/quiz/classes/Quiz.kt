@@ -1,6 +1,8 @@
 package com.example.circuitmessing.products.quiz.classes
 
 import android.util.Log
+import androidx.fragment.app.Fragment
+import com.example.circuitmessing.products.quiz.views.EndQuizFragment
 import com.example.radioquestion.MultipleQuestion
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -18,13 +20,22 @@ class FValueEventListener(val onDataChange: (DataSnapshot) -> Unit, val onError:
     override fun onCancelled(error: DatabaseError) = onError.invoke(error)
 }
 
-public class Quiz( public var ProductName: String ){
+public class Quiz( public var ProductName: String){
     public var Questions: MutableList<com.example.core.IQuestion> = arrayListOf()
 
-    public fun DisplayQuestion() {
-        // IMPLEMENT LOGIC FOR DISPLAYING QUESTION ATRIBUTES
-        // List of questions is in MutableList Questions above
-        TODO()
+    private var index = -1
+
+    var points = 0
+
+    public fun DisplayQuestion() : Fragment {
+        index++
+        if (index >= Questions.size) {
+            index = -1
+            //TODO point function
+            return EndQuizFragment()
+        } else {
+            return Questions[index].QuestionFragment
+        }
     }
 
     public suspend fun FetchQuestions() {
@@ -47,7 +58,7 @@ public class Quiz( public var ProductName: String ){
         for (ds in dataSnapshot.children) {
             Log.d("TAG0", ds.toString())
             var text: String = ""
-            var answers: MutableList<String> = ArrayList()
+            val answers: MutableList<String> = ArrayList()
             var correct: String = ""
 
             for (child in ds.children) {
@@ -87,7 +98,7 @@ public class Quiz( public var ProductName: String ){
             CreateQuestion(text, answers, listOf(correct))
         }
         //Questions = list
-        //Log.d("TAG QUESTIONS", Questions.toString())
+        Log.d("TAG QUESTIONS", Questions.toString())
     }
 
     suspend fun DatabaseReference.getSnapshotValue(): DataSnapshot {
@@ -103,6 +114,7 @@ public class Quiz( public var ProductName: String ){
 
     private fun CreateQuestion(text: String, answers: List<String>, correctAnswers: List<String>) {
         val question = RadioQuestion(text, answers, false, correctAnswers)
+        //TODO List of question.createFragment then displayQuestion-> return the list and just need to display it in quiz question fragment
         //val question = MultipleQuestion(text, answers, false, correctAnswers)
         Log.d("TAG NEW QUESTION", question.CorrectAnswers[0])
         Questions.add(question)
