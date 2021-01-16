@@ -17,6 +17,37 @@ class ProgressManager {
 
         public var titles: MutableList<String> = arrayListOf()
 
+        public var rankingList: MutableList<User> = arrayListOf()
+
+        fun getRanking() {
+            rankingList.clear()
+            val pageRef = database.child("users")
+            val valueEventListener = object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    for (user in dataSnapshot.children) {
+                        var username: String = ""
+                        var password: String = ""
+                        var points: Int = 0
+                        //Log.d("TAG User: ", user.toString())
+                        for (userParam in user.children) {
+                            //Log.d("TAG UserParam: ", userParam.toString())
+                            if (userParam.key == "password") password = userParam.value.toString()
+                            if (userParam.key == "username") username = userParam.value.toString()
+                            if (userParam.key == "points") points = userParam.value.toString().toInt()
+                        }
+                        rankingList.add(User(username, password, "", points))
+                        Log.d("TAG User: ", username + " " + password + " " + points)
+                    }
+                    rankingList.sortByDescending { it.points }
+                    //Log.d("Users: ", rankingList.toString())
+                }
+                override fun onCancelled(databaseError: DatabaseError) {
+                    // Here goes error message
+                }
+            }
+            pageRef.addListenerForSingleValueEvent(valueEventListener)
+        }
+
         fun getAllTitles() {
             titles.clear()
             val pageRef = database.child("titles")

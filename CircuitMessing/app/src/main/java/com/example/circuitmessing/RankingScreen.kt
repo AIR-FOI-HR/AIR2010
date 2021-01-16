@@ -4,8 +4,10 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.View
+import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
@@ -14,7 +16,9 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.ui.AppBarConfiguration
 import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.products.ProgressManager
 import com.example.circuitmessing.ui.auth.LoginActivity
+import com.example.circuitmessing.utils.RankingAdapter
 import com.example.circuitmessing.utils.SettingsActivity
 import com.google.android.material.navigation.NavigationView
 
@@ -39,6 +43,19 @@ class RankingScreen : AppCompatActivity() {
         val headerView = navView.getHeaderView(0)
         val navUsername = headerView.findViewById<View>(R.id.username) as TextView
         navUsername.text = preferences.username
+
+        val listView: ListView = findViewById(R.id.ranking_list)
+        val listItems = arrayOfNulls<Triple<Int, String, Int>>(ProgressManager.rankingList.size)
+        for (i in 0 until ProgressManager.rankingList.size) {
+            val rank = ProgressManager.rankingList[i]
+            listItems[i] = Triple(i+1, rank.username, rank.points)
+        }
+        for (i in 0 until ProgressManager.rankingList.size) {
+            Log.d("List [$i]", listItems[i].toString())
+        }
+        val adapter = RankingAdapter(this, listItems)
+        listView.adapter = adapter
+        //listView.textAlignment = View.TEXT_ALIGNMENT_CENTER
 
         //appBarConfiguration = AppBarConfiguration(setOf(
         //R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
