@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import com.example.circuitmessing.products.quiz.views.EndQuizFragment
 import com.example.circuitmessing.products.quiz.views.QuizQuestionFragment
+import com.example.radioquestion.MultipleChoiceQuestionFragment
 import com.example.radioquestion.MultipleQuestion
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -57,6 +58,7 @@ public class Quiz(var ProductName: String){
             }
         }
         QuizQuestionFragment.userAnswer.clear()
+        MultipleChoiceQuestionFragment.userAnswer.clear()
     }
 
     suspend fun FetchQuestions() {
@@ -117,8 +119,8 @@ public class Quiz(var ProductName: String){
     }
 
     private fun CreateQuestion(text: String, answers: List<String>, correctAnswers: List<String>) {
-        val question = RadioQuestion(text, answers, correctAnswers)
-        //val question = MultipleQuestion(text, answers, correctAnswers)
+        //val question = RadioQuestion(text, answers, correctAnswers)
+        val question = MultipleQuestion(text, answers, correctAnswers)
         Questions.add(question)
     }
 }

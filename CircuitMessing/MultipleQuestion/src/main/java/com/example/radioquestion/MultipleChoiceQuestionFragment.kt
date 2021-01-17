@@ -14,15 +14,23 @@ import androidx.fragment.app.FragmentTransaction
 class MultipleChoiceQuestionFragment(var QuestionText: String,
                                      var Answers: List<String>) : Fragment() {
 
-    lateinit var userAnswers : MutableList<String>
     private lateinit var viewModel: MultipleChoiceQuestionViewModel
+
+    companion object {
+        var userAnswer : MutableList<String> = arrayListOf()
+        fun setAnswer(answer: String) {
+            userAnswer.add(answer)
+        }
+        fun removeAnswer(answer: String) {
+            userAnswer.remove(answer)
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.multiple_choice_question_fragment, container, false)
-        userAnswers = mutableListOf()
         val question = root.findViewById<TextView>(R.id.question_text)
         question.text = QuestionText
         val answer1 = root.findViewById<CheckBox>(R.id.answer1)
@@ -34,28 +42,28 @@ class MultipleChoiceQuestionFragment(var QuestionText: String,
 
         answer1.setOnClickListener {
             if (answer1.isChecked){
-                userAnswers.add(answer1.text.toString())
+                setAnswer(answer1.text.toString())
             }
             else{
-                userAnswers.remove(answer1.text.toString())
+                removeAnswer(answer1.text.toString())
             }
         }
 
         answer2.setOnClickListener {
             if (answer2.isChecked){
-                userAnswers.add(answer1.text.toString())
+                setAnswer(answer2.text.toString())
             }
             else{
-                userAnswers.remove(answer1.text.toString())
+                removeAnswer(answer2.text.toString())
             }
         }
 
         answer3.setOnClickListener {
             if (answer3.isChecked){
-                userAnswers.add(answer1.text.toString())
+                setAnswer(answer3.text.toString())
             }
             else{
-                userAnswers.remove(answer1.text.toString())
+                removeAnswer(answer3.text.toString())
             }
         }
 
