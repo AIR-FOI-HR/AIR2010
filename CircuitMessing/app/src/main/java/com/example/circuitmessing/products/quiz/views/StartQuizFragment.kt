@@ -6,6 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.replace
+import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 
 class StartQuizFragment : Fragment() {
@@ -21,7 +25,8 @@ class StartQuizFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.start_quiz_fragment, container, false)
+        val root = inflater.inflate(R.layout.start_quiz_fragment, container, false)
+        return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
