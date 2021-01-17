@@ -16,22 +16,16 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.browser.customtabs.CustomTabsClient
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.browser.customtabs.CustomTabsIntent.Builder
-import androidx.browser.customtabs.CustomTabsService
 import androidx.fragment.app.FragmentManager
 import com.escaper.escaper.utils.preferences
-import com.example.circuitmessing.databinding.NavHeaderRingoBinding
-import com.example.circuitmessing.products.ProgressManager
 import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
 import com.example.circuitmessing.products.quiz.classes.Quiz
 import com.example.circuitmessing.ui.auth.LoginActivity
 import com.example.circuitmessing.utils.SettingsActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import java.lang.Exception
 
 
 class MainActivity : AppCompatActivity() {
@@ -99,9 +93,7 @@ class MainActivity : AppCompatActivity() {
 
         getAllTitles()
         // FETCH ALL QUESTIONS. Needs to be like this to call suspended function
-        Log.d("TAG:", "Fetching questions starting")
         GlobalScope.launch {
-            Log.d("TAG:", "Fetching questions started")
             GetAllQuestions()
         }
     }
@@ -115,14 +107,12 @@ class MainActivity : AppCompatActivity() {
 
         // Function for fetching all questions. Calls FetchQuestions method that gets all the questions from database
         suspend fun GetAllQuestions() {
+            ringoQuiz.Questions.clear()
             ringoQuiz.FetchQuestions()
+            nibbleQuiz.Questions.clear()
             nibbleQuiz.FetchQuestions()
+            makerbuinoQuiz.Questions.clear()
             makerbuinoQuiz.FetchQuestions()
-
-            //println("MAIN ACTIVITY QUESTION")
-            //ringoQuiz.DisplayQuestion()
-            // Test log
-            //Log.d("QUESTION:", ringoQuiz.Questions[1].QuestionText)
         }
       
         // WebView setup

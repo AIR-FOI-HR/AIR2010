@@ -13,16 +13,6 @@
         android:layout_marginHorizontal="20dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textColor="#000"
-            android:text="@string/menu_quiz"
-            android:textStyle="bold"
-            android:textSize="34sp"
-            android:layout_gravity="center"/>
-
-        <TextView
             android:id="@+id/question_text"
             android:layout_width="match_parent"
             android:layout_height="225dp"
@@ -32,7 +22,6 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:gravity="center"
             android:padding="25dp"
-            android:text="@string/quiz_question"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
@@ -58,7 +47,6 @@
             android:id="@+id/answer3"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:text="@string/answer_3"
             android:textAllCaps="false"
             android:gravity="center_vertical"
             android:layout_marginBottom="50dp"

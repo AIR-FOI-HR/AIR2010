@@ -3,12 +3,18 @@ package com.example.circuitmessing.products.quiz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
+import com.example.circuitmessing.products.quiz.classes.Quiz
+import com.example.circuitmessing.products.quiz.views.EndQuizFragment
 import com.example.circuitmessing.products.quiz.views.QuizQuestionFragment
 import com.example.circuitmessing.products.quiz.views.StartQuizFragment
+import kotlin.reflect.typeOf
 
 class QuizActivity : AppCompatActivity() {
 
@@ -18,26 +24,46 @@ class QuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-
         val product : Bundle? = intent.extras
 
         if(product != null) {
             viewManagement(product)
-            val mybundle : Bundle = Bundle()
-            mybundle.putString("productName", productName)
 
             val transaction : FragmentTransaction = getSupportFragmentManager().beginTransaction()
             val myFrag = StartQuizFragment()
-            myFrag.arguments = mybundle
+
             transaction.replace(R.id.quiz_fragment, myFrag)
             transaction.addToBackStack(null)
             transaction.commit()
 
+            var confirmButton = findViewById<Button>(R.id.confirm_quiz)
+            confirmButton.setOnClickListener {
+                switchQuestion(product)
+            }
+        }
+    }
+
+    private fun switchQuestion(product: Bundle) {
+        productName = product.getString("product").toString()
+
+        var currentQuiz: Quiz? = null
+        when(productName){
+            "ringo" -> currentQuiz = MainActivity.ringoQuiz
+            "nibble" -> currentQuiz = MainActivity.nibbleQuiz
+            "makerbuino" -> currentQuiz = MainActivity.makerbuinoQuiz
         }
 
+        var questionFrag: Fragment = currentQuiz!!.DisplayQuestion()
 
+        if (currentQuiz.index == -1){
+            var confirmButton = findViewById<Button>(R.id.confirm_quiz)
+            confirmButton.isVisible = false
+        }
 
-
+        val transaction : FragmentTransaction = getSupportFragmentManager().beginTransaction()
+        transaction.replace(R.id.quiz_fragment, questionFrag)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 
     override fun onBackPressed()
@@ -47,7 +73,6 @@ class QuizActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-
 
     private fun viewManagement(product: Bundle)
     {
@@ -62,6 +87,7 @@ class QuizActivity : AppCompatActivity() {
             }
         }
     }
+
     private fun makerbuinoViewManagement(toolbar: Toolbar)
     {
         toolbar.setBackgroundColor(getColor(R.color.colorAccent))

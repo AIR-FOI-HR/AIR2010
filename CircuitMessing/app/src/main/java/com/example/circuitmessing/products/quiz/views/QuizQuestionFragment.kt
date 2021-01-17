@@ -15,15 +15,9 @@ import com.example.circuitmessing.R
 import com.example.circuitmessing.products.quiz.classes.Quiz
 
 class QuizQuestionFragment(var QuestionText: String,
-                           var Answers: List<String>,
-                           var CorrectAnswers: List<String>) : Fragment() {
-
-    /*companion object {
-        fun newInstance() = QuizQuestionFragment(QuestionText =)
-    }*/
+                           var Answers: List<String>) : Fragment() {
 
     lateinit var userAnswer : String
-
     private lateinit var viewModel: QuizQuestionViewModel
 
 
@@ -32,12 +26,6 @@ class QuizQuestionFragment(var QuestionText: String,
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.quiz_question_fragment, container, false)
-
-        //val allQuestions = MainActivity.ringoQuiz.DisplayQuestion()
-
-        val mybundle : Bundle? = arguments
-        val productName = mybundle?.getString("productName")
-
 
         val question = root.findViewById<TextView>(R.id.question_text)
         question.text = QuestionText
@@ -48,62 +36,26 @@ class QuizQuestionFragment(var QuestionText: String,
         val answer3 = root.findViewById<Button>(R.id.answer3)
         answer3.text = Answers[2]
 
-        var myQuiz : Quiz? = null
-        when (productName) {
-            "Ringo" -> myQuiz = MainActivity.ringoQuiz
-            "Nibble" ->myQuiz =  MainActivity.nibbleQuiz
-            "Makerbuino" -> myQuiz = MainActivity.makerbuinoQuiz
-        }
-        var tmpFragment :Fragment? = myQuiz?.DisplayQuestion()
-        if (tmpFragment != null) {
-            tmpFragment.arguments = mybundle
-        }
-
         answer1.setOnClickListener {
-            if (answer1.text == CorrectAnswers[0]) {
-                myQuiz!!.points++
-
-            }
-            val transaction : FragmentTransaction = activity?.getSupportFragmentManager()!!.beginTransaction()
-            if (myQuiz != null) {
-                if (tmpFragment != null) {
-                    transaction.replace(R.id.quiz_fragment, tmpFragment)
-                }
-            }
-            transaction.addToBackStack(null)
-            transaction.commit()
+            userAnswer = answer1.text.toString()
+            answer1.alpha = 0.5F
+            answer2.alpha = 1F
+            answer3.alpha = 1F
         }
-
 
         answer2.setOnClickListener {
-            if (answer2.text == CorrectAnswers[0]) {
-                myQuiz!!.points++
-
-            }
-            val transaction : FragmentTransaction = activity?.getSupportFragmentManager()!!.beginTransaction()
-            if (myQuiz != null) {
-                if (tmpFragment != null) {
-                    transaction.replace(R.id.quiz_fragment, tmpFragment)
-                }
-            }
-            transaction.addToBackStack(null)
-            transaction.commit()
+            userAnswer = answer2.text.toString()
+            answer1.alpha = 1F
+            answer2.alpha = 0.5F
+            answer3.alpha = 1F
         }
+
         answer3.setOnClickListener {
-            if (answer3.text == CorrectAnswers[0]) {
-                myQuiz!!.points++
-
-            }
-            val transaction : FragmentTransaction = activity?.getSupportFragmentManager()!!.beginTransaction()
-            if (myQuiz != null) {
-                if (tmpFragment != null) {
-                    transaction.replace(R.id.quiz_fragment, tmpFragment)
-                }
-            }
-            transaction.addToBackStack(null)
-            transaction.commit()
+            userAnswer = answer3.text.toString()
+            answer1.alpha = 1F
+            answer2.alpha = 1F
+            answer3.alpha = 0.5F
         }
-
 
         return root
     }

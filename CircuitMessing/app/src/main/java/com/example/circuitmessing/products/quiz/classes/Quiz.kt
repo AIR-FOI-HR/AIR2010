@@ -1,5 +1,6 @@
 package com.example.circuitmessing.products.quiz.classes
 
+import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import com.example.circuitmessing.products.quiz.views.EndQuizFragment
@@ -20,25 +21,43 @@ class FValueEventListener(val onDataChange: (DataSnapshot) -> Unit, val onError:
     override fun onCancelled(error: DatabaseError) = onError.invoke(error)
 }
 
-public class Quiz( public var ProductName: String){
+public class Quiz(var ProductName: String){
     public var Questions: MutableList<com.example.core.IQuestion> = arrayListOf()
 
-    private var index = -1
-
+    var index = -1
     var points = 0
 
-    public fun DisplayQuestion() : Fragment {
+    fun DisplayQuestion() : Fragment {
         index++
         if (index >= Questions.size) {
+            calculatePoints()
+            var title: String = "/"
+            if (points > 400){
+                when(ProductName){
+                    "Ringo" -> title = "Ringo Quiz Expert"
+                    "Nibble" -> title = "Nibble Quiz Expert"
+                    "Makerbuino" -> title = "Makerbuino Quiz Expert"
+                }
+            }
+            var endFragment: Fragment = EndQuizFragment(points, title)
+            points = 0
             index = -1
-            //TODO point function
-            return EndQuizFragment()
+            return endFragment
         } else {
             return Questions[index].QuestionFragment
         }
     }
 
-    public suspend fun FetchQuestions() {
+    private fun calculatePoints() {
+        for (question in Questions){
+            var wasAnsweredCorrectly = question.checkAnswers()
+            if (wasAnsweredCorrectly){
+                points += 150
+            }
+        }
+    }
+
+    suspend fun FetchQuestions() {
         val database = Firebase.database.reference
 
         val pageRef: DatabaseReference
@@ -64,13 +83,11 @@ public class Quiz( public var ProductName: String){
             for (child in ds.children) {
                 /* GET QUESTION TEXT */
                 if (child.key.toString() == "text"){
-                    Log.d("TAG1", child.value.toString())
                     text = child.value.toString()
                 }
 
                 /* GET ANSWERS */
                 if (child.key.toString() == "answers"){
-                    Log.d("TAG2", child.value.toString())
                     for (answer in child.children){
                         answers.add(answer.value.toString())
                     }
@@ -78,27 +95,12 @@ public class Quiz( public var ProductName: String){
 
                 /* GET CORRECT ANSWER */
                 if (child.key.toString() == "correct"){
-                    Log.d("TAG3", child.value.toString())
                     correct = child.value.toString()
                 }
             }
 
-            /*
-            val question = object: IQuestion{
-                override var QuestionText: String = text
-                override var Answers: List<String> = answers
-                override var CorrectAnswer: String = correct
-                override var WasAnsweredCorrectly: Boolean = false
-                override fun CheckAnswers(answer: String): Boolean {
-                    return answer == CorrectAnswer
-                }
-            }
-            list.add(question)
-             */
             CreateQuestion(text, answers, listOf(correct))
         }
-        //Questions = list
-        Log.d("TAG QUESTIONS", Questions.toString())
     }
 
     suspend fun DatabaseReference.getSnapshotValue(): DataSnapshot {
@@ -113,10 +115,8 @@ public class Quiz( public var ProductName: String){
     }
 
     private fun CreateQuestion(text: String, answers: List<String>, correctAnswers: List<String>) {
-        val question = RadioQuestion(text, answers, false, correctAnswers)
-        //TODO List of question.createFragment then displayQuestion-> return the list and just need to display it in quiz question fragment
-        //val question = MultipleQuestion(text, answers, false, correctAnswers)
-        Log.d("TAG NEW QUESTION", question.CorrectAnswers[0])
+        val question = RadioQuestion(text, answers, correctAnswers)
+        //val question = MultipleQuestion(text, answers, correctAnswers)
         Questions.add(question)
     }
 }
