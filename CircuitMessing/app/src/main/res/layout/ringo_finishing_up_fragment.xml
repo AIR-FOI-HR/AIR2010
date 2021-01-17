@@ -22,14 +22,12 @@
                 android:layout_marginHorizontal="20dp"
                 android:padding="10dp"
                 android:text="@string/r1"
-                android:textColor="#fff"
                 android:textSize="40sp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r2"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -37,7 +35,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r3"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -45,7 +42,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r4"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -69,7 +65,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r5"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -85,7 +80,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r6"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -93,7 +87,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r7"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -101,7 +94,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r8"
-                android:textColor="#000"
                 android:textStyle="bold"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -110,7 +102,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r9"
-                android:textColor="#000"
                 android:textStyle="bold"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
@@ -135,7 +126,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r10"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -143,7 +133,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r11"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -159,7 +148,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r12"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -167,7 +155,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r13"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -183,7 +170,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r14"
-                android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>
 
@@ -191,7 +177,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/r15"
-                android:textColor="#000"
                 android:textStyle="bold"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"/>

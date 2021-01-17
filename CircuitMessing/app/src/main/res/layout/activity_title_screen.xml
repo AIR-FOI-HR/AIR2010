@@ -53,7 +53,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_titles"
-                android:textColor="@android:color/black"
                 android:textSize="32sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/trophy"/>

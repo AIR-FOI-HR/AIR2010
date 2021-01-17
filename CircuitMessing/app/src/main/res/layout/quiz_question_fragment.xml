@@ -16,7 +16,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="#000"
             android:text="@string/menu_quiz"
             android:textStyle="bold"
             android:textSize="34sp"
@@ -33,7 +32,6 @@
             android:gravity="center"
             android:padding="25dp"
             android:text="@string/quiz_question"
-            android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <Button

@@ -13,7 +13,6 @@ class Preferences(context: Context) {
         get() = prefs.getBoolean("isConnected", false)
         set(value) = prefs.edit().putBoolean("isConnected", value).apply()
 
-
     var nightMode: Boolean
         get() = prefs.getBoolean("night_mode", false)
         set(value) = prefs.edit().putBoolean("night_mode", value).apply()

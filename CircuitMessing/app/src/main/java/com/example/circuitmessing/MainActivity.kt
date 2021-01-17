@@ -15,6 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
 import androidx.browser.customtabs.CustomTabsClient
 import androidx.browser.customtabs.CustomTabsIntent
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         val headerView = navView.getHeaderView(0)
         val navUsername = headerView.findViewById<View>(R.id.username) as TextView
         navUsername.text = preferences.username
+        setTheme(preferences.nightMode)
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -101,10 +103,17 @@ class MainActivity : AppCompatActivity() {
         getAllTitles()
         getRanking()
         // FETCH ALL QUESTIONS. Needs to be like this to call suspended function
-        Log.d("TAG:", "Fetching questions starting")
         GlobalScope.launch {
-            Log.d("TAG:", "Fetching questions started")
             GetAllQuestions()
+        }
+    }
+
+    private fun setTheme(nightMode: Boolean) {
+        if (nightMode){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }
+        else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
     }
 
@@ -119,9 +128,6 @@ class MainActivity : AppCompatActivity() {
             ringoQuiz.FetchQuestions()
             nibbleQuiz.FetchQuestions()
             makerbuinoQuiz.FetchQuestions()
-
-            // Test log
-            Log.d("QUESTION:", ringoQuiz.Questions[0].QuestionText)
         }
       
         // WebView setup
