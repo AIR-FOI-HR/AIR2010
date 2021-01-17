@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.CompoundButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -28,6 +29,7 @@ class SettingsActivity : AppCompatActivity() {
     lateinit var locale: Locale
     private var currentLanguage = "en"
     private var currentLang: String? = null
+    private var currentTheme: Boolean = false
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private var mFragmentManager: FragmentManager = supportFragmentManager
@@ -37,18 +39,15 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_settings)
 
         currentLanguage = resources.configuration.locale.toString()
-
+        currentTheme = preferences.nightMode
+        setTheme(currentTheme)
 
         val toolbar: Toolbar = findViewById(R.id.topAppBar)
         setSupportActionBar(toolbar)
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
-        //val navController = findNavController(R.id.coordinatorLayout)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
 
-        // Setting navHeader text to the current user username
         val headerView = navView.getHeaderView(0)
         val navUsername = headerView.findViewById<View>(R.id.username) as TextView
         navUsername.text = preferences.username
@@ -95,16 +94,28 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         val langswitch: CompoundButton = findViewById(R.id.language_switch)
-        Log.d("CurrentLang: ", currentLanguage)
         langswitch.isChecked = currentLanguage != "en_US" && currentLanguage != "en" && currentLanguage != "en_us"
         langswitch.setOnCheckedChangeListener { _, isChecked ->
             if (langswitch.isChecked) {
-                Log.d("LangSwitch: ", "ON")
                 setLocale("hr")
             }
             else {
-                Log.d("LangSwitch: ", "OFF")
                 setLocale("en")
+            }
+        }
+
+        val themeswitch: CompoundButton = findViewById(R.id.theme_switch)
+        themeswitch.isChecked = currentTheme
+        themeswitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked){
+                currentTheme = !currentTheme
+                preferences.nightMode = currentTheme
+                setTheme(currentTheme)
+            }
+            else {
+                currentTheme = !currentTheme
+                preferences.nightMode = currentTheme
+                setTheme(currentTheme)
             }
         }
     }
@@ -124,6 +135,15 @@ class SettingsActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
+    }
+
+    private fun setTheme(themeType: Boolean){
+        if (themeType){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }
+        else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
     }
 
     private fun setLocale(localeName: String) {

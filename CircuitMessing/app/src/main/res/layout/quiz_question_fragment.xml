@@ -13,6 +13,15 @@
         android:layout_marginHorizontal="20dp">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/menu_quiz"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_gravity="center"/>
+
+        <TextView
             android:id="@+id/question_text"
             android:layout_width="match_parent"
             android:layout_height="225dp"
@@ -22,7 +31,7 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:gravity="center"
             android:padding="25dp"
-            android:textColor="@android:color/white"
+            android:text="@string/quiz_question"
             android:textSize="24sp" />
 
         <Button
