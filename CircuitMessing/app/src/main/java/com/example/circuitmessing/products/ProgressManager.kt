@@ -139,6 +139,41 @@ class ProgressManager {
             }
             pageRef.addListenerForSingleValueEvent(valueEventListener)
         }
+
+        fun giverUserPointsAfterQuiz(productName: String, points: Int) {
+            var finishedPage: Boolean = false
+            val pageRef = database.child("users").orderByChild("username").equalTo(preferences.username)
+            val valueEventListener = object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    for (ds in dataSnapshot.children) {
+                        // Give user points if he scores more than last time
+                        if(productName == "Ringo") {
+                            if(points > preferences.maxPointsRingo) {
+                                var dbPoints = points - preferences.maxPointsRingo
+                                preferences.maxPointsRingo = points
+                                database.child("users").child(preferences.username).child("points").setValue(ServerValue.increment(dbPoints.toLong()))
+                            }
+                        } else if (productName == "Nibble") {
+                            if(points > preferences.maxPointsNibble){
+                                var dbPoints = points - preferences.maxPointsNibble
+                                preferences.maxPointsNibble = points
+                                database.child("users").child(preferences.username).child("points").setValue(ServerValue.increment(dbPoints.toLong()))
+                            }
+                        } else {
+                            if(points > preferences.maxPointsMakerbuino) {
+                                var dbPoints = points - preferences.maxPointsMakerbuino
+                                preferences.maxPointsMakerbuino = points
+                                database.child("users").child(preferences.username).child("points").setValue(ServerValue.increment(dbPoints.toLong()))
+                            }
+                        }
+                    }
+                }
+                override fun onCancelled(databaseError: DatabaseError) {
+                    // Here goes error message
+                }
+            }
+            pageRef.addListenerForSingleValueEvent(valueEventListener)
+        }
     }
 
 }

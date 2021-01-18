@@ -3,6 +3,8 @@ package com.example.circuitmessing.products.quiz.classes
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
+import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.products.ProgressManager
 import com.example.circuitmessing.products.quiz.views.EndQuizFragment
 import com.example.circuitmessing.products.quiz.views.QuizQuestionFragment
 import com.example.radioquestion.MultipleChoiceQuestionFragment
@@ -36,10 +38,11 @@ public class Quiz(var ProductName: String){
             var title: String = "/"
             if (points > 400){
                 when(ProductName){
-                    "Ringo" -> title = "Ringo Quiz Expert"
-                    "Nibble" -> title = "Nibble Quiz Expert"
-                    "Makerbuino" -> title = "Makerbuino Quiz Expert"
+                    "Ringo" -> title = "ringoQuizExpert"
+                    "Nibble" -> title = "nibbleQuizExpert"
+                    "Makerbuino" -> title = "makerbuinoQuizExpert"
                 }
+                ProgressManager.giveUserTitle(preferences.username, title)
             }
             var endFragment: Fragment = EndQuizFragment(points, title)
             points = 0
@@ -57,6 +60,7 @@ public class Quiz(var ProductName: String){
                 points += 150
             }
         }
+        ProgressManager.giverUserPointsAfterQuiz(ProductName, points)
         QuizQuestionFragment.userAnswer.clear()
         MultipleChoiceQuestionFragment.userAnswer.clear()
     }
