@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import com.example.circuitmessing.R
 import com.example.circuitmessing.databinding.FragmentRegisterFragmentBinding
 import com.example.circuitmessing.ui.classes.User
 import kotlinx.coroutines.*
@@ -19,6 +22,7 @@ class FragmentRegister : Fragment() {
 
     private lateinit var viewModel: FragmentRegisterViewModel
     private lateinit var registerBinding: FragmentRegisterFragmentBinding
+    private lateinit var mFragmentManager: FragmentManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,7 +52,6 @@ class FragmentRegister : Fragment() {
                                 registerBinding.registerPasswordInputRepeat.setText("")
                                 registerBinding.usernameField.error = null
                                 registerBinding.passwordField2.error = null
-                                showLoginFragment()
 
                             } else {
                                 registerBinding.usernameField.error = "User with that username already exists, try again."
@@ -69,9 +72,5 @@ class FragmentRegister : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(FragmentRegisterViewModel::class.java)
         // TODO: Use the ViewModel
-    }
-
-    private fun showLoginFragment() {
-        activity?.onBackPressed()
     }
 }
