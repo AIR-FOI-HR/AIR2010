@@ -20,4 +20,16 @@ class Preferences(context: Context) {
     var username: String
         get() = prefs.getString("username", "noName").toString()
         set(value) = prefs.edit().putString("username", value).apply()
+
+    var maxPointsRingo: Int
+        get() = prefs.getInt("maxPointsRingo", 0)
+        set(value) = prefs.edit().putInt("maxPointsRingo", value).apply()
+
+    var maxPointsNibble: Int
+        get() = prefs.getInt("maxPointsNibble", 0)
+        set(value) = prefs.edit().putInt("maxPointsNibble", value).apply()
+
+    var maxPointsMakerbuino: Int
+        get() = prefs.getInt("maxPointsMakerbuino", 0)
+        set(value) = prefs.edit().putInt("maxPointsMakerbuino", value).apply()
 }
