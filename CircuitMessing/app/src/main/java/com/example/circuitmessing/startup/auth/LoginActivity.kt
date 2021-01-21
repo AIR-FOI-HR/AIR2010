@@ -1,4 +1,4 @@
-package com.example.circuitmessing.ui.auth
+package com.example.circuitmessing.startup.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.databinding.ActivityLoginBinding

@@ -1,4 +1,4 @@
-package com.example.circuitmessing.ui.home
+package com.example.circuitmessing.startup.home
 
 import android.content.Intent
 import android.os.Bundle

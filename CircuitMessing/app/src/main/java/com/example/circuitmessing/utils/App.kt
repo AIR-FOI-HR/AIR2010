@@ -1,6 +1,7 @@
-package com.escaper.escaper.utils
+package com.example.circuitmessing.utils
 
 import android.app.Application
+import com.escaper.escaper.utils.Preferences
 
 val preferences: Preferences by lazy {
     App.preferences!!

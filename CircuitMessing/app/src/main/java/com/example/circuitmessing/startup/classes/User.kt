@@ -1,23 +1,11 @@
-package com.example.circuitmessing.ui.classes
+package com.example.circuitmessing.startup.classes
 
-import android.app.Activity
-import android.content.Context
-import android.content.Intent
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
-import androidx.fragment.app.FragmentActivity
-import com.escaper.escaper.utils.preferences
-import com.example.circuitmessing.MainActivity
-import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
-import com.example.circuitmessing.databinding.FragmentRegisterFragmentBinding
+import com.example.circuitmessing.utils.preferences
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.delay
 import java.math.BigInteger
 import java.security.MessageDigest
 import java.security.SecureRandom

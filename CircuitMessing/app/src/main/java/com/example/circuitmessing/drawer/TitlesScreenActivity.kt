@@ -1,4 +1,4 @@
-package com.example.circuitmessing
+package com.example.circuitmessing.drawer
 
 import android.content.Intent
 import android.net.Uri
@@ -16,17 +16,15 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.MainActivity
+import com.example.circuitmessing.R
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.products.ProgressManager.Companion.titles
-import com.example.circuitmessing.ui.auth.LoginActivity
-import com.example.circuitmessing.utils.SettingsActivity
+import com.example.circuitmessing.startup.auth.LoginActivity
 import com.google.android.material.navigation.NavigationView
 
-class TitleScreen : AppCompatActivity() {
+class TitlesScreenActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private var mFragmentManager: FragmentManager = supportFragmentManager
 
@@ -83,12 +81,12 @@ class TitleScreen : AppCompatActivity() {
                     MainActivity.customTabsIntent.launchUrl(this, Uri.parse(MainActivity.forumUrl))
                 }
                 R.id.nav_titles -> {
-                    val intent = Intent(this, TitleScreen::class.java)
+                    val intent = Intent(this, TitlesScreenActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
                 R.id.nav_ranking ->{
-                    val intent = Intent(this, RankingScreen::class.java)
+                    val intent = Intent(this, RankingScreenActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

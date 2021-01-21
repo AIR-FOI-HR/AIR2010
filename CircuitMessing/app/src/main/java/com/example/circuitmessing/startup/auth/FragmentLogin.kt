@@ -1,4 +1,4 @@
-package com.example.circuitmessing.ui.auth
+package com.example.circuitmessing.startup.auth
 
 import android.content.Intent
 import androidx.lifecycle.ViewModelProviders
@@ -7,10 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.databinding.FragmentLoginFragmentBinding
-import com.example.circuitmessing.ui.classes.User
+import com.example.circuitmessing.startup.classes.User
 import kotlinx.coroutines.*
 
 class FragmentLogin : Fragment() {

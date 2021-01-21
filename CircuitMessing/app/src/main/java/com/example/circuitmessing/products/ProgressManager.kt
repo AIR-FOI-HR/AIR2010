@@ -2,13 +2,12 @@ package com.example.circuitmessing.products
 
 import android.util.Log
 import android.view.MenuItem
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.R
-import com.example.circuitmessing.ui.classes.User
+import com.example.circuitmessing.startup.classes.User
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import kotlin.math.log
 
 class ProgressManager {
 

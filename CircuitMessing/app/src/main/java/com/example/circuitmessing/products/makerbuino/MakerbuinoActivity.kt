@@ -10,9 +10,10 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
+import com.example.circuitmessing.drawer.RankingScreenActivity
 import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
 import com.example.circuitmessing.products.ProgressManager.Companion.giveUserTitle
 import com.example.circuitmessing.products.ProgressManager.Companion.updatePageDone
@@ -61,8 +62,8 @@ class MakerbuinoActivity : AppCompatActivity() {
                 R.id.nav_quiz -> {
                     val intent = Intent(this, QuizActivity::class.java)
                     var product : Bundle = Bundle()
-                    product.putString("product", "makerbuino"); //Your id
-                    intent.putExtras(product) //Put your id to your next Intent
+                    product.putString("product", "makerbuino"); // Your id
+                    intent.putExtras(product) // Put your id to your next Intent
                     startActivity(intent)
                     finish()
                 }
@@ -115,9 +116,12 @@ class MakerbuinoActivity : AppCompatActivity() {
                     val item = navView.menu.getItem(4)
                     updatePageDone(productName = "makerbuino", pageName = "summed", item)
                     giveUserTitle(username = preferences.username, titleName = "makerbuinoMaster")
-                }
-                navView.menu.getItem(5).isChecked -> {
-                    // quiz
+                    val intent = Intent(this, QuizActivity::class.java)
+                    var product : Bundle = Bundle()
+                    product.putString("product", "makerbuino"); //Your id
+                    intent.putExtras(product) //Put your id to your next Intent
+                    startActivity(intent)
+                    finish()
                 }
             }
         }
@@ -143,9 +147,6 @@ class MakerbuinoActivity : AppCompatActivity() {
                     updatePageDone(productName = "makerbuino", pageName = "summed", item)
                     replaceFragment(R.id.maker_buino_fragment, MakerbuinoTimeToGetMakinFragment())
                     navView.menu.getItem(3).isChecked = true;
-                }
-                navView.menu.getItem(5).isChecked -> {
-                    // quiz
                 }
             }
         }

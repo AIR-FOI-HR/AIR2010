@@ -7,18 +7,18 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.circuitmessing.ui.home.HomeFragment"
+        android:name="com.example.circuitmessing.startup.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/fragment_register"
-        android:name="com.example.circuitmessing.ui.auth.FragmentRegister"
+        android:name="com.example.circuitmessing.startup.auth.FragmentRegister"
         android:label="fragment_register_fragment"
         tools:layout="@layout/fragment_register_fragment" />
     <fragment
         android:id="@+id/fragment_login2"
-        android:name="com.example.circuitmessing.ui.auth.FragmentLogin"
+        android:name="com.example.circuitmessing.startup.auth.FragmentLogin"
         android:label="fragment_login_fragment"
         tools:layout="@layout/fragment_login_fragment" />
 

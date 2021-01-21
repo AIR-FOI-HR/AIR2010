@@ -7,9 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import androidx.core.graphics.red
-import androidx.core.graphics.toColor
-import com.escaper.escaper.utils.preferences
 import com.example.circuitmessing.R
 
 class RankingAdapter(private val context: Context, private val arrayList: Array<Triple<Int, String, Int>?>) : BaseAdapter() {

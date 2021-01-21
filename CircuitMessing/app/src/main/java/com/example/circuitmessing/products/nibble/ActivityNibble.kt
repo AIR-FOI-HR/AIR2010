@@ -10,7 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
@@ -114,9 +114,12 @@ class ActivityNibble : AppCompatActivity() {
                     val item = navView.menu.getItem(4)
                     updatePageDone(productName = "nibble", pageName = "summed", item)
                     giveUserTitle(username = preferences.username, titleName = "nibbleMaster")
-                }
-                navView.menu.getItem(4).isChecked -> {
-                    // quiz
+                    val intent = Intent(this, QuizActivity::class.java)
+                    var product : Bundle = Bundle()
+                    product.putString("product", "nibble"); //Your id
+                    intent.putExtras(product) //Put your id to your next Intent
+                    startActivity(intent)
+                    finish()
                 }
             }
         }
@@ -142,9 +145,6 @@ class ActivityNibble : AppCompatActivity() {
                     updatePageDone(productName = "nibble", pageName = "summed", item)
                     replaceFragment(R.id.nibble_fragment, NibbleTimeToGetMakinFragment())
                     navView.menu.getItem(3).isChecked = true;
-                }
-                navView.menu.getItem(5).isChecked -> {
-                    // quiz
                 }
             }
         }

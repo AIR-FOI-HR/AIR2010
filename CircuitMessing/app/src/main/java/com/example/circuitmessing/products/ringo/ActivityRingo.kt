@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.ui.AppBarConfiguration
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.MainActivity
 import com.example.circuitmessing.R
 import com.example.circuitmessing.products.ProgressManager.Companion.checkDonePages
@@ -121,9 +121,12 @@ class ActivityRingo : AppCompatActivity() {
                     val item = navView.menu.getItem(4)
                     updatePageDone(productName = "ringo", pageName = "summed", item)
                     giveUserTitle(username = preferences.username, titleName = "ringoMaster")
-                }
-                navView.menu.getItem(5).isChecked -> {
-                    // quiz
+                    val intent = Intent(this, QuizActivity::class.java)
+                    var product : Bundle = Bundle()
+                    product.putString("product", "ringo"); //Your id
+                    intent.putExtras(product) //Put your id to your next Intent
+                    startActivity(intent)
+                    finish()
                 }
             }
         }
@@ -149,9 +152,6 @@ class ActivityRingo : AppCompatActivity() {
                     updatePageDone(productName = "ringo", pageName = "summed", item)
                     replaceFragment(R.id.ringo_fragment, RingoTimeToGetMakinFragmentFragment())
                     navView.menu.getItem(3).isChecked = true;
-                }
-                navView.menu.getItem(5).isChecked -> {
-                    // quiz
                 }
             }
         }

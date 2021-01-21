@@ -3,7 +3,6 @@ package com.example.circuitmessing
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.View
 import android.widget.TextView
@@ -20,12 +19,14 @@ import androidx.appcompat.widget.Toolbar
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.browser.customtabs.CustomTabsIntent.Builder
 import androidx.fragment.app.FragmentManager
-import com.escaper.escaper.utils.preferences
+import com.example.circuitmessing.drawer.RankingScreenActivity
+import com.example.circuitmessing.drawer.TitlesScreenActivity
+import com.example.circuitmessing.utils.preferences
 import com.example.circuitmessing.products.ProgressManager.Companion.getAllTitles
 import com.example.circuitmessing.products.ProgressManager.Companion.getRanking
 import com.example.circuitmessing.products.quiz.classes.Quiz
-import com.example.circuitmessing.ui.auth.LoginActivity
-import com.example.circuitmessing.utils.SettingsActivity
+import com.example.circuitmessing.startup.auth.LoginActivity
+import com.example.circuitmessing.drawer.SettingsActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -70,12 +71,12 @@ class MainActivity : AppCompatActivity() {
                       customTabsIntent.launchUrl(this, Uri.parse(forumUrl))
                 }
                 R.id.nav_titles -> {
-                    val intent = Intent(this, TitleScreen::class.java)
+                    val intent = Intent(this, TitlesScreenActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
                 R.id.nav_ranking ->{
-                    val intent = Intent(this, RankingScreen::class.java)
+                    val intent = Intent(this, RankingScreenActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

@@ -1,4 +1,4 @@
-package com.example.circuitmessing.ui.auth
+package com.example.circuitmessing.startup.auth
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -7,10 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import com.example.circuitmessing.R
 import com.example.circuitmessing.databinding.FragmentRegisterFragmentBinding
-import com.example.circuitmessing.ui.classes.User
+import com.example.circuitmessing.startup.classes.User
 import kotlinx.coroutines.*
 
 class FragmentRegister : Fragment() {
