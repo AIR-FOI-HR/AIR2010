@@ -9,4 +9,5 @@ public interface IQuestion {
     public var QuestionFragment: Fragment
 
     public fun checkAnswers(): Boolean
+    public fun createFragment(): Fragment
 }

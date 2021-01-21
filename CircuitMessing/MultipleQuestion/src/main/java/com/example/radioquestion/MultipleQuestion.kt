@@ -12,7 +12,7 @@ public class MultipleQuestion(
 
     override var QuestionFragment: Fragment = createFragment()
 
-    fun createFragment(): Fragment{
+    override fun createFragment(): Fragment{
         return MultipleChoiceQuestionFragment(QuestionText, Answers)
     }
 

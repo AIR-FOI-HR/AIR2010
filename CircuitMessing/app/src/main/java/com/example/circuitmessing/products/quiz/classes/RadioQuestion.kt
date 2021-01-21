@@ -16,9 +16,7 @@ public class RadioQuestion(
 
     override var QuestionFragment: Fragment = createFragment()
 
-    private val viewModel: QuizQuestionViewModel = QuizQuestionViewModel()
-
-    fun createFragment(): QuizQuestionFragment{
+    override fun createFragment(): QuizQuestionFragment{
         return QuizQuestionFragment(QuestionText, Answers)
     }
 
