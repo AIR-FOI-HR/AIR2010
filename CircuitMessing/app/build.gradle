@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -64,6 +65,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation project(path: ':Core')
     implementation project(path: ':MultipleQuestion')
+    implementation 'com.google.firebase:firebase-database:19.6.0'
 
 
     testImplementation 'junit:junit:4.12'
