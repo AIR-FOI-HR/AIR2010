@@ -2,12 +2,387 @@
     <string name="app_name">CircuitMessing</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">John Doe</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_titles">Titles</string>
+    <string name="menu_ranking">Ranking</string>
+    <string name="menu_forum">Forum</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_sign_out">SIGN OUT</string>
+
+    <string name="menu_introduction">Introduction</string>
+    <string name="menu_meet_tools">Meet the tools</string>
+    <string name="menu_time_makin">Time to get makin\'</string>
+    <string name="menu_summed_up">Summed up</string>
+    <string name="menu_quiz">Quiz</string>
+
+    <string name="page_title">CircuitMessing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="text_input_username">Username</string>
+    <string name="text_input_password">Password</string>
+    <string name="text_input_repeat_password">Repeat password</string>
+
+    <!-- LOGIN ACTIVITY -->
+
+    <string name="login_activity_signin_tab_button">Sign in</string>
+    <string name="login_activity_signup_tab_button">Sign up</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="register">Register</string>
+
+    <!-- home fragment -->
+    <string name="home_ringo_title">Ringo build guide</string>
+    <string name="home_ringo_description">Assemble your own mobile phone - Ringo!</string>
+
+    <string name="home_maker_title">MAKERbuino build guide</string>
+    <string name="home_maker_description">Assemble your own portable gaming console - MAKERbuino!</string>
+
+    <string name="home_nibble_title">Nibble build guide</string>
+    <string name="home_nibble_description">Build guide for your brand new gaming console - Nibble!</string>
+
+    <string name="home_card_difficulty">Difficulty: </string>
+    <string name="home_difficulty_easy">easy</string>
+    <string name="home_difficulty_medium">medium</string>
+    <string name="home_difficulty_hard">hard</string>
+
+    <string name="home_card_time">Time: </string>
+    <string name="home_ringo_time">5 hours</string>
+    <string name="home_maker_time">4 hours 30 minutes</string>
+    <string name="home_nibble_time">2 hours</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_product_drawer">ProductDrawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="ringo_title">Welcome to Ringo!</string>
+    <string name="ringo_chapter1">Welcome to the CircuitMess Ringo build guide! In the following 5 chapters, we’ll help you build your own mobile phone out of the components you received in your Ringo kit!</string>
+    <string name="ringo_title2">Recommended age group</string>
+    <string name="ringo_chapter2">We believe that an 11-year-old child should be able to assemble a Ringo with some help from an adult. The estimated age group is 11+. The estimated build time is around 5 hours, but it can vary depending on your skill level.CircuitMess Ringo was designed to bring the basics of STEM (Science, Technology, Engineering, and Mathematics) to beginners in a fun and interesting way.</string>
+    <string name="ringo_title3">What You’ll Learn With the Ringo</string>
+    <string name="ringo_chapter3">Ringo’s main goal is to educate and motivate you to learn something new or brush the skills you already have. In the process of assembly, you’ll learn: how to solder, what are the basic electronic components and what is their function, how can electronic components be connected and why, what are microcontrollers and some basics of digital electronics.</string>
+    <string name="nibble_title">Welcome to Nibble!</string>
+    <string name="nibble_chapter1">In this build guide, you’ll find out how to assemble a game console all by yourself, using only a couple of tools in the process. Whether this is your first time meeting a do-it-yourself device or you’re a DIY veteran, you will learn a lot!</string>
+    <string name="nibble_title2">Recommended age group</string>
+    <string name="nibble_chapter2">As it says on the box, you should be at least 9 years old to assemble this console. With that in mind, parts of the assembly like soldering and tightening bolts should be carefully approached - ask an adult to help out if you\'ve never soldered before. The time of the assembly depends on your previous knowledge and experience with electronics. You will need an estimate of 2 hours in total to assemble your console.</string>
+    <string name="nibble_title3">What You’ll Learn With the Nibble</string>
+    <string name="nibble_chapter3">Nibble’s main goal is to educate and motivate you to learn something new or brush up on the skills you already have. It should also serve as an entry point in electronics, making it the perfect project for starting out your big engineering career. In the process of assembly, you’ll learn: how to solder, what are the basic electronic components and their function, how can electronic components be connected and why, what are microcontrollers and some basics of digital electronics.</string>
+    <string name="makerbuino_title">Welcome to MAKERbuino!</string>
+    <string name="makerbuino_chapter1">Welcome to the MAKERbuino build guide. In these chapters, we’ll help you make a fully functional retro gaming device out of a bunch of components you’ve received in your MAKERbuino package.</string>
+    <string name="makerbuino_title2">Recommended age group</string>
+    <string name="makerbuino_chapter2">Our estimation is that an 11-year-old kid should be able to assemble the MAKERbuino with a tiny bit of help from an adult. Therefore, the estimated age group is 11+. Estimated build time: 4 hours 30 minutes. Build time varies and depends on the skills of a user. MAKERbuino was made with the purpose of bringing STEM (Science, Technology, Engineering, and Mathematics) to electronics rookies in a fun and interesting way.</string>
+    <string name="makerbuino_title3">What You’ll Learn With the MAKERbuino</string>
+    <string name="makerbuino_chapter3">MAKERbuino’s main goal is to educate and motivate you to learn something new or brush the skills you already have.In the process of making the MAKERbuino you’ll learn: how to solder, what are the basic electronic components and what is their function, how can electronic components be connected and why, what are microcontrollers and some basics of digital electronics.</string>
+
+    <!-- activity_settings -->
+    <string name="dark_mode">Dark mode</string>
+    <string name="language">ENG/HR</string>
+
+    <!-- end_quiz_fragment -->
+    <string name="congratulation">Congratulation!</string>
+    <string name="you_have_completed_course">You have completed course!</string>
+    <string name="your_score_is">Your score is:</string>
+    <string name="score_achieved">score_achieved</string>
+    <string name="titles_achieved">titles_achieved</string>
+    <string name="continue_quiz">Continue</string>
+
+    <!-- makerbuiono_finisihing_up_fragment -->
+    <string name="mb1">If everything electronics-related is working fine, the last step is to put the guts (electronics) in a nice crystal clear acrylic casing so that everyone can see your perfect soldering joints!</string>
+    <string name="mb2">Start by assembling the bottom side of the casing, which consists of two pieces of plastic.</string>
+    <string name="mb3">Next up, place the colored button caps to the yellow pushbuttons by simply snapping them on (you will have to apply some force and that is completely normal).</string>
+    <string name="mb4">Continue by mounting the front plate and fixating it with black hexagonal M3 spacers and nuts.</string>
+    <string name="mb5">Some newer versions of the kit have a hand-strap included.</string>
+    <string name="mb6">If your kit has a hand-strap, you can now place it around the bottom right hexagonal M3 spacer.</string>
+    <string name="mb7">Now look at you, you\'ve managed to make your own working gaming device out of a bag of tiny electronic components.</string>
+    <string name="mb8">Well done, you should be proud of yourself!</string>
+    <string name="mb9">That\'s all folks!</string>
+
+    <!-- makerbuiono_meet_the_tools_fragment -->
+    <string name="mb10">MAKERbuino tools</string>
+    <string name="mb11">There are some tools and equipment that are required for the assembly and they are not included in the standard kit. If you’ve bought the standard kit (not a kit with tools) and don’t have them, now would be a good time to borrow or purchase them. These tools are useful whenever assembling, fixing or modifying electronic devices and should be the part of every maker’s/hacker’s/modder’s/electrician’s equipment. Many of these are available in a supermarket or in some professional DIY electronics stores like Radio Shack, Adafruit, Sparkfun….</string>
+    <string name="mb12">Soldering iron</string>
+    <string name="mb13">Any entry-level ‘all-in-one’ soldering iron that you might find at your local hardware store should work (recommended power – something around 30W). It’s a good idea to upgrade to a more expensive soldering station with temperature regulation if you plan to dive into the world of DIY electronics more thoroughly.</string>
+    <string name="mb14">Solder</string>
+    <string name="mb15">We highly advise buying a rosin core, 60/40 solder. This type of solder is usually preferred by the DIY electronics community for similar soldering projects. Be careful when buying solder, bad solder leads to lots of complications like bad solder joints and unwanted bridging.</string>
+    <string name="mb16">Diagonal Cutter Pliers</string>
+    <string name="mb17">You’ll need pliers like this to trim leads of soldered components and cut wires. We prefer this type showed on the picture (Plato, model 170).</string>
+    <string name="mb18">Standard cross screwdriver</string>
+    <string name="mb19">You’ll need this one to mount the casing and the LCD screen. A regular cross screwdriver with a shaft diameter of 3mm or smaller is sufficient.</string>
+    <string name="mb20">Some insulating tape</string>
+    <string name="mb21">You’ll need some sort of adhesive to fixate MAKERbuino’s speaker to the back side of the casing. Our advice: some insulating or similar tape is the best choice here, but a tube of superglue or a hot glue gun will also do the job. Although, it will not look as tidy as it could if you’ve used the tape for fixation.</string>
+    <string name="mb22">Extra tools that are not mandatory for assembling MAKERbuino but might come in handy include a desoldering vacuum tool, helping third hand with magnification, multimeter and solder wick.</string>
+
+    <!-- makerbuiono_time_to_get_makin_fragment -->
+    <string name="mb23">Motivational tip from Albert</string>
+    <string name="mb24">Soldering is an essential skill if you want to become an electronics ninja one day. Your soldering iron is a magical wand, only instead of enabling you to fight black magic, it gives you the power to create unique intelligent electronic devices from scratch. Don’t get frustrated by soldering failure, it’s just a matter of practice. You’ll get better at it over time by soldering kits like MAKERbuino and working on other fun projects you decide to make. I know how frustrating it can be when something doesn’t work from the first try. The truth is, you’ll have to get used to it because you’ll get lots of that in the world of DIY electronics. And please, don’t worry, In the worst-case scenario (your MAKERbuino not working) we’ll make it work together. Good luck and keep making!</string>
+    <string name="mb25">Step 1 – the SD socket</string>
+    <string name="mb26">We’ll start with the SD card socket – the big shiny metallic component that is mounted on the PCB’s surface. Find the SD socket, place it on the back side of the board where there is “SD SOCKET” text written on it. Continue by soldering the four pads of the socket’s shielding. When soldering the socket’s contacts, you DON’T have to solder the three rightmost pins because they are not used.</string>
+    <string name="mb27">Step 2 – Microcomputer’s socket</string>
+    <string name="mb28">Microcomputer’s socket is also soldered at the back of the MAKERbuino board.</string>
+    <string name="mb29">Be careful how you rotate the socket because it’s not symmetrical. Be sure to place it on the right side indicated by a notch on the socket.</string>
+    <string name="mb30">Pro tip: first solder the two diagonal pins of the socket, then make sure that the socket is aligned with the board nicely, correct the alignment if needed and solder the rest of the pins.</string>
+    <string name="mb31">Step 3 – 10k ohm resistor</string>
+    <string name="mb32">Find the tiny 10kΩ resistor (colors: brown, black, black, red, brown) and solder it to the front side of the board where the R2 mark is (bottom side of the board) – this resistor is necessary for the screen to work. Pro tip: when you insert the resistor, bend the leads of the resistor so that it doesn’t fall out from the PCB while you’re soldering it.</string>
+    <string name="mb33">Important: Remember to cut all the leads of the components you’ve soldered using your diagonal cutter pliers. Also, save the excess leads you’ve cut, you’ll need them in one of the further steps.</string>
+    <string name="mb34">Step 4 – 16MHz crystal</string>
+    <string name="mb35">Find the 16MHz crystal and insert it on the front side of the PCB (right half of the PCB, marked Q1, 16MHz).</string>
+    <string name="mb36">IMPORTANT: Text marking on the crystal may vary and sometimes look like this: “16B000”. Apply the previous pro tip and bend the leads of the crystal at the back of the board.</string>
+    <string name="mb37">Step 5 – two 22pF capacitors</string>
+    <string name="mb38">Solder the two 22pF ceramic capacitors (little red-ish thingies with the number 22 written on them). Along with the crystal, these are essential for the oscillating circuit of the game console.</string>
+    <string name="mb39">Step 6 – two slide switches</string>
+    <string name="mb40">Now solder the two slide toggle switches for turning the console ON and OFF and muting the sound. They’re soldered at the bottom side of the PCB and labeled as SWITCH1 and SWITCH2. The left switch is muting the sound and the right one will turn the console’s power ON and OFF. The switches have to go all the way down and sit nicely on the PCB.</string>
+    <string name="mb41">Step 7 – 100uF electrolytic capacitors</string>
+    <string name="mb42">Locate the three electrolytic capacitors (tiny black barrels with two leads). The places for these are marked on the PCB as C4, C5 and C7. Important: these capacitors are polarized, make sure to insert them properly.</string>
+    <string name="mb43">The polarity of the capacitors is indicated with the big white minus (-) sign on the capacitors (the big white stripe).</string>
+    <string name="mb44">Step 8 – 3.3V voltage regulator and 2n2222 transistor</string>
+    <string name="mb45">Important: These two components are very similar so make sure to read the text on the components carefully because that is the only way you can recognize them. (Please note that the text on your transistor may vary and have something like “KSP 2222A – 708” written on it. This happens because the different manufacturers tend to write unique serial numbers on their components). Solder the regulator on the board where “IC2 3.3V” is marked and the transistor to the spot with “T1 2N2222” marking on it.</string>
+    <string name="mb46">Be careful to turn these components on the right side!</string>
+    <string name="mb47">Important: Make sure the flat side of the regulator and the transistor faces down towards the board, this is achieved by bending the pins of the components by 90 degrees.</string>
+    <string name="mb48">Step 9 – Nokia 5110 LCD screen</string>
+    <string name="mb49">You’ll need M2 screws, nuts, and spacers for mounting your screen.</string>
+    <string name="mb50">mportant: check whether the soldering joints on your microcomputer’s socket are soldered nice and clean and that they are all shaped like a “volcano”.</string>
+    <string name="mb51">You have to make sure connections on the microcontroller are good because you won’t be able to fix them after you solder the screen (the screen overlaps the socket’s soldering joints). Important: before soldering the screen to the PCB, fasten its bottom two holes with screws, nuts, and spacers. n this way, you’ll ensure that the screen module is aligned perfectly before soldering it to the PCB. You will only be able to fixate the screen using the bottom two holes on it. After you’ve fixated the screen, solder the connector on the other side of the PCB and avoid bridging between pins.</string>
+    <string name="mb52">Step 10-Insert the ATmega328 microcomputer</string>
+    <string name="mb53">Let’s start by finding the little black precious microcomputer. Here comes the tricky part…Important: Most common mistake that people do with the microcontroller is that they either insert it in the socket wrongly or break the microcontroller’s tiny pins in the process of inserting it. Don’t worry, it just needs a tiny bit of caution and concentration (don’t hurry with this one).</string>
+    <string name="mb54">Firstly, locate the microcontroller’s notch indicating which side to turn it when inserting it in the socket.</string>
+    <string name="mb55">Secondly, DON’T insert the microcontroller straight away. You’ll need to bend the pins a bit. Do this pushing the microcontroller’s pins against the table so that you apply equal force to all pins.</string>
+    <string name="mb56">Check whether there are pins on the microcomputer that are not bent correctly and correct that.</string>
+    <string name="mb57">Finally, slowly insert the microcontroller into the socket. If needed, take the chip out and bend the pins some more.</string>
+    <string name="mb58">Step 11-first functionality test</string>
+    <string name="mb59">We’ve just soldered all of the core MAKERbuino components required for its basic functions and we’re going to test them. Connect the battery to the already soldered female battery connector.</string>
+    <string name="mb60">Turn the device on by moving the power switch into the left position. The screen should turn on and display some text.</string>
+    <string name="mb61">If that happened, that means all of the components so far work fine and are properly soldered.</string>
+    <string name="mb62">Step 12-solder the second 10k ohm resistor</string>
+    <string name="mb63">This resistor is important for connecting the microcontroller to the serial UART programmer board. It’s labeled R3 and the color code goes brown, black, black, red, brown.</string>
+    <string name="mb64">Step 13-female 6-pin angle header</string>
+    <string name="mb65">Locate this black female connector. It’s soldered to the place labeled “JP2, serial programmer”. The serial UART programmer board is connected to this port. Make sure to turn it the right way.</string>
+    <string name="mb66">Pro tip: If the component is falling out of the PCB when you try to solder it, place your cutting pliers’ handle underneath the component you’re soldering.</string>
+    <string name="mb67">Step 14-two wheel potentiometers</string>
+    <string name="mb68">Now we’ll locate and solder the two trim potentiometers labeled TR1 and TR2. The left potentiometer is used for regulating the screen’s backlight and the right one regulates the sound volume. Make sure to use our previous pro tip here and put your pliers underneath the potentiometers while soldering them.</string>
+    <string name="mb69">Step 15-3×2 ICSP header and 100nF capacitors</string>
+    <string name="mb70">The header is mounted on the top left front side of the PCB (labeled JP1). After the header, find the two little 100nF capacitors (they have 104 written on their surface) and solder them on places labeled with C1 and C6.</string>
+    <string name="mb71">Step 16-some more resistors and a diode</string>
+    <string name="mb72">Ok, let’s solder the rest of the small two-leaded components.</string>
+    <string name="mb73">Solder the 2.2k ohm resistor (red, red, red, golden) to the place marked “R1, 2k”</string>
+    <string name="mb74">100 ohm resistor (brown, black, brown, golden OR brown, black, black, black, brown) to the spot marked “R6, 100”</string>
+    <string name="mb75">Two 4.7k ohm resistors (yellow, purple, red, golden) need to be placed on the marking “R4, 4k7” and “R5, 4k7”</string>
+    <string name="mb76">1N4148 diode needs to go where “D1, 1N4148” is written on the board.</string>
+    <string name="mb77">Important: mind the polarity of the diode by making sure that the black ring on the diode matches the marking on the PCB</string>
+    <string name="mb78">Step 17-headphone connector</string>
+    <string name="mb79">The headphone connector goes to the place marked“X1, STEREOJACK”. Although this connector was built for stereo sound output, MAKERbuino can only output bleeps and bloops in mono. Because of that, both left and right earphone are bridged together and connected to the same sound output channel on the microcomputer. Make use of our previous pro tip and place your pliers beneath the connector so that it doesn’t fall off while you’re soldering it.</string>
+    <string name="mb80">Step 18-Li-Po charger board</string>
+    <string name="mb81">For mounting the TP4056 Li-Po charger board, you’ll need to make use of those tiny excess cut-off leads we’ve told you to save on step 3. Pick four of the longest leads from the pile of excess leads and insert them through charger’s and PCB’s contacts and bend them before soldering. You need to solder the contacts both on the top and the bottom side of your MAKERbuino in order for the charger to work properly.</string>
+    <string name="mb82">Electronics 101: This way of adding stack-on PCBs to the main PCB is called the “child board design”. Boards stacked onto the main PCB are called the “child boards”.</string>
+    <string name="mb83">Step 19-male 4-pin angle multiplayer headers</string>
+    <string name="mb84">These are labeled as JP3 and JP4 on the board. Use the pro tip about placing the pliers underneath the component because these might be a bit harder to solder.</string>
+    <string name="mb85">Step 20-seven big clicky pushbuttons</string>
+    <string name="mb86">Finally! Time’s to solder the yellow pushbuttons. Important: make sure to push the pushbuttons all the way down to the PCB, otherwise they might get angled, which will cause them to jam when you mount the front casing.</string>
+    <string name="mb87">You did a good job. Well done!</string>
+
+    <!-- nibble_finishing_up_fragment -->
+    <string name="n1">Nibble</string>
+    <string name="n2">There are a couple of additional things you need to keep an eye on while using the console.</string>
+    <string name="n3">The micro-USB to USB cable is used to connect the console to your computer and to download new software updates as well as to upload your own games created using CircuitBlocks!</string>
+    <string name="n4">Micro USB cable</string>
+    <string name="n5">Connecting your Nibble to the computer</string>
+    <string name="n6">What is CircuitBlocks you say?</string>
+    <string name="n7">CircuitBlocks is a graphical programming interface that helps newbies get into embedded programming.</string>
+    <string name="n8">It’s based on Microsoft’s MakeCode and PXT-Blockly (Google Blockly fork) and it presents the user with a slick Scratch-like interface in which they connect logic blocks to generate code for their MAKERphone and Nibble (and soon other CircuitMess devices).</string>
+    <string name="n9">You can find more about CircuitBlocks here.</string>
+    <string name="n10">Once connected to your computer, make sure to turn the console on so it gets recognized.</string>
+    <string name="n11">Additionally, there is also a small button on top of the console, which is used to quickly reset the console. Use that button whenever the console gets stuck or if it’s loading for too long. However, do not touch this button while playing the games since it will erase your game progress!</string>
+    <string name="n12">There is also a small blue light underneath the screen that should be blinking while the console is on. You probably won’t see it from all these casings, but if you do, don’t be surprised - it’s an indicator that your console is working.</string>
+    <string name="n13">The blue blinking light - an indicator of a working console</string>
+    <string name="n14">Finally, if your batteries ever run out of juice, make sure to replace them with AAA (triple-A) batteries. It’s best to use the batteries from the same pack since they are all going to last for the same amount of time.</string>
+    <string name="n15">Now enough talking, let’s get playing!</string>
+
+    <!-- nibble_meet_the_tools_fragment -->
+    <string name="n16">Nibble tools</string>
+    <string name="n17">You’ve got your Circuitmess Nibble in front of you? Cool! First of all, go over the list of components below and make sure you have all of them on your table and ready for assembly. Your Nibble kit was hand packed with love in Croatia by us, the CircuitMess team, and we always double-check, but mistakes can happen! In case something is missing, please contact us at contact@circuitmess.com and we\'ll get back to you as soon as possible. Here is the list of tools that will help you build your own Nibble.</string>
+    <string name="n18">Soldering accessories</string>
+    <string name="n19">Soldering sponge\nThis piece of sponge doesn’t seem like much, but put it under some water and see how it turns into a solder-cleaning super-sponge. Use it after soldering a couple of joints to remove excess solder from the tip of your soldering iron. Make sure it’s not dripping wet, but also not completely dry.\n\nSoldering iron stand\nThis stand is used for keeping soldering iron in a safe place while it’s still hot. Place it close to your working area (but not too close) when not using the soldering iron and carefully place the soldering iron on top of it. Also, use it to cool off the soldering iron after all the soldering work is done.\n\nSolder\nThis is the metal material you will be melting with your soldering iron in order to connect two components together. This type of solder is commonly used in the DIY electronics community for similar soldering projects. Be careful about getting new solder for your other DIY projects, because bad solder can lead to a lot of complications like bad solder joints and unwanted bridging.</string>
+    <string name="n20">Soldering equipment</string>
+    <string name="n21">Soldering iron\nThis is the most important tool in a maker’s arsenal, but for the Nibble’s assembly, any entry-level soldering iron will suffice. If you plan to dive into the world of DIY, you should consider getting a more expensive soldering station with temperature regulation. It could make your soldering experience that much better.There are also many soldering irons with interchangeable tips that can be particularly useful when working with much smaller components. Instructions on how to properly solder and take care of your soldering iron will be explained in the next chapter.\n\nSoldering iron cable\nThis cable is used to connect your soldering iron to the USB power brick. When you connect your cable be prepared that your soldering iron will heat up if you hold it in your hand. For safety reasons, make sure to plug out the cable whenever you’re not using the soldering iron.\n\nUSB power brick for the soldering iron\nUse this power brick to connect the soldering iron via the USB cable to the power. Be sure to only use this power brick because using some other power bricks can damage the device or cause it to not function properly.</string>
+    <string name="n22">Phillips screwdriver</string>
+    <string name="n23">You’ll need this cross screwdriver to screw down all the modules to the main board and to assemble the entire casing together. A standard 2.0mm cross screwdriver is one of the most used tools in the world of DIY, and this project is no exception.</string>
+    <string name="n24">Micro USB cable</string>
+    <string name="n25">This cable is used to connect your Nibble to a computer. That way you can download the newest firmware and upload new games to your console.</string>
+    <string name="n26">Desoldering vacuum tool</string>
+    <string name="n27">This tool is useful for cleaning up soldering mistakes but is not 100% necessary for assembling your Nibble. It should help you with the removal of solder if you make a mistake here or in any other case of soldering later.</string>
+    <string name="n28">Extra tools that are not mandatory for assembling Nibble but might come in handy include a helping third hand with magnification, multimeter and solder wick.</string>
+
+    <!-- nibble_time_to_get_makin_fragment -->
+    <string name="n29">Chapter One- Soldering the components</string>
+    <string name="n30">Part One - The buttons</string>
+    <string name="n31">The buttons consist of two parts - mechanical button parts and the button caps. Buttons can work even without the caps, but pressing them with the caps on feels way nicer and they look a lot cooler. Take one of the mechanical button parts and put it through the holes. There are a total of seven button placement locations, each with four little holes, that mark the following buttons: MENU, UP, LEFT, DOWN, RIGHT, A, and B.</string>
+    <string name="n32">Make sure to place the buttons on the correct side. You should see the little button text marks when placing the buttons. The solder joint needs to be on the back of the console (the side with the white patterns on it). The button should go through the holes all the way and make a little click when it falls in place.</string>
+    <string name="n33">After placing the component in the proper place (pins through the little holes), place the main board on the surface in front of you and take the soldering iron. Turn the main board around, so that you’re facing the white part, take a piece of solder and the soldering iron in your hands, and start heating it up.</string>
+    <string name="n34">Firstly, carefully place the soldering iron on one of the pins, so that it’s touching both the pin and the little plated area around the hole that the pin is going through. Leave it like that for about ten seconds so it heats up and then apply the tip of the solder to it. The solder should easily melt and spread evenly around the joint. Repeat the process for the other three pins. Make sure that the button is still fully pushed from the other side and that it’s not moving sideways in any directions.</string>
+    <string name="n35">If the button is not moving, but it can be clicked, then the first component is soldered. Congratulations! One down, many more to go.</string>
+    <string name="n36">Part two - the switch</string>
+    <string name="n37">Unfortunately, the console cannot stay powered on all the time, and sometimes you have to switch it off. This is where the switch comes in. You can easily switch the console on and off with one simple push. Before soldering this part, try to switch it around a few times. Each time the state of the switch changes, you should hear a loud click. So far, it’s not really doing anything, but soon enough, it will give life to your Nibble whenever you want it to. The process of soldering down this component is exactly the same as the previous ones.</string>
+    <string name="n38">Bridging</string>
+    <string name="n39">Another problem that can happen when soldering is a bridge. It is most common when soldering two pins very close to each other. If you bridge the pins, you must un-bridge them before continuing with the build.</string>
+    <string name="n40">Breaking off the bridged joint is easy - just place the heated soldering iron in the middle, take the excessive solder off, and clean the iron on the sponge. Repeat the process several times if needed. Clean the soldering iron so you don’t have any residual solder on it.</string>
+    <string name="n41">Part three - The battery holder</string>
+    <string name="n42">Unlike all of the other parts, this one goes onto the back of the console (the mostly white side). The pins should go through the holes so that they’re visible from the front side, the one where the screen and the buttons are located.</string>
+    <string name="n43">Again, pick up the soldering iron and solder the two pins. As easy as it gets!</string>
+    <string name="n44">Part four - The screen</string>
+    <string name="n45">Since this is pretty much the most important part of the console, together with the processor, you should treat it with care.</string>
+    <string name="n46">You’ll notice a little protective layer on top of it, which you can take off by pulling the little green part. Don’t do that just yet, so that the screen stays protected all the way through the soldering part.</string>
+    <string name="n47">After you’ve done your soldering, take it off so your screen can really shine! Everything will work just as well even if the protector remains on, so don’t worry too much about it. Inserting the screen is pretty much the same as with the other components. Just make sure to push the pins all the way through so that the screen fits firmly in place. Even though the screen has its protector, try to touch the black part as little as possible, so that it doesn’t get damaged. Especially avoid touching any part of the screen with the soldering iron, hot or cold (except the pins, duh). Turn the console around and solder all of the pins. Beware of the previously mentioned bad solder joints and solder bridges.</string>
+    <string name="n48">Before starting the soldering process, make sure to place some soft material under the screen so that it doesn’t get damaged or scratched while facing down on the table.</string>
+    <string name="n49">Chapter Two- First Check</string>
+    <string name="n50">This part is really important: Take a battery and place it in one of the outer two slots so that the minus (-) symbol is closer to the little spring, and the plus (+) symbol is looking away from it. When inserting it, make sure to first insert the minus (-) part so that you push the spring with the battery and then lightly insert the other part inside the holder. You need to use a little bit of strength in this process. If you’re unable to do so, ask someone older or stronger for assistance. (It’s all about the teamwork!)</string>
+    <string name="n51">Before turning your Nibble on, you have to insert the fuse that will keep all of the components untouched if something goes wrong inside the circuit. There are a total of three fuses and they can be replaced if needed as well. It doesn’t matter which way you put the fuse, as long as the little black text on it is facing upwards.</string>
+    <string name="n52">Now that the batteries and the fuse are both properly inserted, take the console in your hands and place the switch in the ON position.</string>
+    <string name="n53">The screen should turn on and you should see something like this!</string>
+    <string name="n54">Chapter Three- Button caps</string>
+    <string name="n55">Just take a button cap and put it on top of the button. Press hard so the button cap properly clicks on. If the button cap remains on after you release it and if it still can be clicked, you’ve put the cap on properly! Repeat this process for each button. After you’ve done so, check again if all the buttons are easily clickable.</string>
+    <string name="n56">Chapter Four-Casing Up</string>
+    <string name="n57">Now comes the most fun part of assembling Nibble - putting these neat, cool, transparent casings on it! You might be wondering why does it have a total of six plastic parts, but each and every one of them is there to keep the console not only safe from falling but also to be as comfortable to hold as possible. For this part of the assembly, you’re going to use three different types of bolts and two different types of spacers.</string>
+    <string name="n58">Final product</string>
+    <string name="n59">Voila! You have just completed the assembly of your own brand new gaming console - Nibble!</string>
+
+    <!-- quiz_question_fragment -->
+    <string name="quiz_question">Quiz question?</string>
+    <string name="answer_1">Answer 1</string>
+    <string name="answer_2">Answer 2</string>
+    <string name="answer_3">Answer 3</string>
+
+    <!-- start_quiz_fragment -->
+    <string name="start_quiz">Start quiz</string>
+
+    <!-- ringo_finishing_up_fragment -->
+    <string name="r1">Summed Up</string>
+    <string name="r2">Firstly, if you have received a SIM card with your CircuitMess Ringo kit, take it out and pop it out at the 2nd smallest size (micro SIM).</string>
+    <string name="r3">If you didn’t receive a SIM card with your kit, or if you don’t have one that you can use, don’t worry, your Ringo can function just fine without a SIM card (except for calls and messages, duh!).</string>
+    <string name="r4">Still, we advise that you should insert a SIM card if you have one before going further.</string>
+    <string name="r5">The SIM card slot is located on the left side of the device, and you need to insert it so that the notch on the SIM card faces upwards (check the picture).</string>
+    <string name="r6">When inserting it you should hear a click when it sits in the slot.</string>
+    <string name="r7">The Micro SIM slot has a push-push mechanism (push when inserting and push when removing).</string>
+    <string name="r8">NOTE: SIM can be inserted in multiple ways but it will only work if it’s inserted the right way. After inserting the SIM card, restart the phone so that the SIM module can reload the card.</string>
+    <string name="r9">IMPORTANT: Before turning your Ringo on, we recommend charging your phone for at least one hour.</string>
+    <string name="r10">The batteries come discharged in order to preserve their chemical composition.</string>
+    <string name="r11">After it charged for a while, press the ON button on the bottom right side of the phone.</string>
+    <string name="r12">Your Ringo should power on and boot into the Startup wizard.</string>
+    <string name="r13">Your Ringo should power on and boot into the Startup wizard.</string>
+    <string name="r14">Follow the on-screen instructions of the startup wizard to check if everything works right.</string>
+    <string name="r15">In case something is wrong or you have any questions about the assembly process, please feel free to let us know at contact@circuitmess.com.Also, any feedback that you give is extremely useful to us so we can make this guide and the Ringo kit even better.</string>
+
+    <!-- ringo_meet_the_tools_fragment -->
+    <string name="r16">Ringo tools</string>
+    <string name="r17">The Ringo is a kit designed to educate, but it’s far from a toy. And as such, it requires some real tools. The equipment and tools required for the assembly are not included in the standard kit. If you’ve bought the standard kit (no tools included) and don’t have them, now would be a good time to borrow or purchase them. If you’ve bought a Ringo kit with tools, you’ll get a box with the following tools.</string>
+    <string name="r18">Soldering iron</string>
+    <string name="r19">This is the most important tool in a maker’s arsenal, but for the Ringo’s assembly, any entry-level soldering iron will suffice. Though if you plan to dive into the world of DIY, you should consider maybe getting a more expensive soldering station with temperature regulation. It could make your soldering experience that much better. If you have bought the Ringo tools kit, you have also received a USB soldering iron in the set, as well as a stand for the soldering iron and a piece of sponge you can use to clean it.</string>
+    <string name="r20">Solder</string>
+    <string name="r21">This is the metal material you will be melting with your soldering iron in order to connect two components together. We highly advise buying a rosin core, 60/40 solder.This type of solder is commonly used in the DIY electronics community for similar soldering projects. Be careful when buying solder, because bad solder can lead to a lot of complications like bad solder joints and unwanted bridging.</string>
+    <string name="r22">Diagonal cutter pliers</string>
+    <string name="r23">With pliers like these, you’ll be able to trim leads of soldered components, cut wires and pin headers. We prefer this type shown in the picture (Plato, model 170), but any other type will do.</string>
+    <string name="r24">Needle-nose pliers</string>
+    <string name="r25">You’re going to need pliers like these when assembling the casing, or when plugging in some tricky connectors. They’re generally useful when doing some fine mechanical work.</string>
+    <string name="r26">Standard cross screwdriver</string>
+    <string name="r27">You’ll need this cross (Phillips) screwdriver to screw down all the modules to the Main board and to assemble the entire casing together. A standard 2.0mm cross screwdriver should do the trick.</string>
+    <string name="r28">Desoldering vacuum tool (solder sucker)</string>
+    <string name="r29">This tool is useful when cleaning up some bigger soldering mistakes but it isn’t necessary for assembling your Ringo. If you plan on doing some hacking, modding, or hardware repairs in the future, buying this one is always a good idea.</string>
+    <string name="r30">Cleaning sponge</string>
+    <string name="r31">This piece of sponge doesn’t seem like much, but put it under some water and see how it turns into a solder-cleaning super-sponge. Use it after soldering a couple of joints to remove excess solder from the tip of your soldering iron. Don’t use it when it’s dripping wet, but also don’t use it when it’s completely dry.</string>
+    <string name="r32">Extra tools that are not mandatory for assembling Ringo but might come in handy include a helping third hand with magnification, multimeter and solder wick.</string>
+
+    <!-- ringo_time_to_get_makin_fragment -->
+    <string name="r33">Motivational tip from Albert</string>
+    <string name="r34">Soldering is an essential skill if you want to dive into the world of DIY electronics.</string>
+    <string name="r35">Soldering is an essential skill if you want to dive into the world of DIY electronics. Your soldering iron is your best companion when it comes to creating something new. It gives you the power to create unique electronic devices from scratch. Nobody is born a soldering genius. It’s a skill just like any other and you need to practice it in order to become better at it. Also, I know how frustrating it can be when something doesn’t work from the first try. The truth is, you’ll have to get used to it because DIY electronics are all about that trial-and-error process, all while learning something new. And please, don’t worry, In the worst-case scenario (something not working) we’ll make it work together. Good luck and keep making!</string>
+    <string name="r36">Step 1-The Brain board</string>
+    <string name="r37">Let’s begin with the Brain board. Take 2 sticks of pin headers and cut them to size so that you can solder them onto the Brain board’s PCB.</string>
+    <string name="r38">You need to trim them with your diagonal cutter pliers.</string>
+    <string name="r39">In the end, you need to have one 22-pin header and one 11-pin machined header.</string>
+    <string name="r40">The pin headers need to be soldered so that they’re vertical to the board. Luckily there is a nice technique for doing just that:</string>
+    <string name="r41">1) Solder just the first pin of one row of headers</string>
+    <string name="r42">2) Check that the pin header is perpendicular.</string>
+    <string name="r43">3) If the header is slightly skewed and needs adjusting, melt the solder and tilt the headers with your fingers. (Watch out not to burn yourself.)</string>
+    <string name="r44">4) Check if the headers are aligned correctly, if not then repeat the process. If the header is vertical to the board, you can solder the rest of the pins.</string>
+    <string name="r45">Solder the second row of the headers as well. Make sure that they’re vertical to the Brain board! The results should look like the photo on the left.</string>
+    <string name="r46">Step 2-Attaching the Brain board onto the Main board</string>
+    <string name="r47">For this, you will need: 1 x M3x10mm black nylon bolt 1 x M3x5mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!) 1 x M3 black nylon nut</string>
+    <string name="r48">Put the bolt through the Brain board so it faces out in the direction of the pins. Then screw the brass spacer on top of it.</string>
+    <string name="r49">Use a small screwdriver for this!</string>
+    <string name="r50">Then, you can place the entire Brain board onto the Main board where it says “the Brain board”. Put the plastic nut onto the bolt on the back side of the Main board. Now that they’re fixed together, we can solder the Brain board onto the Main board.</string>
+    <string name="r51">Step 3-Soldering the Brain board to the Main board</string>
+    <string name="r52">Remember the headers you had to cut and solder to the Brain board? We’re not done with them yet! You need to solder them to the Main board too. We need to do this in order to establish an electrical connection between the Brain board and the Main board.</string>
+    <string name="r53">Step 4-The Display board</string>
+    <string name="r54">Next, we have the Display board... Again, you’ll have to cut the pin headers to the appropriate size so that they can fit the pins on the Display board. You need an 8-pin header row for this. With the same technique used when soldering the Brain board’s pin headers, soldering this shouldn’t be a problem.</string>
+    <string name="r55">Step 5-Mounting the Display board onto the Main board</string>
+    <string name="r56">For this, you’ll need: 3 x M3x10mm black nylon bolt, 3x M3x5mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!), 3x M3 black nylon nut.</string>
+    <string name="r57">Put the bolts through the holes so that they face the same direction as the pins.</string>
+    <string name="r58">Then, put the spacers on top of them and screw them on. Place the Display board on the Main board where it says “LCD display”. Then tighten the three nuts from the back side of the Main board.</string>
+    <string name="r59">NOTE : You can’t tighten the nuts with a screwdriver from underneath, only from above!</string>
+    <string name="r60">Step 6-Soldering the Display board</string>
+    <string name="r61">Now let’s go ahead and solder the Display board pins onto the Main board. Through these pins, the Brain board will be able to push all the images to the Display board, so it’s important to solder them properly.</string>
+    <string name="r62">Step 7-The Sound board</string>
+    <string name="r63">With the Sound board we’re going to have to do a bit more soldering than with the other boards. For this step, you’ll need:</string>
+    <string name="r64">1 x pin header row</string>
+    <string name="r65">1 x microphone</string>
+    <string name="r66">1 x headphone jack</string>
+    <string name="r67">First, solder the microphone to the Sound board. Be careful not to solder it onto the opposite side. After that, solder the headphone jack, too. As before, you need to trim the pin headers to the right size using your diagonal cutter pliers. You’ll need a 9-pin header for the Sound board. Solder them vertically to the board just like you’ve done with the Brain board and Display board before.</string>
+    <string name="r68">Step 8-Attaching the Sound board</string>
+    <string name="r69">For this step, you’ll need the following components: 1 x M3x10mm black nylon bolt, 1 x M3x5mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!), 1 x M3 black nylon nut</string>
+    <string name="r70">Put the screw through the board as we did with the other boards, then screw down the spacer. Place the Sound board onto the Main board where it says “Sound board”. Fasten the nut from the back side.</string>
+    <string name="r71">Step 9-Soldering the Sound board</string>
+    <string name="r72">The Sound board shouldn’t pose any problems since it doesn’t have that many pins that need to be soldered. Plus, by now you should be getting a grip on how soldering works if you didn’t already have the experience. Solder the pins to the Main board and we’re done with that.</string>
+    <string name="r73">Step 10-A lot of buttons…</string>
+    <string name="r74">All of these buttons may seem overwhelming, but trust us, after you solder a couple of them, the rest will be a breeze!</string>
+    <string name="r75">The smaller buttons are placed where the numerical keypad is, and just below the display. The bigger buttons are placed where it says A and B. Let’s start with the big yellow ones. Push them into the Main board so that they sit firmly on the board.</string>
+    <string name="r76">Before soldering the push buttons, make sure that they’re perpendicular (vertical) to the board. This is very important as you’ll have trouble putting the protective casing on the device if the buttons are tilted!</string>
+    <string name="r77">The soldering pads are quite big for these buttons, so you’ll need to hold your iron on them a bit longer. Soldering the smaller pushbuttons is mostly the same as soldering the big yellow ones.</string>
+    <string name="r78">Please make sure that the pushbuttons are sitting firmly on the board and that they’re not tilted before soldering them.</string>
+    <string name="r79">As we said in the previous paragraph, you won’t be able to mount the casing if the buttons are tilted! Make sure you solder each and every pin correctly. Don’t get hasty just because there’s so many of them. Slow and steady wins the race!</string>
+    <string name="r80">Step 11-The joystick</string>
+    <string name="r81">The joystick is still left to be soldered, but after all those pushbuttons, it shouldn’t be an issue.</string>
+    <string name="r82">Once you’re done with that, feel free to turn off your soldering iron and take a breather, because soldering time is over!</string>
+    <string name="r83">Nice job so far, but unfortunately we’re not done yet. There are still a few steps ahead. Oh no! It seems we’ve made a mistake during the soldering process! As you already know, soldering joints mustn’t be bridged as the device won’t work correctly (signals or voltages will get mixed or shorted). This is a perfect moment to demonstrate how to fix bridged solder joints with a desoldering vacuum pump:</string>
+    <string name="r84">Push down the plunger button on the desoldering pump</string>
+    <string name="r85">Place the soldering iron on the bridged joint until it melts</string>
+    <string name="r86">Place the desoldering pump directly on the melted solder joint</string>
+    <string name="r87">Press the release button on the desoldering pump, that should suck up the molten solder</string>
+    <string name="r88">Repeat the process if needed</string>
+    <string name="r89">This will require some practice, but it isn’t impossible to learn!</string>
+    <string name="r90">Step 12-The Network board</string>
+    <string name="r91">In order to attach the Network board to the Main board, you’ll need the following components: 2x M2.5 white nylon bolt2x M2.5 white nylon nut. The Network board first needs to be inserted into the big connector on the back where it says “Mini PCIE Express”. The network module needs to be inserted at an angle like this. Then you need to push it down until it’s horizontal with the Main board.</string>
+    <string name="r92">Keep holding it down and put one bolt through the Network board and the Main board. Fasten it with a nut from the other side. Then put the other bolt and fasten the other nut too.</string>
+    <string name="r93">Step 13-The speaker</string>
+    <string name="r94">Connecting the speaker is easy! First, you need to insert the speaker’s wire connector through the large hole on the top of the Main board. Once you’ve done that, take the white connector with a pair of pliers (or your fingers) and put it in the female connector slot where it says “speaker”. You should feel a bump when the connector fits in the slot nicely.</string>
+    <string name="r95">Step 14-The button caps</string>
+    <string name="r96">Pressing those pushbuttons without button caps on would be really tough, wouldn’t it? Well then, let’s take out all the button caps and place them on the buttons. Same as with the pushbuttons, there are two types: the bigger ones are for the A and B buttons and the smaller ones make up the rest.</string>
+    <string name="r97">*NOTE: You will receive the buttons with UV printed symbols.</string>
+    <string name="r98">Place them on top of the buttons and push down firmly. They should make a “click” when they fit into place.</string>
+    <string name="r99">Step 15-The front casing</string>
+    <string name="r100">Since we don’t want anything to happen to your Ringo, it’s best to put it in its plastic casing. Let’s start with the front side. For this, we’re going to need: 6x M3x8mm metal bolt (WATCH OUT – there are two versions of metal bolts that look similar; you need the shorter bolts here), 6 x M3x5mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the bigger brass spacer here!), 1 x Front protective casing1 x Front aesthetic casing. Put the bolts in from the front side and tighten the metal spacers from the back side.</string>
+    <string name="r101">Don’t tighten them too much, because you could damage the casing!</string>
+    <string name="r102">Step 16-The back casing</string>
+    <string name="r103">Take the rest of the components: 6x M3x12mm metal bolt (WATCH OUT – there are two versions of metal bolts that look similar; you need the longer bolts here), 6x M3x4mm brass (golden) spacer (WATCH OUT – there are two similar types of brass spacers in your kit and you need the shorter brass spacer here!), 1 x Bottom aesthetic casing1 x Bottom protective casing. The process is pretty similar to assembling the front casing.</string>
+    <string name="r104">Step 17-The battery</string>
+    <string name="r105">The battery comes with pre-applied two-sided sticky tape, so you’ll need to peel off the paper layer from the back of the battery.</string>
+    <string name="r106">Be careful not to peel off the whole tape, just the protective paper layer.</string>
+    <string name="r107">Place it inside the largest slot on the back casing, and make sure the battery’s cable is facing right. Press down on the battery firmly to ensure it’s stuck to the casing nicely. After sticking the battery to the casing, all that’s left to do is connect the white connector into the slot on the Main board where it says “battery”.</string>
+    <string name="r108">Step 18- The antenna</string>
+    <string name="r109">You were probably wondering what’s that dangling black wire connected to the network module. That’s the Ringo’s antenna and it is impossible to connect to the mobile network without it. Like with the battery, you’ll need to first peel off the paper layer from the end of the antenna.</string>
+    <string name="r110">Be extra gentle with it as it can be damaged if sticked wrongly!</string>
+    <string name="r111">Then stick it to the casing right next to the battery, with the antenna wire facing up.</string>
+    <string name="r112">Be careful when tugging on the antenna because the antenna connector on the network module is a bit fragile and might even break if you put too much strain on it!</string>
+    <string name="r113">Now you should have the back casing connected to the Main board with the battery and antenna as shown on the photo on the left.</string>
+    <string name="r114">Step 19-Combining the front and back casing</string>
+    <string name="r115">Place the back casing onto the back of the Main board.</string>
+    <string name="r116">Watch out for the cables as they might get in the way. Make sure they stay within the casing and away from the screws so they don’t stick out or get damaged.</string>
+    <string name="r117">Flip the phone so that the screen is facing up. Now place the front casing onto the front side of the Main board. Tighten the six bolts on the BACK SIDE. Squeeze the bottom and top pieces of casings together with your fingers while tightening the bolts.</string>
+    <string name="r118">Keep in mind that you don’t tighten them too much when assembling the casing because you might damage it.</string>
+    <string name="r119">And voilá, you’ve just assembled your very own mobile phone! Check out the following chapter for further instructions on how to set up your Ringo.</string>
+
 </resources>

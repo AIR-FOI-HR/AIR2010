@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nibble_time_to_get_makin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+
+        <TextView
+            android:id="@+id/chapter_one_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n29"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chapter_one_part1_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n30"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_title_nibble" />
+
+        <TextView
+            android:id="@+id/chapter_one_buttons1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n31"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part1_nibble" />
+
+        <TextView
+            android:id="@+id/chapter_one_buttons2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n32"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons1" />
+
+        <TextView
+            android:id="@+id/chapter_one_buttons3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n33"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons2" />
+
+        <TextView
+            android:id="@+id/chapter_one_buttons4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n34"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons3" />
+
+        <TextView
+            android:id="@+id/chapter_one_buttons5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n35"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons4" />
+
+        <ImageView
+            android:id="@+id/chapter_one_buttons1_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons5"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/nibble_chapter_one_buttons"/>
+
+        <ImageView
+            android:id="@+id/chapter_one_buttons2_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons1_image"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/nibble_chapter_one_buttons_other_side"/>
+
+        <TextView
+            android:id="@+id/chapter_one_part2_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n36"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_buttons2_image" />
+
+        <TextView
+            android:id="@+id/chapter_one_capture_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n37"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part2_nibble" />
+
+        <TextView
+            android:id="@+id/chapter_one_switch_bridging1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n38"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_capture_switch" />
+
+        <TextView
+            android:id="@+id/chapter_one_switch_bridging2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n39"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_bridging1" />
+
+        <TextView
+            android:id="@+id/chapter_one_switch_bridging3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n40"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_bridging2" />
+
+        <ImageView
+            android:id="@+id/chapter_one_switch_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_bridging3"
+            app:srcCompat="@drawable/nibble_chapter_one_switch"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/chapter_one_part3_battery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n41"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_switch_image" />
+
+        <TextView
+            android:id="@+id/chapter_one_part3_battery1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n42"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part3_battery" />
+
+        <TextView
+            android:id="@+id/chapter_one_part3_battery2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n43"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part3_battery1" />
+
+        <ImageView
+            android:id="@+id/chapter_one_battery_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part3_battery2"
+            app:srcCompat="@drawable/nibble_chapter_one_battery" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n44"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_battery_image" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n45"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n46"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen1" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n47"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen2" />
+
+        <TextView
+            android:id="@+id/chapter_one_part4_screen4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n48"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen3" />
+
+        <ImageView
+            android:id="@+id/chapter_one_screen_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_part4_screen4"
+            app:srcCompat="@drawable/nibble_chapter_one_screen" />
+
+        <TextView
+            android:id="@+id/chapter_two_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n49"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_one_screen_image"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/chapter_two_battery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n50"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_title_nibble" />
+
+        <ImageView
+            android:id="@+id/chapter_two_battery_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery"
+            app:srcCompat="@drawable/nibble_chapter_two_batteries"
+           />
+
+        <TextView
+            android:id="@+id/chapter_two_fuse1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n51"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_battery_image" />
+
+        <TextView
+            android:id="@+id/chapter_two_fuse2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/n52"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse1" />
+
+        <ImageView
+            android:id="@+id/chapter_two_fuse_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse2"
+            app:srcCompat="@drawable/nibble_chapter_two_fuse"
+            />
+
+        <TextView
+            android:id="@+id/chapter_two_final"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/n53"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_fuse_image"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_two_final_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_final"
+            app:srcCompat="@drawable/nibble_chapter_two_final"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/chapter_three_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n54"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_two_final_image"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/chapter_three_buttons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/n55"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_title_nibble"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_three_buttons_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_buttons"
+            app:srcCompat="@drawable/nibble_chapter_three_buttons"
+            />
+
+        <TextView
+            android:id="@+id/chapter_four_title_nibble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n56"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_three_buttons_image"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/chapter_four_casing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/n57"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_title_nibble"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/chapter_four_casing_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_casing"
+            app:srcCompat="@drawable/nibble_chapter_four_casing" />
+
+        <ImageView
+            android:id="@+id/chapter_four_bolts_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_casing_image"
+            app:srcCompat="@drawable/nibble_chapter_four_bolts"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/nibble_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n58"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_four_bolts_image"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/nibble_final_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nibble_final"
+            app:srcCompat="@drawable/nibble_final"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/nibble_final_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/n59"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nibble_final_image"
+            android:layout_marginTop="25dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

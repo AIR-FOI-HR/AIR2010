@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ringo_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/chapter_title_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="@string/makerbuino_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chapter1_makerbuino"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="@string/makerbuino_chapter1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_title_makerbuino" />
+
+        <ImageView
+            android:id="@+id/makerbuino_image"
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/makerbuino_picture" />
+
+        <TextView
+            android:id="@+id/chapter_title2_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/makerbuino_title2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/makerbuino_image" />
+
+        <TextView
+            android:id="@+id/chapter2_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="@string/makerbuino_chapter2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_title2_makerbuino" />
+
+        <TextView
+            android:id="@+id/chapter_title3_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/makerbuino_title3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter2_makerbuino" />
+
+        <TextView
+            android:id="@+id/chapter3_makerbuino"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:gravity="start|top"
+            android:maxLines="10"
+            android:text="@string/makerbuino_chapter3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_title3_makerbuino" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

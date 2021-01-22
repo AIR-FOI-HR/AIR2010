@@ -1,2 +1,4 @@
+include ':Core'
+include ':MultipleQuestion'
 include ':app'
 rootProject.name = "CircuitMessing"

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="10dp"
+                android:text="@string/r1"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r2"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r3"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r4"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <ImageView
+                android:id="@+id/ringo_finishing_up_image_1"
+                android:src="@drawable/ringo_finishing_up_1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <ImageView
+                android:id="@+id/ringo_finishing_up_image_2"
+                android:src="@drawable/ringo_finishing_up_2"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r5"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <ImageView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/ringo_finishing_up_image_3"
+                android:src="@drawable/ringo_finishing_up_3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r6"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r7"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r8"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r9"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <ImageView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/ringo_finishing_up_image_4"
+                android:src="@drawable/ringo_finishing_up_4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <ImageView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/ringo_finishing_up_image_5"
+                android:src="@drawable/ringo_finishing_up_5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r10"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r11"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <ImageView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/ringo_finishing_up_image_6"
+                android:src="@drawable/ringo_finishing_up_6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r12"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r13"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <ImageView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/ringo_finishing_up_image_7"
+                android:src="@drawable/ringo_finishing_up_7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r14"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r15"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

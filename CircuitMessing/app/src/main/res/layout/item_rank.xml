@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TableRow>
+        <TextView
+            android:id="@+id/ranking_place"
+            android:width="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Rank" />
+        <TextView
+            android:id="@+id/ranking_username"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Username" />
+        <TextView
+            android:id="@+id/ranking_score"
+            android:width="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Score" />
+    </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

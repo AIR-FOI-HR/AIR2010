@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.circuitmessing">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
+        android:name=".utils.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,7 +13,35 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".drawer.RankingScreenActivity"
+            android:label="Ranking Screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".drawer.SettingsActivity"
+            android:label="Settings Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".drawer.TitlesScreenActivity"
+            android:label="Title Screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.quiz.QuizActivity"
+            android:label="Quiz"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.makerbuino.MakerbuinoActivity"
+            android:label="Makerbuino"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.nibble.ActivityNibble"
+            android:label="Nibble"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.ringo.ActivityRingo"
+            android:label="Ringo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".startup.auth.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,6 +50,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

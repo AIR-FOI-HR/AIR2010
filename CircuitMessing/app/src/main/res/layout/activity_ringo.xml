@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".products.ringo.ActivityRingo">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/ringo_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/ringo_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/leftArrow"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="51dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="0dp"
+                app:icon="@drawable/abc_vector_test"
+                app:iconPadding="0dp"
+                app:iconTint="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/rightArrow"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="51dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="20dp"
+                android:rotationY="180"
+                app:icon="@drawable/abc_vector_test"
+                app:iconPadding="0dp"
+                app:iconTint="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_ringo"
+        app:menu="@menu/activity_product_drawer" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

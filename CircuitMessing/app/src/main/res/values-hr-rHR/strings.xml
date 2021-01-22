@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CircuitMessing</string>
+    <string name="navigation_drawer_open">Otvori navigacijsku ladicu</string>
+    <string name="navigation_drawer_close">Zatvori navigacijsku ladicu</string>
+    <string name="nav_header_title">John Doe</string>
+    <string name="nav_header_desc">Navigacijsko zaglavlje</string>
+    <string name="action_settings">Postavke</string>
+    <string name="prefs">Preference</string>
+
+    <string name="menu_home">Početna</string>
+    <string name="menu_gallery">Galerija</string>
+    <string name="menu_slideshow">Projekcija slajdova</string>
+
+    <string name="menu_titles">Titule</string>
+    <string name="menu_ranking">Ljestvica</string>
+    <string name="menu_forum">Forum</string>
+    <string name="menu_settings">Postavke</string>
+    <string name="menu_sign_out">ODJAVI SE</string>
+
+    <string name="menu_introduction">Uvod</string>
+    <string name="menu_meet_tools">Upoznaj alate</string>
+    <string name="menu_time_makin">Vrijeme je za rad</string>
+    <string name="menu_summed_up">Zaključak</string>
+    <string name="menu_quiz">Kviz</string>
+
+    <string name="page_title">CircuitMessing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Pozdrav prazni fragmente</string>
+
+    <string name="text_input_username">Korisničko ime</string>
+    <string name="text_input_password">Lozinka</string>
+    <string name="text_input_repeat_password">Ponovljena lozinka</string>
+
+    <string name="username">Korisničko ime</string>
+    <string name="login_activity_signin_tab_button">Prijavi se</string>
+    <string name="login_activity_signup_tab_button">Registriraj se</string>
+    <string name="login">Prijavi se</string>
+    <string name="password">Lozinka</string>
+    <string name="repeat_password">Ponovljena lozinka</string>
+    <string name="register">Registriraj se</string>
+
+    <!-- home fragment -->
+    <string name="home_ringo_title">Ringo vodič</string>
+    <string name="home_ringo_description">Sastavi vlastiti mobitel - Ringo!</string>
+
+    <string name="home_maker_title">MAKERbuino vodič</string>
+    <string name="home_maker_description">Sastavi vlastitu igraču konzolu - MAKERbuino!</string>
+
+    <string name="home_nibble_title">Nibble vodič</string>
+    <string name="home_nibble_description">sastavi vlastitu igraču konzolu - Nibble!</string>
+
+    <string name="home_card_difficulty">Težina: </string>
+    <string name="home_difficulty_easy">lagano</string>
+    <string name="home_difficulty_medium">srednje</string>
+    <string name="home_difficulty_hard">teško</string>
+
+    <string name="home_card_time">Vrijeme: </string>
+    <string name="home_ringo_time">5 sati</string>
+    <string name="home_maker_time">4 sata 30 minuta</string>
+    <string name="home_nibble_time">2 sata</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_product_drawer">ProductDrawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+    <!-- activity_settings -->
+    <string name="dark_mode">Tamni način</string>
+    <string name="language">ENG/HR</string>
+
+    <!-- end_quiz_fragment -->
+    <string name="congratulation">Čestitamo!</string>
+    <string name="you_have_completed_course">Sve ste završili!</string>
+    <string name="your_score_is">Vaš rezultat je:</string>
+    <string name="score_achieved">score_achieved</string>
+    <string name="titles_achieved">titles_achieved</string>
+    <string name="continue_quiz">Nastavak</string>
+
+    <!-- makerbuiono_introduction_fragment -->
+    <string name="makerbuino_title">Dobrodošli u MAKERbuino!</string>
+    <string name="makerbuino_chapter1">Dobrodošli u MAKERbuino vodič za izradu. U ovim poglavljima pomoći ćemo vam da napravite potpuno funkcionalan retro uređaj za igranje od gomile komponenata koje ste dobili u paketu MAKERbuino.</string>
+    <string name="makerbuino_title2">Preporučena dobna skupina</string>
+    <string name="makerbuino_chapter2">Procjenjujemo da bi dijete od 11 godina trebalo biti u mogućnosti sastaviti MAKERbuino uz malo pomoći odrasle osobe. Stoga je procijenjena dobna skupina 11+. Procijenjeno vrijeme izrade: 4 sata 30 minuta. Vrijeme izrade varira i ovisi o vještinama korisnika. MAKERbuino je napravljen sa svrhom dovođenja STEM-a (znanosti, tehnologije, inženjerstva i matematike) među novake elektronike na zabavan i zanimljiv način.</string>
+    <string name="makerbuino_title3">Što ćete naučiti s MAKERbuinom</string>
+    <string name="makerbuino_chapter3">Glavni cilj MAKERbuina je educirati vas i motivirati da naučite nešto novo ili četkati vještine koje već imate. U procesu izrade MAKERbuina naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i koja je njihova funkcija, kako mogu li se elektroničke komponente povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
+
+    <!-- makerbuiono_finisihing_up_fragment -->
+    <string name="mb1">Ako sve što se tiče elektronike radi u redu, zadnji je korak staviti crijeva (elektroniku) u lijepo kristalno čisto akrilno kućište kako bi svi mogli vidjeti vaše savršene lemne spojeve!</string>
+    <string name="mb2">Započnite sastavljanjem donje strane kućišta koja se sastoji od dva dijela plastike.</string>
+    <string name="mb3">Dalje, stavite poklopce u boji na žute gumbe jednostavnim postavljanjem (morat ćete primijeniti određenu silu i to je sasvim normalno)</string>
+    <string name="mb4">Nastavite montiranjem prednje ploče i pričvršćivanjem crnim šesterokutnim odstojnicima M3 i maticama.</string>
+    <string name="mb5">Neke novije verzije kompleta uključuju remen za ruke.</string>
+    <string name="mb6">Ako vaš komplet ima remen za ruku, sada ga možete postaviti oko donjeg desnog šesterokutnog odstojnika M3.</string>
+    <string name="mb7">Sada se pogledajte, uspjeli ste od vrećice sitnih elektroničkih komponenata napraviti svoj vlastiti djelujući uređaj za igre.</string>
+    <string name="mb8">Bravo, trebali biste biti ponosni na sebe!</string>
+    <string name="mb9">To je sve narode!</string>
+
+    <!-- makerbuiono_meet_the_tools_fragment -->
+    <string name="mb10">MAKERbuino alati</string>
+    <string name="mb11">Postoje neki alati i oprema potrebni za montažu koji nisu uključeni u standardni komplet. Ako ste kupili standardni komplet (a ne komplet s alatima) i nemate ih, sada bi bilo dobro vrijeme da ih posudite ili kupite. Ovi su alati korisni pri sastavljanju, popravljanju ili modificiranju elektroničkih uređaja i trebali bi biti dio opreme svakog proizvođača / hakera / moddera / električara. Mnogi od njih dostupni su u supermarketu ili u nekim profesionalnim prodavaonicama DIY elektronike poput Radio Shack, Adafruit, Sparkfun …</string>
+    <string name="mb12">Lemilica</string>
+    <string name="mb13">Bilo koje početno "sve u jednom" lemilo koje biste mogli pronaći u lokalnoj trgovini hardverom trebalo bi raditi (preporučena snaga - oko 30 W). Dobra je ideja nadograditi na skuplju stanicu za lemljenje s regulacijom temperature ako planirate temeljitije zaroniti u svijet DIY elektronike.</string>
+    <string name="mb14">Lem</string>
+    <string name="mb15">Toplo savjetujemo kupnju jezgre kolofonije, lem 60/40. Ovu vrstu lema obično preferira DIY elektronička zajednica za slične projekte lemljenja. Budite oprezni kad kupujete lem, loše lemljenje dovodi do puno komplikacija poput loših lemnih zglobova i neželjenog premošćivanja.</string>
+    <string name="mb16">Kliješta za dijagonalne rezače</string>
+    <string name="mb17">Ovakve će vam kliješta trebati za obrezivanje kabela lemljenih dijelova i rezanje žica. Više volimo ovaj tip prikazan na slici (Platon, model 170).</string>
+    <string name="mb18">Standardni križni odvijač</string>
+    <string name="mb19">Ovaj će vam trebati za postavljanje kućišta i LCD zaslona. Dovoljan je uobičajeni križni odvijač s promjerom osovine od 3 mm ili manjim.</string>
+    <string name="mb20">Nešto izolacijske trake</string>
+    <string name="mb21">Trebat će vam neka vrsta ljepila za pričvršćivanje MAKERbuinog zvučnika na stražnju stranu kućišta. Naš savjet: ovdje je najbolji izbor neka izolacijska ili slična traka, ali tu će učiniti i cijev super ljepila ili pištolj za vruće ljepilo. Iako, neće izgledati uredno koliko bi mogao da ste traku koristili za fiksiranje.</string>
+    <string name="mb22">Dodatni alati koji nisu obvezni za sastavljanje MAKERbuina, ali bi vam mogli dobro doći, uključuju vakumski alat za odlemljivanje, koji pomaže trećoj ruci kod povećanja, multimetar i fitilj za lemljenje.</string>
+
+
+    <!-- makerbuiono_time_to_get_makin_fragment -->
+    <string name="mb23">Motivacijski savjet od Alberta</string>
+    <string name="mb24">Lemljenje je bitna vještina ako jednoga dana želite postati nindža elektronike. Vaše lemilo je čarobni štapić, samo umjesto da vam omogućuje borbu protiv crne magije, daje vam moć stvaranja jedinstvenih inteligentnih elektroničkih uređaja od nule. Nemojte se frustrirati neuspjehom lemljenja, to je samo stvar prakse. S vremenom ćete to poboljšati lemljenjem kompleta poput MAKERbuina i radom na drugim zabavnim projektima koje ste odlučili napraviti. Znam koliko frustrirajuće može biti kad nešto ne uspije iz prvog pokušaja. Istina je da ćete se na to morati naviknuti jer ćete toga dobiti puno u svijetu DIY elektronike. I molim vas, ne brinite, u najgorem slučaju (vaš MAKERbuino ne radi) učinit ćemo da to funkcionira zajedno. Sretno i nastavite s izradom!</string>
+    <string name="mb25">Korak 1 - SD utičnicat</string>
+    <string name="mb26">Započet ćemo s utičnicom za SD karticu - velikom sjajnom metalnom komponentom koja se postavlja na površinu PCB-a. Pronađite SD utičnicu, postavite je na stražnju stranu ploče tamo gdje je napisan "SD SOCKET" tekst. Nastavite lemljenjem četiri jastučića oklopa utičnice. Pri lemljenju kontakata utičnice NE MORATE lemiti tri krajnja desna klina, jer se ne koriste.</string>
+    <string name="mb27">Korak 2 - Utičnica mikroračunala</string>
+    <string name="mb28">Utičnica mikroračunala također je zalemljena na stražnjoj strani ploče MAKERbuino.</string>
+    <string name="mb29">Pazite kako okrećete utičnicu jer nije simetrična. Obavezno ga postavite s desne strane označene urezom na utičnici.</string>
+    <string name="mb30">Pro savjet: prvo zalemite dvije dijagonalne iglice utičnice, a zatim provjerite je li utičnica lijepo poravnana s pločom, po potrebi ispravite poravnanje i lemite ostatak iglica.</string>
+    <string name="mb31">Korak 3 - otpornik od 10 k ohma</string>
+    <string name="mb32">Pronađite mali otpornik od 10 kΩ (boje: smeđa, crna, crna, crvena, smeđa) i zalemite ga na prednju stranu ploče gdje je oznaka R2 (donja strana ploče) - ovaj otpor potreban je za rad zaslona . Pro savjet: kada umetnete otpornik, savijte vodove otpornika tako da ne ispadne s PCB-a dok ga lemite.</string>
+    <string name="mb33">Važno: Ne zaboravite izrezati sve vodove komponenata koje ste lemili pomoću svojih dijagonalnih kliješta za rezanje. Također, uštedite višak potencijala koje ste izrezali, trebat će vam u jednom od daljnjih koraka.</string>
+    <string name="mb34">Korak 4 – 16MHz kristal</string>
+    <string name="mb35">Pronađite kristal od 16 MHz i umetnite ga na prednju stranu PCB-a (desna polovica PCB-a, označena Q1, 16 MHz).</string>
+    <string name="mb36">VAŽNO: Oznake teksta na kristalu mogu se razlikovati i ponekad izgledaju ovako: "16B000". Nanesite prethodni profesionalni vrh i savijte elektrode kristala na stražnjoj strani ploče.</string>
+    <string name="mb37">Korak 5 - dva kondenzatora od 22pF</string>
+    <string name="mb38">Zalemite dva 22pF keramička kondenzatora (male crvenkaste stvarčice s napisanim brojem 22). Uz kristal, oni su neophodni za oscilirajući krug igraće konzole.</string>
+    <string name="mb39">Korak 6 - dva klizna prekidača</string>
+    <string name="mb40">Sada zalemite dva klizna preklopna prekidača za UKLJUČIVANJE I ISKLJUČIVANJE konzole i utišavanje zvuka. Oni su zalemljeni na donjoj strani PCB-a i označeni su kao SWITCH1 i SWITCH2. Lijeva sklopka utišava zvuk, a desna će uključivati i isključivati napajanje konzole. Prekidači se moraju spustiti dolje i lijepo sjediti na PCB-u.</string>
+    <string name="mb41">Korak 7 – 100uF elektrolitski kondenzatori</string>
+    <string name="mb42">Pronađite tri elektrolitska kondenzatora (male crne bačve s dva odvoda). Mjesta za njih na PCB-u su označena kao C4, C5 i C7. Važno: ovi su kondenzatori polarizirani, pazite da ih pravilno umetnete.</string>
+    <string name="mb43">Polaritet kondenzatora označen je velikim bijelim znakom minus (-) na kondenzatorima (velika bijela pruga).</string>
+    <string name="mb44">Korak 8 – 3.3V regulator napona i tranzistor 2n2222</string>
+    <string name="mb45">Važno: Ove dvije komponente su vrlo slične, zato pažljivo pročitajte tekst na komponentama jer ih jedino tako možete prepoznati. (Imajte na umu da se tekst na vašem tranzistoru može razlikovati i na njemu biti napisano nešto poput "KSP 2222A - 708". To se događa zato što različiti proizvođači na svoje komponente pišu jedinstvene serijske brojeve). Zalemite regulator na ploču na kojoj je označeno „IC2 3.3V“, a tranzistor na mjesto s oznakom „T1 2N2222“.</string>
+    <string name="mb46">Pazite da ove komponente okrenete s desne strane!</string>
+    <string name="mb47">Važno: Provjerite jesu li ravna strana regulatora i tranzistor okrenuti prema ploči prema dolje, to se postiže savijanjem zatiča komponenata za 90 stupnjeva.</string>
+    <string name="mb48">Korak 9 - LCD zaslon Nokia 5110</string>
+    <string name="mb49">Za montiranje zaslona trebat će vam M2 vijci, matice i odstojnici.</string>
+    <string name="mb50">Važno: provjerite jesu li lemni zglobovi na utičnici vašeg mikroračunala lijepo i čisto zalemljeni i jesu li svi oblikovani poput "vulkana".</string>
+    <string name="mb51">Morate biti sigurni da su veze na mikrokontroleru dobre jer ih nećete moći popraviti nakon što zalemite zaslon (zaslon preklapa lemne spojeve utičnice). Važno: prije lemljenja zaslona na PCB, pričvrstite njegove dvije donje rupe vijcima, maticama i odstojnicima. Na ovaj način osigurat ćete da je modul zaslona savršeno poravnat prije lemljenja na PCB. Zaslon ćete moći fiksirati samo pomoću dvije donje rupe na njemu. Nakon što ste fiksirali zaslon, zalemite konektor s druge strane pločice i izbjegavajte premošćivanje između pinova.</string>
+    <string name="mb52">Korak 10 - Umetnite mikroračunalo ATmega328</string>
+    <string name="mb53">Krenimo od pronalaska malog crnog dragocjenog mikroračunala. Evo lukavstva … Važno: Najčešća pogreška koju ljudi čine s mikrokontrolerom je ta da ga pogrešno ubace u utičnicu ili slome sitne igle mikrokontrolera u procesu umetanja. Ne brinite, samo treba malo opreza i koncentracije (s ovim ne žurite).</string>
+    <string name="mb54">Prvo locirajte urez mikrokontrolera naznačujući na koju ga stranu okrenuti prilikom umetanja u utičnicu.</string>
+    <string name="mb55">Drugo, NEMOJTE odmah umetnuti mikrokontroler. Morat ćete malo saviti igle. Učinite to gurajući klinove mikrokontrolera prema stolu tako da na sve igle primijenite jednaku silu.</string>
+    <string name="mb56">Provjerite postoje li igle na mikroračunalu koje nisu pravilno savijene i ispravite ih.</string>
+    <string name="mb57">Na kraju, polako umetnite mikrokontroler u utičnicu. Ako je potrebno, izvadite čip i savijte još igle.</string>
+    <string name="mb58">Korak 11 - prvo ispitivanje funkcionalnosti</string>
+    <string name="mb59">Upravo smo lemili sve osnovne MAKERbuino komponente potrebne za njegove osnovne funkcije i testirat ćemo ih. Spojite bateriju na već zalemljeni ženski konektor baterije.</string>
+    <string name="mb60">Uključite uređaj pomicanjem prekidača za napajanje u lijevi položaj. Zaslon bi se trebao uključiti i prikazati malo teksta.</string>
+    <string name="mb61">Ako se to dogodilo, to znači da sve komponente do sada dobro rade i pravilno su zalemljene.</string>
+    <string name="mb62">Korak 12 - lemite drugi otpornik od 10 k ohma</string>
+    <string name="mb63">Ovaj otpor važan je za spajanje mikrokontrolera na serijsku ploču UART programera. Označen je R3, a kod boje postaje smeđa, crna, crna, crvena, smeđa.</string>
+    <string name="mb64">Korak 13 - ženski 6-pinski kutni zaglavlje</string>
+    <string name="mb65">Pronađite ovaj crni ženski konektor. Zalemljen je na mjesto s oznakom "JP2, serijski programer". Na ovaj je priključak priključena serijska ploča UART programera. Obavezno ga okrenite na pravi način.</string>
+    <string name="mb66">Pro savjet: Ako komponenta ispadne iz PCB-a kada je pokušate zalemiti, stavite ručku kliješta za rezanje ispod komponente koju lemite.</string>
+    <string name="mb67">Korak 14-dva potenciometra kotača</string>
+    <string name="mb68">Sada ćemo locirati i lemiti dva potenciometra za trim s oznakama TR1 i TR2. Lijevi potenciometar koristi se za regulaciju pozadinskog osvjetljenja zaslona, a desni regulira glasnoću zvuka. Obavezno ovdje upotrijebite naš prethodni profesionalni savjet i stavite kliješta ispod potenciometara dok ih lepite.</string>
+    <string name="mb69">Korak 15–3 × 2 ICSP zaglavlja i kondenzatori od 100 nF</string>
+    <string name="mb70">Zaglavlje je postavljeno na gornju lijevu prednju stranu PCB-a (s oznakom JP1). Nakon zaglavlja, pronađite dva mala kondenzatora od 100 nF (na površini imaju 104 napisana) i lemite ih na mjesta označena C1 i C6.</string>
+    <string name="mb71">Korak 16-još neki otpornici i dioda</string>
+    <string name="mb72">Ok, zalemimo ostatak malih dvovodnih komponenata.</string>
+    <string name="mb73">Zalemite otpor 2.2k ohma (crveni, crveni, crveni, zlatni) na mjesto označeno s “R1, 2k”</string>
+    <string name="mb74">Otpor od 100 ohma (smeđi, crni, smeđi, zlatni ILI smeđi, crni, crni, crni, smeđi) na mjestu s oznakom “R6, 100”</string>
+    <string name="mb75">Dva otpornika od 4,7 k ohma (žuta, ljubičasta, crvena, zlatna) trebaju se postaviti na oznake „R4, 4k7“ i „R5, 4k7“</string>
+    <string name="mb76">Dioda 1N4148 mora ići tamo gdje je na ploči napisano "D1, 1N4148".</string>
+    <string name="mb77">Važno: pazite na polaritet diode pazeći da crni prsten na diodi odgovara oznakama na PCB-u</string>
+    <string name="mb78">Korak 17 - konektor za slušalice</string>
+    <string name="mb79">Konektor za slušalice ide na mjesto označeno "X1, STEREOJACK". Iako je ovaj konektor napravljen za stereo izlaz zvuka, MAKERbuino može emitirati samo zvučne signale i bloops u mono. Zbog toga su i lijeva i desna slušalica povezane zajedno i povezane na isti izlazni zvučni kanal na mikroračunalu. Iskoristite naš prethodni profesionalni savjet i stavite kliješta ispod konektora tako da ne padne dok ga lepite.</string>
+    <string name="mb80">Korak 18-Li-Po ploča punjača</string>
+    <string name="mb81">Za postavljanje ploče za punjač Li-Po TP4056 morat ćete upotrijebiti one malene suvišne odsječne vodove za koje smo vam rekli da štedite na koraku 3. Iz gomile suvišnih elektroda odaberite četiri najduža elektrode i umetnite spojite ih kroz kontakte punjača i PCB-a i savijte ih prije lemljenja. Morate lemiti kontakte i na gornjoj i na donjoj strani vašeg MAKERbuina kako bi punjač ispravno radio.</string>
+    <string name="mb82">Elektronika 101: Ovaj način dodavanja naslaganih PCB-a na glavnu PCB naziva se "dizajn dječje ploče". Ploče naslagane na glavnu PCB zovu se "podređene ploče".</string>
+    <string name="mb83">Korak 19-muška 4-pinska kutna zaglavlja za više igrača</string>
+    <string name="mb84">Na ploči su označeni kao JP3 i JP4. Upotrijebite profesionalni savjet o postavljanju kliješta ispod komponente jer bi ih moglo biti malo teže lemiti.</string>
+    <string name="mb85">Korak 20-sedam velikih klikovih tipki</string>
+    <string name="mb86">Konačno! Vrijeme je za lemljenje žutih tipki. Važno: pazite da pritisnete tipke skroz dolje na PCB, jer bi se u suprotnom mogli zavojiti, što će uzrokovati njihovo zaglavljivanje kada montirate prednje kućište.</string>
+    <string name="mb87">Napravio si dobar posao. Dobro napravljeno!</string>
+
+    <!-- nibble_introduction_fragment -->
+    <string name="nibble_title">Dobrodošli u Nibble!</string>
+    <string name="nibble_chapter1">U ovom vodiču za izradu saznat ćete kako sami sastaviti igraću konzolu, koristeći samo nekoliko alata u procesu. Bilo da prvi put susrećete uređaj za samostalno korištenje ili ste samostalni veteran, naučit ćete puno!</string>
+    <string name="nibble_title2">Preporučena dobna skupina</string>
+    <string name="nibble_chapter2">Kao što piše na kutiji, trebali biste imati najmanje 9 godina za sastavljanje ove konzole. Imajući to na umu, treba pažljivo pristupiti dijelovima sklopa poput lemljenja i zateznih vijaka - zamolite odraslu osobu da pomogne ako nikada prije niste lemili. Vrijeme montaže ovisi o vašem prethodnom znanju i iskustvu s elektronikom. Za sastavljanje vaše konzole trebat će vam ukupno oko 2 sata.</string>
+    <string name="nibble_title3">Što ćete naučiti s Nibble</string>
+    <string name="nibble_chapter3">Glavni cilj Nibblea je educirati vas i motivirati da naučite nešto novo ili se osvježiti s vještinama koje već imate. Također bi trebao poslužiti kao ulazna točka u elektronici, čineći ga savršenim projektom za započinjanje vaše velike inženjerske karijere. U procesu montaže naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i njihova funkcija, kako se elektroničke komponente mogu povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
+
+    <!-- nibble_finishing_up_fragment -->
+    <string name="n1">Nibble</string>
+    <string name="n2">Postoji nekoliko dodatnih stvari koje morate pripaziti tijekom upotrebe konzole.</string>
+    <string name="n3">Kabel mikro-USB na USB koristi se za povezivanje konzole s računalom i za preuzimanje novih ažuriranja softvera, kao i za prijenos vlastitih igara stvorenih pomoću Circuit Blocks-a!</string>
+    <string name="n4">Micro USB kabel</string>
+    <string name="n5">Povezivanje vašeg Nibble-a s računalom</string>
+    <string name="n6">Što je CircuitBlocks pitate se?</string>
+    <string name="n7">Circuit Blocks je grafičko programsko sučelje koje pomaže početnicima da uđu u ugrađeno programiranje.</string>
+    <string name="n8">Temelji se na Microsoftovim MakeCode-u i PXT-Blockly (Google Blockly fork) i korisniku predstavlja glatko sučelje nalik ogrebotinama u kojem povezuju logičke blokove kako bi generirali kôd za svoj MAKERphone i Nibble (a uskoro i druge uređaje CircuitMess).</string>
+    <string name="n9">Ovdje možete pronaći više o CircuitBlocks.</string>
+    <string name="n10">Jednom kad se povežete s računalom, uključite konzolu kako bi bila prepoznata.</string>
+    <string name="n11">Uz to, na vrhu konzole nalazi se i mali gumb koji služi za brzo resetiranje konzole. Koristite taj gumb kad god se konzola zaglavi ili ako se predugo učitava. Međutim, nemojte dodirivati ovaj gumb dok igrate igre jer će to izbrisati vaš napredak u igri!</string>
+    <string name="n12">Ispod zaslona nalazi se malo plavo svjetlo koje bi trebalo treptati dok je konzola uključena. Vjerojatno ga nećete vidjeti sa svih ovih kućišta, ali ako ga vidite, nemojte se iznenaditi - pokazatelj je da vaša konzola radi.</string>
+    <string name="n13">Plavo trepćuće svjetlo - pokazatelj radne konzole</string>
+    <string name="n14">Napokon, ako vam ikad ponestane soka, zamijenite ih AAA (trostrukim A) baterijama. Najbolje je koristiti baterije iz istog pakiranja jer će sve trajati jednako dugo.</string>
+    <string name="n15">Dosta priče, krenimo!</string>
+
+    <!-- nibble_meet_the_tools_fragment -->
+    <string name="n16">Nibble alati</string>
+    <string name="n17">Pred sobom imate svoj Nibble iz kruga? Super! Prije svega, pregledajte popis komponenata u nastavku i provjerite jesu li sve na vašem stolu i spremne za montažu. Vaš komplet za Nibble ručno smo upakirali s ljubavlju u Hrvatskoj mi CircuitMess tim i uvijek provjeravamo, ali mogu se dogoditi pogreške! U slučaju da nešto nedostaje, kontaktirajte nas na contact@circuitmess.com i javit ćemo vam se što je prije moguće. Evo popisa alata koji će vam pomoći da napravite vlastiti Nibble.</string>
+    <string name="n18">Pribor za lemljenje</string>
+    <string name="n19">Spužvica za lemljenje \nOvaj komad spužve ne čini se previše, ali stavite je pod malo vode i pogledajte kako će se pretvoriti u super-spužvu za čišćenje lema. Upotrijebite ga nakon lemljenja nekoliko zglobova da biste uklonili višak lema s vrha vašeg lemilice. Pazite da ne curi mokro, ali i da nije potpuno suho.\n\nPostolje za lemljenje \nOvo postolje služi za održavanje lemilice na sigurnom mjestu dok je još vruće. Stavite ga blizu svog radnog područja (ali ne preblizu) kada ne koristite lemilo i pažljivo ga postavite na njega. Također ga upotrijebite za hlađenje lemilice nakon završetka svih radova lemljenja.\n\nLemljenje \nOvo je metalni materijal koji ćete topiti svojim lemilom kako biste povezali dvije komponente. Ova vrsta lema obično se koristi u DIY elektroničkoj zajednici za slične projekte lemljenja. Budite oprezni pri nabavljanju novog lema za svoje druge DIY projekte, jer loše lemljenje može dovesti do puno komplikacija poput loših lemnih zglobova i neželjenog premošćivanja.</string>
+    <string name="n20">Oprema za lemljenje</string>
+    <string name="n21">Lemilica \nOvo je najvažniji alat u arsenalu proizvođača, ali za sklop Nibble-a bit će vam dovoljno svako lemljenje početne razine. Ako planirate zaroniti u svijet "uradi sam", trebali biste razmisliti o nabavci skuplje stanice za lemljenje s regulacijom temperature. To bi moglo učiniti vaše iskustvo lemljenja toliko boljim. Postoji i mnogo lemilica s izmjenjivim vrhovima koje mogu biti posebno korisne u radu s mnogo manjim komponentama. Upute za pravilno lemljenje i brigu o lemilu bit će objašnjene u sljedećem poglavlju. \n\nKabel za lemljenje \nOvaj kabel koristi se za spajanje vašeg lemilice s USB napajanjem. Kad spajate kabel, budite spremni da se vaše lemilice zagriju ako ga držite u ruci. Iz sigurnosnih razloga obavezno iskopčajte kabel kad god ne koristite lemilicu. \n\nUSB opeka za lemilicu \nUpotrijebite ovu električnu opeku za spajanje lemilice putem USB kabela na struju. Obavezno koristite samo ovu energetsku ciglu jer upotreba nekih drugih energetskih opeka može oštetiti uređaj ili prouzročiti da ne radi ispravno.</string>
+    <string name="n22">Phillips odvijač</string>
+    <string name="n23">Ovaj križni odvijač trebat će vam da odvrnete sve module na glavnu ploču i da zajedno sastavite cijelo kućište. Standardni križni odvijač od 2,0 mm jedan je od najčešće korištenih alata u svijetu "uradi sam" i ovaj projekt nije iznimka.</string>
+    <string name="n24">Mikro USB kabel</string>
+    <string name="n25">Ovaj kabel koristi se za povezivanje vašeg Grickanja s računalom. Na taj način možete preuzeti najnoviji firmware i prenijeti nove igre na svoju konzolu.</string>
+    <string name="n26">Aparat za odlemljivanje vakuuma</string>
+    <string name="n27">Ovaj je alat koristan za uklanjanje pogrešaka pri lemljenju, ali nije 100% potreban za sastavljanje vašeg grickanja. Trebalo bi vam pomoći u uklanjanju lema ako ovdje pogriješite ili u bilo kojem drugom slučaju lemljenja.</string>
+    <string name="n28">Dodatni alati koji nisu obvezni za sastavljanje grickalica, ali bi vam mogli dobro doći, uključuju pomoćnu treću ruku s povećanjem, multimetar i fitilj za lemljenje.</string>
+
+    <!-- nibble_time_to_get_makin_fragment -->
+    <string name="n29">Prvo poglavlje - Lemljenje komponenata</string>
+    <string name="n30">Prvi dio - Gumbi</string>
+    <string name="n31">Gumbi se sastoje od dva dijela - mehaničkih dijelova gumba i poklopca gumba. Gumbi mogu raditi i bez poklopca, ali pritiskom na poklopce čini se ljepšima i izgledaju puno hladnije. Uzmi jedan od mehaničkih dijelova gumba i provuci ga kroz rupe. Ukupno je sedam mjesta za postavljanje gumba, svaka s po četiri rupice, koje označavaju sljedeće gumbe: MENU, GORE, LIJEVO, DOLJE, DESNO, A i B.</string>
+    <string name="n32">Obavezno postavite gumbe na ispravnu stranu. Prilikom postavljanja gumba trebali biste vidjeti oznake teksta na gumbu. Lemni spoj mora biti na stražnjoj strani konzole (strana s bijelim uzorcima na sebi). Gumb bi trebao proći kroz rupe do kraja i kliknuti kad padne na svoje mjesto.</string>
+    <string name="n33">Nakon što smjestite komponentu na odgovarajuće mjesto (zakvačite kroz rupice), stavite glavnu ploču na površinu ispred sebe i uzmite lemilicu. Okrenite glavnu ploču tako da budete okrenuti prema bijelom dijelu, uzmite komad lema i lemilicu u ruke i počnite je zagrijavati.</string>
+    <string name="n34">Prvo, pažljivo postavite lemilicu na jedan od zatiča, tako da dodiruje i zatik i malo presvučeno područje oko rupe kroz koju prolazi klin. Ostavite tako desetak sekundi da se zagrije, a zatim na njega nanesite vrh lema. Lem se treba lako topiti i ravnomjerno širiti oko spoja. Ponovite postupak za ostale tri igle. Pazite da je gumb još uvijek u potpunosti pritisnut s druge strane i da se ne pomiče bočno ni u kojem smjeru.</string>
+    <string name="n35">Ako se gumb ne pomiče, ali na njega se može kliknuti, tada je prva komponenta zalemljena. Čestitamo! Jedan dolje, još mnogo toga do kraja.</string>
+    <string name="n36">Drugi dio - prekidač</string>
+    <string name="n37">Nažalost, konzola ne može ostati uključena cijelo vrijeme, a ponekad je morate isključiti. Ovdje dolazi prekidač. Konzolu možete jednostavno uključiti i isključiti jednim jednostavnim pritiskom. Prije lemljenja ovog dijela, pokušajte ga prebaciti nekoliko puta. Svaki put kad se promijeni stanje prekidača, trebali biste čuti glasan klik. Zasad zapravo ništa ne radi, ali dovoljno brzo, oživjet će vaš Grickani kad god to poželite. Postupak lemljenja ove komponente potpuno je isti kao i prethodni.</string>
+    <string name="n38">Premošćivanje</string>
+    <string name="n39">Drugi problem koji se može dogoditi kod lemljenja je most. Najčešće je kod lemljenja dvije igle vrlo blizu jedna drugoj. Ako premostite pinove, morate ih demontirati prije nastavka izrade.</string>
+    <string name="n40">Otkinuti premošćeni spoj lako je - samo postavite zagrijano lemilo u sredinu, skinite prekomjerni lem i očistite glačalo na spužvi. Ponovite postupak nekoliko puta ako je potrebno. Očistite lemilicu tako da na njoj nema ostataka lema.</string>
+    <string name="n41">Treći dio - Držač baterije</string>
+    <string name="n42">Za razliku od svih ostalih dijelova, ovaj ide na stražnju stranu konzole (uglavnom bijele strane). Igle bi trebale proći kroz rupe tako da budu vidljive s prednje strane, one na kojoj se nalaze zaslon i gumbi.</string>
+    <string name="n43">Ponovno podignite lemilicu i zalemite dvije igle. Koliko lako postaje!</string>
+    <string name="n44">Četvrti dio - Zaslon</string>
+    <string name="n45">Budući da je ovo uglavnom najvažniji dio konzole, zajedno s procesorom, trebali biste prema njemu postupati pažljivo.</string>
+    <string name="n46">Na njemu ćete primijetiti mali zaštitni sloj koji možete skinuti povlačenjem malog zelenog dijela. Nemojte to još raditi, tako da zaslon ostane zaštićen do kraja kroz dio za lemljenje.</string>
+    <string name="n47">Nakon što završite s lemljenjem, skinite ga tako da zaslon zaista može zasjati! Sve će raditi jednako dobro, čak i ako zaštitnik ostane uključen, zato ne brinite previše zbog toga. Umetanje zaslona gotovo je isto kao i kod ostalih komponenata. Samo pripazite da igle potisnete do kraja, tako da zaslon čvrsto stane na svoje mjesto. Iako zaslon ima svoj zaštitnik, pokušajte što manje dodirivati crni dio, kako se ne bi oštetio. Posebno izbjegavajte dodirivati bilo koji dio zaslona lemilicom, vrućim ili hladnim (osim igla, duh). Okrenite konzolu i zalemite sve igle. Čuvajte se prethodno spomenutih loših spojnica za lemljenje i lemnih mostova.</string>
+    <string name="n48">Prije početka lemljenja, položite nešto mekog materijala ispod zaslona kako se ne bi oštetio ili ogrebao dok je okrenut prema dolje na stolu.</string>
+    <string name="n49">Drugo poglavlje - Prva provjera</string>
+    <string name="n50">Ovaj je dio zaista važan: Uzmite bateriju i stavite je u jedan od dva vanjska utora tako da je simbol minus (-) bliži maloj opruzi, a znak plus (+) gleda dalje od nje. Prilikom umetanja, prvo umetnite minus (-) dio tako da pritisnete oprugu s baterijom, a zatim lagano umetnite drugi dio u držač. U ovom procesu trebate upotrijebiti malo snage. Ako to ne možete učiniti, zamolite nekoga starijeg ili jačeg za pomoć. (Sve je u timskom radu!)</string>
+    <string name="n51">Prije uključivanja grickalice, morate umetnuti osigurač koji će zadržati sve dijelove netaknutima ako nešto ne uspije u krugu. Ukupno postoje tri osigurača, a po potrebi se mogu i zamijeniti. Nije važno na koji ste način stavili osigurač, sve dok je mali crni tekst na njemu okrenut prema gore.</string>
+    <string name="n52">Sad kad su baterije i osigurač pravilno umetnuti, uzmite konzolu u ruke i postavite prekidač u položaj UKLJUČENO.</string>
+    <string name="n53">Zaslon bi se trebao uključiti i trebali biste vidjeti nešto poput ovoga!</string>
+    <string name="n54">Poglavlje treće - Obujmice gumba</string>
+    <string name="n55">Samo uzmite poklopac gumba i stavite ga na vrh gumba. Pritisnite snažno kako bi poklopac gumba pravilno kliknuo. Ako poklopac gumba ostane uključen nakon što ga otpustite i ako se na njega i dalje može kliknuti, pravilno ste ga stavili! Ponovite ovaj postupak za svaki gumb. Nakon što to učinite, ponovno provjerite jesu li svi gumbi lako kliknuti.</string>
+    <string name="n56">Četvrto poglavlje</string>
+    <string name="n57">Sada dolazi najzabavniji dio sastavljanja grickanja - stavljanje ovih urednih, hladnih, prozirnih kućišta! Možda se pitate zašto ima ukupno šest plastičnih dijelova, ali svaki od njih postoji kako bi konzola bila ne samo sigurna od pada, već i što udobnija za držanje. Za ovaj ćete dio sklopa upotrijebiti tri različite vrste vijaka i dvije različite vrste odstojnika.</string>
+    <string name="n58">Finalni proizvod</string>
+    <string name="n59">Voila! Upravo ste dovršili montažu vlastite potpuno nove igraće konzole - Nibble!</string>
+
+    <!-- quiz_question_fragment -->
+    <string name="quiz_question">Pitanja za kviz?</string>
+    <string name="answer_1">Odgovor 1</string>
+    <string name="answer_2">Odgovor 2</string>
+    <string name="answer_3">Odgovor 3</string>
+
+    <!-- start_quiz_fragment -->
+    <string name="start_quiz">Započni kviz</string>
+
+    <!-- ringo_introduction_fragment -->
+    <string name="ringo_title">Dobrodošli u Ringo!</string>
+    <string name="ringo_chapter1">Dobrodošli u vodič za izradu CircuitMess Ringo! U sljedećih 5 poglavlja pomoći ćemo vam da napravite vlastiti mobitel od komponenata koje ste dobili u svom Ringo kompletu!</string>
+    <string name="ringo_title2">Preporučena dobna skupina</string>
+    <string name="ringo_chapter2">Vjerujemo da bi dijete od 11 godina trebalo biti u mogućnosti sastaviti Ringo uz pomoć odrasle osobe. Procijenjena dobna skupina je 11+. Procijenjeno vrijeme izrade je oko 5 sati, ali može se razlikovati ovisno o vašoj razini vještine. CircuitMess Ringo dizajniran je da početnike na zabavan i zanimljiv način upozna s osnovama STEM-a (znanosti, tehnologije, inženjerstva i matematike).</string>
+    <string name="ringo_title3">Što ćete naučiti s Ringom</string>
+    <string name="ringo_chapter3">Glavni cilj Ringa je educirati vas i motivirati da naučite nešto novo ili četkati vještine koje već imate. U procesu montaže naučit ćete: kako lemiti, koje su osnovne elektroničke komponente i koja je njihova funkcija, kako se elektroničke komponente mogu povezati i zašto, što su mikrokontroleri i neke osnove digitalne elektronike.</string>
+    <!-- ringo_finishing_up_fragment -->
+    <string name="r1">Sažetak</string>
+    <string name="r2">Na početku, ako ste dobili SIM karticu sa svojim CircuitMess Ringo kompletom, izvadite je i otrgnite je na drugoj najmanjoj veličini (micro SIM).</string>
+    <string name="r3">Ako uz svoj komplet niste dobili SIM karticu ili ako nemate onu koju možete koristiti, ne brinite, vaš Ringo može izvrsno funkcionirati i bez SIM kartice (osim poziva i poruka).</string>
+    <string name="r4">Ipak, savjetujemo vam da umetnete SIM karticu ako je imate prije nego što krenete dalje.</string>
+    <string name="r5">Utor za SIM karticu nalazi se na lijevoj strani uređaja i trebate je umetnuti tako da je zarez na SIM kartici okrenut prema gore (provjerite sliku).</string>
+    <string name="r6">Prilikom umetanja trebali biste čuti klik kad sjedne u utor.</string>
+    <string name="r7">Utor za Micro SIM ima gurni-gurni mehanizam (guranje pri umetanju i guranje pri vađenju).</string>
+    <string name="r8">NAPOMENA: SIM se može umetnuti na više načina, ali funkcionirat će samo ako je umetnut na pravi način. Nakon umetanja SIM kartice, ponovo pokrenite telefon tako da SIM modul može ponovo učitati karticu.</string>
+    <string name="r9">VAŽNO: Prije uključivanja Ringa preporučujemo punjenje telefona najmanje jedan sat.</string>
+    <string name="r10">Baterije dolaze prazne kako bi se očuvao njihov kemijski sastav.</string>
+    <string name="r11">Nakon što se punio neko vrijeme, pritisnite gumb ON na donjoj desnoj strani telefona</string>
+    <string name="r12">Vaš Ringo trebao bi se uključiti i pokrenuti čarobnjak za pokretanje.</string>
+    <string name="r13">Vaš Ringo trebao bi se uključiti i pokrenuti čarobnjak za pokretanje.</string>
+    <string name="r14">Slijedite upute čarobnjaka za pokretanje da biste provjerili radi li sve ispravno.</string>
+    <string name="r15">U slučaju da nešto nije u redu ili imate bilo kakvih pitanja u vezi s postupkom sastavljanja, slobodno nas obavijestite na contact@circuitmess.com. Također, bilo kakva povratna informacija koju nam date izuzetno nam je korisna kako bismo mogli učiniti ovaj vodič i Ringo komplet još bolji.</string>
+
+    <!-- ringo_meet_the_tools_fragment -->
+    <string name="r16">Ringo alati</string>
+    <string name="r17">Ringo je komplet dizajniran za obrazovanje, ali daleko je od igračke. I kao takav, zahtijeva neke ozbiljne alate. Oprema i alati potrebni za sastavljanje nisu uključeni u standardni komplet. Ako ste kupili standardni komplet (bez alata) i nemate ga, sada bi bilo pravo vrijeme da ga posudite ili kupite. Ako ste kupili Ringo komplet s alatima, dobit ćete kutiju sa sljedećim alatima</string>
+    <string name="r18">Lemilica</string>
+    <string name="r19">Ovo je najvažniji alat u arsenalu sastavljača, ali za Ringov sklop bit će dovoljna bilo koja lemilica. Ako planirate zaroniti u "uradi sam" svijet, možda biste trebali razmisliti o nabavci skuplje stanice za lemljenje s regulacijom temperature. To bi moglo učiniti vaše iskustvo lemljenja puno boljim. Ako ste kupili komplet Ringo alata, u kompletu ste dobili i USB lemilicu, kao i postolje za lemilicu i komad spužve pomoću kojeg je možete očistiti.</string>
+    <string name="r20">Žica za lemljenje</string>
+    <string name="r21">Ovo je metalni materijal koji ćete topiti svojom lemilicom kako biste povezali dvije komponente. Toplo savjetujemo kupnju žice s jezgrom kolofonija, 60/40. Ova vrsta žice obično se koristi u DIY elektroničkoj zajednici za slične projekte lemljenja. Budite oprezni kad kupujete žicu, jer loše lemljenje može dovesti do puno komplikacija poput loših zglobova i neželjenog premošćivanja.</string>
+    <string name="r22">Kliješta za dijagonalni rez</string>
+    <string name="r23">Kliještima poput ovih moći ćete obrezati vodove zalemljenih komponenata, izrezati žice i konektore. Mi preferiramo tip prikazan na slici (Platon, model 170), ali bilo koji drugi tip će poslužiti.</string>
+    <string name="r24">Produžena kliješta</string>
+    <string name="r25">Ovakva kliješta trebat će vam prilikom sastavljanja kućišta ili kad priključujete neke nezgodne konektore. Općenito su korisna kada obavljate neke fine mehaničke radove.</string>
+    <string name="r26">Standardni križni odvijač</string>
+    <string name="r27">Trebat će vam ovaj križni (Phillips) odvijač da biste pričvrstili sve module na glavnu ploču i da biste sastavili cijelo kućište. Standardni križni odvijač od 2,0 mm trebao bi biti dovoljan.</string>
+    <string name="r28">Vakuumska pumpa za odlemljivanje (usisavač lema)</string>
+    <string name="r29">Ovaj je alat koristan pri čišćenju nekih većih pogrešaka pri lemljenju, ali nije potreban za sastavljanje vašeg Ringa. Ako u budućnosti planirate raditi neka hakiranja, modificiranje ili popravke elektronike, kupnja ovog uvijek je dobra ideja.</string>
+    <string name="r30">Spužva za čišćenje</string>
+    <string name="r31">Ovaj se komad spužve ne čini se poseban, ali stavite ga pod malo vode i pogledajte kako će se pretvoriti u super-spužvu za čišćenje lema. Upotrijebite ga nakon lemljenja nekoliko zglobova da biste uklonili višak lema s vrha vaše lemilice. Nemojte ju koristiti kad je potpuno mokra, ali isto tako i kad je potpuno suha.</string>
+    <string name="r32">Dodatni alati koji nisu obvezni za sastavljanje Ringa, ali bi vam mogli dobro doći, uključuju pomoćnu treću ruku s povećalom, multimetar i žica za odlemljivanje.</string>
+
+    <!-- ringo_time_to_get_makin_fragment -->
+    <string name="r33">Motivacijski savjet od Alberta</string>
+    <string name="r34">Lemljenje je osnovna vještina ako želite zaroniti u svijet DIY elektronike.</string>
+    <string name="r35">Lemljenje je osnovna vještina ako želite zaroniti u svijet DIY elektronike. Vaša lemilica je vaš najbolji suputnik kada je u pitanju stvaranje nečeg novog. Daje vam moć stvaranja jedinstvenih elektroničkih uređaja od nule. Nitko se nije rodio kao genije za lemljenje. To je vještina kao i svaka druga i morate je vježbati kako biste postali bolji. Također, znam koliko može biti frustrirajuće kad nešto ne uspije iz prvog pokušaja. Istina je, morat ćete se na to naviknuti jer je metoda pokušaja i pogrešaka osnova DIY elektronike, i to sve dok učite nešto novo. I molim vas, ne brinite, u najgorem slučaju (nešto ne radi) napravit ćemo to zajedno. Sretno i nastavite izrađivati!</string>
+    <string name="r36">Korak 1 - Ploča s mozgom</string>
+    <string name="r37">Počnimo s pločom s mozgom. Uzmite 2 štapića za priključivanje i prerežite ih na veličinu kako biste ih mogli lemiti na PCB ploče s mozgom.</string>
+    <string name="r38">Morate ih obrezati kliještima za dijagonalni rez.</string>
+    <string name="r39">Na kraju trebate imati jedan 22-pin priključak i jedan 11-pin priključak.</string>
+    <string name="r40">Priključke trebate zalemiti tako da budu okomiti na ploču. Srećom postoji lijepa tehnika za upravo to:</string>
+    <string name="r41">1) Zalemite samo prvi pin jednog reda priključaka</string>
+    <string name="r42">2) Provjerite je li priključak okomit</string>
+    <string name="r43">3) Ako je priključak malo ukošen i treba ga prilagoditi, otopite lem i nagnite priključak prstima. (Pazite da se ne opečete.)</string>
+    <string name="r44">4) Provjerite jesu li priključci pravilno poravnani, ako ne, ponovite postupak. Ako je priključak okomit na ploču, možete lemiti ostatak pinova.</string>
+    <string name="r45">Zalemite i drugi red priključaka. Provjerite jesu li okomiti na ploču s mozgom! Rezultati bi trebali izgledati kao na slici lijevo.</string>
+    <string name="r46">Korak 2 - Priključivanje ploče s mozgom na glavnu ploču</string>
+    <string name="r47">Za ovo će vam trebati: 1 x M3x10mm najlonski vijak 1 x M3x5mm odstojnik od mesinga (zlatni) (PAZITE - u vašem su kompletu dvije slične vrste odstojnika od mesinga i ovdje vam treba veći odstojnik!) 1 x M3 crni najlonska matica</string>
+    <string name="r48">Stavite vijak kroz ploču s mozgom tako da bude okrenut u smjeru pinova. Zatim na to našarafite odstojnik od mesinga.</string>
+    <string name="r49">Za to upotrijebite mali odvijač!</string>
+    <string name="r50">Zatim možete postaviti cijelu ploču s mozgom na glavnu ploču na mjesto gdje piše "Brain board". Stavite plastičnu maticu na vijak na stražnjoj strani glavne ploče. Sad kad su spojeni, možemo zalemiti ploču s mozgom na glavnu ploču.</string>
+    <string name="r51">Korak 3 - Lemljenje ploče s mozgom na glavnu ploču</string>
+    <string name="r52">Sjećate se priključaka koje ste morali izrezati i zalemiti na ploču s mozgom? Još nismo završili s njima! Morate ih prilemiti i na glavnu ploču. To moramo učiniti kako bismo uspostavili električnu vezu između ploče s mozgom i glavne ploče</string>
+    <string name="r53">Korak 4 - Ploča zaslona</string>
+    <string name="r54">Dalje, imamo ploču zaslona… Opet ćete morati izrezati priključke na odgovarajuću veličinu kako bi mogli stati na pinove na ploči zaslona. Za to vam je potreban 8-pinski priključni red. S istom tehnikom koja se koristi za lemljenje priključka pinova ploče s mozgom, lemljenje ovoga ne bi trebalo predstavljati problem.</string>
+    <string name="r55">Korak 5 - Montaža ploče zaslona na glavnu ploču</string>
+    <string name="r56">Za to će vam trebati: 3 x M3x10mm crni najlonski vijak, 3x M3x5mm odstojnik od mesinga (zlatni) (PAZITE - u vašem su kompletu dvije slične vrste odstojnika od mesinga i ovdje vam treba veći odstojnik!), 3x M3 crna najlonska matica.</string>
+    <string name="r57">Stavite vijke kroz rupe tako da budu okrenuti u istom smjeru kao i pinovi.</string>
+    <string name="r58">Zatim na njih stavite odstojnike i pritegnite ih. Postavite ploču zaslona na glavnu ploču na mjesto gdje piše "LCD display". Zatim zategnite tri matice sa stražnje strane glavne ploče.</string>
+    <string name="r59">NAPOMENA: Matice ne možete zategnuti odvijačem odozdo, samo odozgo!</string>
+    <string name="r60">Korak 6 - Lemljenje ploče zaslona</string>
+    <string name="r61">Sada krenimo dalje i zalemimo pinove zaslona na glavnu ploču. Kroz ove pinove, ploča s mozgom moći će prikazati sve slike na zaslon, pa je važno pravilno ih lemiti.</string>
+    <string name="r62">Korak 7 - Zvučna ploča</string>
+    <string name="r63">Sa zvučnom pločom morat ćemo napraviti nešto više lemljenja nego s ostalim pločama. Za ovaj korak trebat će vam:</string>
+    <string name="r64">1 x red za priključke</string>
+    <string name="r65">1 x mikrofon</string>
+    <string name="r66">1 x priključak za slušalice</string>
+    <string name="r67">Prvo, zalemite mikrofon na zvučnu ploču. Pazite da ga ne zalemite na suprotnu stranu. Nakon toga, zalemite i priključak za slušalice. Kao i prije, trebate obrezati priključke na pravu veličinu pomoću kliješta za dijagonalan rez. Trebat će vam 9-pinski priključak za zvučnu ploču. Zalemite ih okomito na ploču, baš kao što ste to činili ranije na ploči s mozgom i pločom zaslona.</string>
+    <string name="r68">Korak 8 - Pričvršćivanje zvučne ploče</string>
+    <string name="r69">Za ovaj korak trebat će vam sljedeće komponente: 1 x M3x10mm crni najlonski vijak, 1 x M3x5mm odstojnik od mesinga (zlatni) (PAZITE - u vašem su kompletu dvije slične vrste odstojnika od mesinga, a ovdje vam treba veći odstojnik !), 1 x M3 crna najlonska matica</string>
+    <string name="r70">Stavite vijak kroz ploču kao što smo to učinili s ostalim pločama, a zatim zašarafite odstojnik. Postavite zvučnu ploču na glavnu ploču na mjesto gdje piše "Sound board". Pričvrstite maticu sa stražnje strane.</string>
+    <string name="r71">Korak 9 - Lemljenje zvučne ploče</string>
+    <string name="r72">Zvučna ploča ne bi trebala stvarati probleme jer nema toliko pinova koje treba zalemiti. Osim toga, do sada biste već trebali biti upoznati s lemljenjem ako već niste imali iskustva. Zalemite pinove na glavnu ploču i gotovi ste.</string>
+    <string name="r73">Korak 10 - Puno gumbova…</string>
+    <string name="r74">Svi se ovi gumbi mogu činiti previše, ali vjerujte nam, nakon što ih zalemite nekoliko, ostatak će biti lagan!</string>
+    <string name="r75">Manji gumbi smješteni su tamo gdje je numerička tipkovnica, odmah ispod zaslona. Veći gumbi postavljeni su tamo gdje piše A i B. Krenimo od velikih žutih. Pričvrstite ih na glavnu ploču tako da čvrsto sjednu u ploču.</string>
+    <string name="r76">Prije lemljenja gumba, pobrinite se da su okomiti na ploču. To je vrlo važno jer ćete imati problema s postavljanjem zaštitnog kućišta na uređaj ako su gumbi nagnuti!</string>
+    <string name="r77">Jastučići za lemljenje prilično su veliki za ove gumbe, pa ćete na njima morati malo duže držati lemilicu. Lemljenje manjih gumba uglavnom je isto kao i lemljenje velikih žutih.</string>
+    <string name="r78">Pobrinite se da gumbi čvrsto stoje na ploči i da nisu nagnuti prije lemljenja.</string>
+    <string name="r79">Kao što smo rekli u prethodnom odlomku, nećete moći montirati kućište ako su gumbi nagnuti! Obavezno pravilno zalemite svaki pin. Ne žurite se samo zato što ih je puno!</string>
+    <string name="r80">Korak 11 - Joystick</string>
+    <string name="r81">Još treba zalemiti joystick, ali nakon svih tih gumbova to ne bi trebalo predstavljati problem.</string>
+    <string name="r82">Kad završite s tim, slobodno isključite lemilicu i dajte si oduška, jer je lemljenju kraj!</string>
+    <string name="r83">Dobar posao do sada, ali nažalost još nismo završili. Pred nama je još nekoliko koraka. O ne! Čini se da smo pogriješili tijekom postupka lemljenja! Kao što već znate, lemni zglobovi ne smiju se premostiti jer uređaj neće raditi ispravno (signali ili naponi će se miješati ili kratko spojiti). Ovo je savršen trenutak da pokažemo kako popraviti premoštene lemne zglobove vakuumskom pumpom za odlemljivanje:</string>
+    <string name="r84">Pritisnite gumb klipa na vakuumskoj pumpi za odlemljivanje</string>
+    <string name="r85">Stavite lemilicu na premošteni spoj dok se ne otopi</string>
+    <string name="r86">Postavite pumpu za odlemljivanje izravno na rastopljeni spoj za lemljenje</string>
+    <string name="r87">Pritisnite gumb za otpuštanje na pumpi za odlemljivanje, koja bi trebala usisati rastaljeni lem</string>
+    <string name="r88">Ponovite postupak ako je potrebno</string>
+    <string name="r89">Ovo će zahtijevati malo vježbe, ali nije nemoguće za naučiti!</string>
+    <string name="r90">Korak 12 - Mrežna ploča</string>
+    <string name="r91">Da biste mrežnu ploču pričvrstili na glavnu ploču, trebat će vam sljedeće komponente: 2x M2,5 bijeli najlonski vijak 2x M2,5 bijela najlonska matica. Mrežnu ploču prvo treba umetnuti u veliki konektor na stražnjoj strani, na mjesto gdje piše "Mini PCIE Express". Mrežnu ploču treba umetnuti pod ovakvim kutom. Zatim je morate gurnuti prema dolje sve dok nije vodoravna s glavnom pločom.</string>
+    <string name="r92">Držite je pritisnutu i stavite jedan vijak kroz mrežnu ploču i glavnu ploču. Pričvrstite ga maticom s druge strane. Zatim stavite drugi vijak i pričvrstite i drugu maticu.</string>
+    <string name="r93">Korak 13 - Zvučnik</string>
+    <string name="r94">Spajanje zvučnika je jednostavno! Prvo morate umetnuti konektor žice zvučnika kroz veliku rupu na vrhu glavne ploče. Nakon što to učinite, uzmite bijeli konektor s kliještima (ili prstima) i stavite ga u utor za ženski konektor gdje piše "speaker". Trebali biste osjetiti kad konektor pravilno sjedne u utor.</string>
+    <string name="r95">Korak 14 - Poklopci gumba</string>
+    <string name="r96">Pritiskati one gumbe bez poklopca gumba bilo bi jako teško, zar ne? Stoga, izvadimo sve poklopce gumba i postavimo ih na gumbe. Kao i ranije, postoje dvije vrste: veći su za gumbe A i B, a manji za ostalo.</string>
+    <string name="r97">*NAPOMENA: Dobit ćete gumbe sa UV ispisanim simbolima.</string>
+    <string name="r98">Postavite ih na vrh gumba i čvrsto pritisnite. Trebali bi kliknuti kad sjednu na svoje mjesto.</string>
+    <string name="r99">Korak 15 - Prednje kućište</string>
+    <string name="r100">Budući da ne želimo da vam se nešto dogodi s Ringom, najbolje je da ga stavite u plastično kućište. Počnimo s prednjom stranom. Za ovo će nam trebati: 6x M3x8mm metalni vijak (PAZITE - postoje dvije verzije metalnih vijaka koji izgledaju slično; ovdje vam trebaju kraći vijci), 6 x M3x5mm odstojnik od mesinga (zlatni) (PAZITE - dvije su slične vrste odstojnika od mesinga u vašem kompletu i ovdje vam treba veći odstojnik!), 1 x Prednje zaštitno kućište 1 x Prednje estetsko kućište. Umetnite vijke s prednje strane i zategnite metalne odstojnike sa stražnje strane.</string>
+    <string name="r101">Nemojte ih previše stezati, jer biste mogli oštetiti kućište!</string>
+    <string name="r102">Korak 16 - Stražnje kućište</string>
+    <string name="r103">Uzmite ostatak komponenata: 6x M3x12mm metalni vijak (PAZITE - postoje dvije verzije metalnih vijaka koji izgledaju slično; ovdje vam trebaju duži vijci), 6x M3x4mm odstojnik od mesinga (zlatni) (PAZITE - postoje dvije slične vrste odstojnika od mesinga u vašem kompletu, a ovdje vam treba kraći odstojnik!), 1 x donje estetsko kućište, 1 x donje zaštitno kućište. Postupak je prilično sličan sastavljanju prednjeg kućišta.</string>
+    <string name="r104">Korak 17 - Baterija</string>
+    <string name="r105">Baterija dolazi s unaprijed nanesenom obostranom ljepljivom trakom, pa ćete morati odlijepiti sloj papira sa stražnje strane baterije.</string>
+    <string name="r106">Pazite da ne odlijepite cijelu traku, samo zaštitni sloj papira.</string>
+    <string name="r107">Postavite ju unutar najvećeg utora na stražnjem kućištu i provjerite je li kabel baterije okrenut udesno. Čvrsto pritisnite bateriju kako biste osigurali da se dobro zalijepila za kućište. Nakon što ste bateriju zalijepili za kućište, preostalo je samo spojiti bijeli konektor u utor na glavnoj ploči na mjesto gdje piše "battery".</string>
+    <string name="r108">Korak 18 - Antena</string>
+    <string name="r109">Vjerojatno ste se pitali što je ta viseća crna žica spojena na mrežnu ploču. To je Ringova antena i bez nje je nemoguće spojiti se na mobilnu mrežu. Kao i kod baterije, morat ćete prvo skinuti sloj papira s kraja antene.</string>
+    <string name="r110">Budite izuzetno nježni jer se može oštetiti ako se pogrešno zalijepi!</string>
+    <string name="r111">Zatim ju zalijepite na kućište, do same baterije, s žicom okrenutom prema gore.</string>
+    <string name="r112">Budite oprezni kad vučete antenu, jer je antenski konektor na mrežnoj ploči pomalo krhak i može se čak i slomiti ako ga previše opteretite!</string>
+    <string name="r113">Sada biste trebali imati stražnje kućište povezano na glavnu ploču s baterijom i antenom, kao što je prikazano na fotografiji s lijeve strane.</string>
+    <string name="r114">Korak 19 - Sastavljanje prednjeg i stražnjeg kućišta</string>
+    <string name="r115">Stavite stražnje kućište na stražnju stranu glavne ploče.</string>
+    <string name="r116">Pazite na kable koji bi vam mogli zasmetati. Pazite da ostanu unutar kućišta i dalje od vijaka kako ne bi stršili ili se oštetili.</string>
+    <string name="r117">Okrenite telefon tako da zaslon bude okrenut prema gore. Sada postavite prednje kućište na prednju stranu glavne ploče. Pritegnite šest vijaka na stražnjoj strani. Stisnite donji i gornji komad kućišta prstima dok stežete vijke.</string>
+    <string name="r118">Imajte na umu da ih ne stežete previše prilikom sastavljanja kućišta jer biste ga mogli oštetiti.</string>
+    <string name="r119">I voilá, upravo ste sastavili svoj vlastiti mobitel! U sljedećem poglavlju potražite daljnje upute o tome kako postaviti svoj Ringo.</string>
+</resources>
